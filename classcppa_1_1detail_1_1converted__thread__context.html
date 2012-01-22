@@ -61,79 +61,26 @@
   </div>
 </div>
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cppa::detail::converted_thread_context Class Reference</div>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="cppa::detail::converted_thread_context" --><!-- doxytag: inherits="abstract_actor&lt; local_actor &gt;" -->
+<!-- doxytag: class="cppa::detail::converted_thread_context" --><!-- doxytag: inherits="cppa::abstract_actor" -->
 <p><code>#include &lt;converted_thread_context.hpp&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for cppa::detail::converted_thread_context:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classcppa_1_1detail_1_1converted__thread__context.png" usemap="#cppa::detail::converted_thread_context_map" alt=""/>
-  <map id="cppa::detail::converted_thread_context_map" name="cppa::detail::converted_thread_context_map">
-<area href="classcppa_1_1detail_1_1abstract__actor.html" alt="cppa::detail::abstract_actor&lt; local_actor &gt;" shape="rect" coords="0,224,250,248"/>
-<area href="classcppa_1_1local__actor.html" title="Base class for local running Actors." alt="cppa::local_actor" shape="rect" coords="0,168,250,192"/>
-<area href="classcppa_1_1actor.html" title="Base class for all actor implementations." alt="cppa::actor" shape="rect" coords="0,112,250,136"/>
-<area href="classcppa_1_1channel.html" title="Interface for all message receivers." alt="cppa::channel" shape="rect" coords="0,56,250,80"/>
-<area href="classcppa_1_1ref__counted.html" title="A (thread safe) base class for reference counted objects with an atomic reference count..." alt="cppa::ref_counted" shape="rect" coords="0,0,250,24"/>
-</map>
- </div></div>
+
+<p>Inherits cppa::abstract_actor&lt; Base &gt;.</p>
 
 <p><a href="classcppa_1_1detail_1_1converted__thread__context-members.html">List of all members.</a></p>
-<table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1detail_1_1converted__thread__context.html#ae7b51f9d579b797cca1a99c4cfa7c9be">quit</a> (std::uint32_t reason)</td></tr>
-</table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Represents a thread that was converted to an Actor. </p>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ae7b51f9d579b797cca1a99c4cfa7c9be"></a><!-- doxytag: member="cppa::detail::converted_thread_context::quit" ref="ae7b51f9d579b797cca1a99c4cfa7c9be" args="(std::uint32_t reason)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cppa::detail::converted_thread_context::quit </td>
-          <td>(</td>
-          <td class="paramtype">std::uint32_t&#160;</td>
-          <td class="paramname"><em>reason</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Finishes execution of this actor. </p>
-<p>Cause this actor to send an exit signal to all of its linked actors, sets its state to <code>exited</code> and throws <a class="el" href="classcppa_1_1actor__exited.html">actor_exited</a> to cleanup the stack. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reason</td><td>Exit reason that will be send to linked actors. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl><dt><b>Exceptions:</b></dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcppa_1_1actor__exited.html" title="Thrown if an actor finished execution.">actor_exited</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classcppa_1_1local__actor.html#a70a12ba036a189340c067286a0fddf40">cppa::local_actor</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>cppa/detail/converted_thread_context.hpp</li>
 </ul>
 </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:25 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

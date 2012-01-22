@@ -77,12 +77,12 @@
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#aac302b6a8c6e3f2c0006750968b7a975">seek_object</a> ()=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#a2486ae2333c538cbb964c9925e3219d9">peek_object</a> ()=0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#a0dd429dbb1e6e5410e907a0727e2e26d">begin_object</a> (const std::string &amp;type_name)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#a05b731b55931e8a05bcf6c8db3694636">begin_object</a> (std::string const &amp;type_name)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#ab74eee91442d5f3fd979bbaea7036769">end_object</a> ()=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#ab7342c6023ac82b8fc2e1c90db265f93">begin_sequence</a> ()=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#ad8b4ae56320e117ad03344d446e0cb6d">end_sequence</a> ()=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#a3cdf810f985cd64a0d429b1f28e203ca">read_value</a> (<a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> ptype)=0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#a7ab5ff291c95d1b0e20a57086c422eb8">read_tuple</a> (size_t num, const <a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> *ptypes, <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> *storage)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#a121b3c53b505be5e8f48b38cd3d5cd67">read_tuple</a> (size_t num, <a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> const *ptypes, <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> *storage)=0</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Technology-independent deserialization interface. </p>
@@ -90,14 +90,14 @@ Public Member Functions</h2></td></tr>
 <p><a class="el" href="announce_example_5_8cpp-example.html#_a3">announce_example_5.cpp</a>.</p>
 </dd>
 </dl></div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a0dd429dbb1e6e5410e907a0727e2e26d"></a><!-- doxytag: member="cppa::deserializer::begin_object" ref="a0dd429dbb1e6e5410e907a0727e2e26d" args="(const std::string &amp;type_name)=0" -->
+<a class="anchor" id="a05b731b55931e8a05bcf6c8db3694636"></a><!-- doxytag: member="cppa::deserializer::begin_object" ref="a05b731b55931e8a05bcf6c8db3694636" args="(std::string const &amp;type_name)=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">virtual void cppa::deserializer::begin_object </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>type_name</em></td><td>)</td>
           <td><code> [pure virtual]</code></td>
         </tr>
@@ -192,7 +192,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7ab5ff291c95d1b0e20a57086c422eb8"></a><!-- doxytag: member="cppa::deserializer::read_tuple" ref="a7ab5ff291c95d1b0e20a57086c422eb8" args="(size_t num, const primitive_type *ptypes, primitive_variant *storage)=0" -->
+<a class="anchor" id="a121b3c53b505be5e8f48b38cd3d5cd67"></a><!-- doxytag: member="cppa::deserializer::read_tuple" ref="a121b3c53b505be5e8f48b38cd3d5cd67" args="(size_t num, primitive_type const *ptypes, primitive_variant *storage)=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -205,7 +205,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> const *&#160;</td>
           <td class="paramname"><em>ptypes</em>, </td>
         </tr>
         <tr>
@@ -288,7 +288,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:25 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

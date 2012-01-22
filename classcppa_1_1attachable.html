@@ -61,6 +61,7 @@
 </div>
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cppa::attachable Class Reference</div>  </div>
@@ -73,23 +74,28 @@
 
 <p><a href="classcppa_1_1attachable-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcppa_1_1attachable_1_1token.html">token</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a pointer to a value with its RTTI.  <a href="structcppa_1_1attachable_1_1token.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1attachable.html#a2edbd4aa191d5b300f5be4256d6e6384">detach</a> (std::uint32_t reason)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1attachable.html#a1c0ce6ff1c559f26d78f001d2094f347">actor_exited</a> (std::uint32_t reason)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1attachable.html#aae9d211978cd5cb0acf9bf03cafd5865">matches</a> (<a class="el" href="structcppa_1_1attachable_1_1token.html">token</a> const &amp;what)=0</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Callback utility class. </p>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a2edbd4aa191d5b300f5be4256d6e6384"></a><!-- doxytag: member="cppa::attachable::detach" ref="a2edbd4aa191d5b300f5be4256d6e6384" args="(std::uint32_t reason)" -->
+<a class="anchor" id="a1c0ce6ff1c559f26d78f001d2094f347"></a><!-- doxytag: member="cppa::attachable::actor_exited" ref="a1c0ce6ff1c559f26d78f001d2094f347" args="(std::uint32_t reason)=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void cppa::attachable::detach </td>
+          <td class="memname">virtual void cppa::attachable::actor_exited </td>
           <td>(</td>
           <td class="paramtype">std::uint32_t&#160;</td>
           <td class="paramname"><em>reason</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [pure virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -97,6 +103,38 @@ Public Member Functions</h2></td></tr>
 
 <p>Executed if the actor finished execution with given <code>reason</code>. </p>
 <p>The default implementation does nothing. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reason</td><td>The exit rason of the observed actor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aae9d211978cd5cb0acf9bf03cafd5865"></a><!-- doxytag: member="cppa::attachable::matches" ref="aae9d211978cd5cb0acf9bf03cafd5865" args="(token const &amp;what)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool cppa::attachable::matches </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcppa_1_1attachable_1_1token.html">token</a> const &amp;&#160;</td>
+          <td class="paramname"><em>what</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Selects a group of <code>attachable</code> instances by <code>what</code>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">what</td><td>A value that selects zero or more <code>attachable</code> instances. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><code>true</code> if <code>what</code> selects this instance; otherwise <code>false</code>. </dd></dl>
 
 </div>
 </div>
@@ -107,7 +145,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:24 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

@@ -60,6 +60,8 @@
   </div>
 </div>
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cppa::any_tuple Class Reference</div>  </div>
 </div>
@@ -68,16 +70,154 @@
 <p><code>#include &lt;any_tuple.hpp&gt;</code></p>
 
 <p><a href="classcppa_1_1any__tuple-members.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1any__tuple.html#a63e7c1f31f31e9f0f21c6cacbcb7a0fe">any_tuple</a> ()</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1any__tuple.html#ac02caedcc701b654a530294897c74700">any_tuple</a> (<a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; Args...&gt; const &amp;t)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1any__tuple.html#a0ad2fbd03421ba797212645da8a7df72">any_tuple</a> (<a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;&amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1any__tuple.html#a658f36e6e041ab10caaab91c93c9eb55">any_tuple</a> (<a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> const &amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1any__tuple.html#a0d427cb9bcf370e3dd40b0e62864cb69">operator=</a> (<a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;&amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1any__tuple.html#a2b807d3eae076f271d13a738c303e369">operator=</a> (<a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> const &amp;)</td></tr>
+</table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Describes a fixed-length tuple with elements of any type. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a63e7c1f31f31e9f0f21c6cacbcb7a0fe"></a><!-- doxytag: member="cppa::any_tuple::any_tuple" ref="a63e7c1f31f31e9f0f21c6cacbcb7a0fe" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cppa::any_tuple::any_tuple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates an empty tuple. </p>
+<dl class="post"><dt><b>Postcondition:</b></dt><dd><code>empty() == true</code> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac02caedcc701b654a530294897c74700"></a><!-- doxytag: member="cppa::any_tuple::any_tuple" ref="ac02caedcc701b654a530294897c74700" args="(tuple&lt; Args...&gt; const &amp;t)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">cppa::any_tuple::any_tuple </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; Args...&gt; const &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates a tuple from <code>t</code>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>A typed tuple representation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="post"><dt><b>Postcondition:</b></dt><dd><code>empty() == false</code> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ad2fbd03421ba797212645da8a7df72"></a><!-- doxytag: member="cppa::any_tuple::any_tuple" ref="a0ad2fbd03421ba797212645da8a7df72" args="(any_tuple &amp;&amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cppa::any_tuple::any_tuple </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Move constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a658f36e6e041ab10caaab91c93c9eb55"></a><!-- doxytag: member="cppa::any_tuple::any_tuple" ref="a658f36e6e041ab10caaab91c93c9eb55" args="(any_tuple const &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cppa::any_tuple::any_tuple </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Copy constructor. </p>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a0d427cb9bcf370e3dd40b0e62864cb69"></a><!-- doxytag: member="cppa::any_tuple::operator=" ref="a0d427cb9bcf370e3dd40b0e62864cb69" args="(any_tuple &amp;&amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a>&amp; cppa::any_tuple::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Move assignment. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd><code>*this</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b807d3eae076f271d13a738c303e369"></a><!-- doxytag: member="cppa::any_tuple::operator=" ref="a2b807d3eae076f271d13a738c303e369" args="(any_tuple const &amp;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a>&amp; cppa::any_tuple::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Copy assignment. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd><code>*this</code>. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>cppa/any_tuple.hpp</li>
 </ul>
 </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:24 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

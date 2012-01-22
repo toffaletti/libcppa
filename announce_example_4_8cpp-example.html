@@ -164,13 +164,13 @@
                                   &amp;bar::i));
 
     <span class="comment">// send a bar to ourselves</span>
-    <a name="a0"></a><a class="code" href="namespacecppa.html#a1e0690c8df96f321e39dd8cac1269e7f" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>(), bar{foo{1,2},3});
+    <a name="a0"></a><a class="code" href="namespacecppa.html#a844e75928ca8a1975a9d9bc9a7914913" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>, bar{foo{1,2},3});
     <span class="comment">// send a baz to ourselves</span>
-    <a class="code" href="namespacecppa.html#a1e0690c8df96f321e39dd8cac1269e7f" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>(), baz{foo{1,2},bar{foo{3,4},5}});
+    <a class="code" href="namespacecppa.html#a844e75928ca8a1975a9d9bc9a7914913" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>, baz{foo{1,2},bar{foo{3,4},5}});
 
     <span class="comment">// receive two messages</span>
     <span class="keywordtype">int</span> i = 0;
-    <a name="a1"></a><a class="code" href="namespacecppa.html#a04248d8185833939eccbf45a0598fff7" title="Receives messages as long as stmt returns true.">receive_while</a>([&amp;]() { <span class="keywordflow">return</span> ++i &lt;= 2; })
+    <a name="a1"></a><a class="code" href="namespacecppa.html#af50e3deafdaddd7159f915841e7fe24c" title="Receives messages as long as stmt returns true.">receive_while</a>([&amp;]() { <span class="keywordflow">return</span> ++i &lt;= 2; })
     (
         on&lt;bar&gt;() &gt;&gt; [](<span class="keyword">const</span> bar&amp; val)
         {
@@ -183,7 +183,7 @@
         on&lt;baz&gt;() &gt;&gt; []()
         {
             <span class="comment">// prints: @&lt;&gt; ( { baz ( foo ( 1, 2 ), bar ( foo ( 3, 4 ), 5 ) ) } )</span>
-            cout &lt;&lt; to_string(<a name="a2"></a><a class="code" href="namespacecppa.html#abf2fc4e0570df2765d49fd80cee410c9" title="Gets the last dequeued message from the mailbox.">last_received</a>()) &lt;&lt; endl;
+            cout &lt;&lt; to_string(<a name="a2"></a><a class="code" href="namespacecppa.html#abdc77f5b27edd9e40908860db20e666d" title="Always points to the current actor. Similar to this in an object-oriented context.">self</a>-&gt;<a name="a3"></a>last_dequeued()) &lt;&lt; endl;
         }
 
     );
@@ -195,7 +195,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:24 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

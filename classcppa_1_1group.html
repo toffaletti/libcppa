@@ -89,12 +89,12 @@ Classes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Module interface.  <a href="classcppa_1_1group_1_1module.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#a0ca2805302d4af52ed0d5052bbf3bce9">identifier</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#a2a366f8a319cb300c6ec1874b2eb296a">module_name</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual subscription&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#aabeb55e4593f8f25e15863ecde26542b">subscribe</a> (const <a class="el" href="namespacecppa.html#a0ac06fc2f69fb1021d95310238161c4e">channel_ptr</a> &amp;who)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#aa0b278c2867f15bb10a62a2b527774cf">identifier</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#ad9bd4a96f7d9bfcc807d2772bf440600">module_name</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual subscription&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#a739ab15988c12ed10c5fddd97265f55b">subscribe</a> (<a class="el" href="namespacecppa.html#a0ac06fc2f69fb1021d95310238161c4e">channel_ptr</a> const &amp;who)=0</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1group.html">group</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#a27268c44307a292136b607d7aaf6c5f6">get</a> (const std::string &amp;module_name, const std::string &amp;group_identifier)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1group.html">group</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#a50b56bdc410b84f5b27ef9457d833b87">get</a> (std::string const &amp;module_name, std::string const &amp;group_identifier)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#ad8a69a374587d3d44a7dac627453dfba">add_module</a> (<a class="el" href="classcppa_1_1group_1_1module.html">module</a> *)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -119,20 +119,20 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a27268c44307a292136b607d7aaf6c5f6"></a><!-- doxytag: member="cppa::group::get" ref="a27268c44307a292136b607d7aaf6c5f6" args="(const std::string &amp;module_name, const std::string &amp;group_identifier)" -->
+<a class="anchor" id="a50b56bdc410b84f5b27ef9457d833b87"></a><!-- doxytag: member="cppa::group::get" ref="a50b56bdc410b84f5b27ef9457d833b87" args="(std::string const &amp;module_name, std::string const &amp;group_identifier)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">static <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt;<a class="el" href="classcppa_1_1group.html">group</a>&gt; cppa::group::get </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>module_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>group_identifier</em>&#160;</td>
         </tr>
         <tr>
@@ -148,12 +148,12 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0ca2805302d4af52ed0d5052bbf3bce9"></a><!-- doxytag: member="cppa::group::identifier" ref="a0ca2805302d4af52ed0d5052bbf3bce9" args="() const " -->
+<a class="anchor" id="aa0b278c2867f15bb10a62a2b527774cf"></a><!-- doxytag: member="cppa::group::identifier" ref="aa0b278c2867f15bb10a62a2b527774cf" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; cppa::group::identifier </td>
+          <td class="memname">std::string const&amp; cppa::group::identifier </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -167,12 +167,12 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2a366f8a319cb300c6ec1874b2eb296a"></a><!-- doxytag: member="cppa::group::module_name" ref="a2a366f8a319cb300c6ec1874b2eb296a" args="() const " -->
+<a class="anchor" id="ad9bd4a96f7d9bfcc807d2772bf440600"></a><!-- doxytag: member="cppa::group::module_name" ref="ad9bd4a96f7d9bfcc807d2772bf440600" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; cppa::group::module_name </td>
+          <td class="memname">std::string const&amp; cppa::group::module_name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -186,14 +186,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aabeb55e4593f8f25e15863ecde26542b"></a><!-- doxytag: member="cppa::group::subscribe" ref="aabeb55e4593f8f25e15863ecde26542b" args="(const channel_ptr &amp;who)=0" -->
+<a class="anchor" id="a739ab15988c12ed10c5fddd97265f55b"></a><!-- doxytag: member="cppa::group::subscribe" ref="a739ab15988c12ed10c5fddd97265f55b" args="(channel_ptr const &amp;who)=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">virtual subscription cppa::group::subscribe </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacecppa.html#a0ac06fc2f69fb1021d95310238161c4e">channel_ptr</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecppa.html#a0ac06fc2f69fb1021d95310238161c4e">channel_ptr</a> const &amp;&#160;</td>
           <td class="paramname"><em>who</em></td><td>)</td>
           <td><code> [pure virtual]</code></td>
         </tr>
@@ -213,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:25 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

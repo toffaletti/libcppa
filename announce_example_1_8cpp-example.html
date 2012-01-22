@@ -101,11 +101,11 @@
     assert(announce&lt;foo_pair2&gt;(&amp;foo_pair2::first, &amp;foo_pair2::second) == <span class="keyword">false</span>);
 
     <span class="comment">// send a foo to ourselves</span>
-    <a name="a0"></a><a class="code" href="namespacecppa.html#a1e0690c8df96f321e39dd8cac1269e7f" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>(), foo{ { 1, 2, 3, 4 }, 5 });
+    <a name="a0"></a><a class="code" href="namespacecppa.html#a844e75928ca8a1975a9d9bc9a7914913" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>, foo{ { 1, 2, 3, 4 }, 5 });
     <span class="comment">// send a foo_pair2 to ourselves</span>
-    <a class="code" href="namespacecppa.html#a1e0690c8df96f321e39dd8cac1269e7f" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>(), foo_pair2{3, 4});
+    <a class="code" href="namespacecppa.html#a844e75928ca8a1975a9d9bc9a7914913" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>, foo_pair2{3, 4});
     <span class="comment">// quits the program</span>
-    <a class="code" href="namespacecppa.html#a1e0690c8df96f321e39dd8cac1269e7f" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>(), atom(<span class="stringliteral">&quot;done&quot;</span>));
+    <a class="code" href="namespacecppa.html#a844e75928ca8a1975a9d9bc9a7914913" title="Sends a message to whom.">send</a>(<span class="keyword">self</span>, atom(<span class="stringliteral">&quot;done&quot;</span>));
 
     <span class="comment">// libcppa returns the same uniform_type_info</span>
     <span class="comment">// instance for foo_pair and foo_pair2</span>
@@ -113,7 +113,7 @@
 
     <span class="comment">// receive two messages</span>
     <span class="keywordtype">int</span> i = 0;
-    <a name="a1"></a><a class="code" href="namespacecppa.html#a04248d8185833939eccbf45a0598fff7" title="Receives messages as long as stmt returns true.">receive_while</a>([&amp;]() { <span class="keywordflow">return</span> ++i &lt;= 2; })
+    <a name="a1"></a><a class="code" href="namespacecppa.html#af50e3deafdaddd7159f915841e7fe24c" title="Receives messages as long as stmt returns true.">receive_while</a>([&amp;]() { <span class="keywordflow">return</span> ++i &lt;= 2; })
     (
         <span class="comment">// note: we sent a foo_pair2, but match on foo_pair</span>
         <span class="comment">// that&#39;s safe because both are aliases for std::pair&lt;int,int&gt;</span>
@@ -148,7 +148,7 @@
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:24 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

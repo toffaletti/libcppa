@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>libcppa: cppa::util::single_reader_queue&lt; T &gt; Class Template Reference</title>
+<title>libcppa: cppa::util::single_reader_queue&lt; T, Deallocator &gt; Class Template Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -64,7 +64,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">cppa::util::single_reader_queue&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">cppa::util::single_reader_queue&lt; T, Deallocator &gt; Class Template Reference</div>  </div>
 </div>
 <div class="contents">
 <!-- doxytag: class="cppa::util::single_reader_queue" -->
@@ -74,29 +74,29 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">element_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#a4dcb8d5ea7f58b2d8b43dd59251c171a">pop</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">element_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#a57f26cda89d9337032362bc78cf58d93">try_pop</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#a5c9518e1302e164804a66148f897f782">push_front</a> (element_type *element)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#abc957eee6ceaf59bfc0fbd1eb71d2cb3">push_front</a> (element_type *first, element_type *last)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">element_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#a33ffa03dd2885a0d190652d13ddb3698">pop</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">element_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#aa8313f23c32705b7cef4bde7dd5333c5">try_pop</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#a929ff3926de9e013a2d9966d90a43ac9">push_front</a> (element_type *element)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#aec91feec2c9e0c5660e2b2e595115847">push_front</a> (element_type *first, element_type *last)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename List &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#a9a434b678dd6f33f8c10b064d2ea7995">push_front</a> (List &amp;&amp;list)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#ae01948ecbff436e323da362b64f396c0">push_back</a> (element_type *new_element)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#a49ab3201ddeba540d5b423a6cc3ac021">empty</a> ()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#aefdd3721b2c1f493547f2437ea8e6423">push_front</a> (List &amp;&amp;list)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#a036c3e252ef358d0ea7cb676032e3fdd">push_back</a> (element_type *new_element)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1single__reader__queue.html#a0f5e006cb514d9bab8c3ce92e1badbaf">empty</a> ()</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br/>
-class cppa::util::single_reader_queue&lt; T &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T, class Deallocator = default_deallocator&lt;T&gt;&gt;<br/>
+class cppa::util::single_reader_queue&lt; T, Deallocator &gt;</h3>
 
 <p>An intrusive, thread safe queue implementation. </p>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a49ab3201ddeba540d5b423a6cc3ac021"></a><!-- doxytag: member="cppa::util::single_reader_queue::empty" ref="a49ab3201ddeba540d5b423a6cc3ac021" args="()" -->
+<a class="anchor" id="a0f5e006cb514d9bab8c3ce92e1badbaf"></a><!-- doxytag: member="cppa::util::single_reader_queue::empty" ref="a0f5e006cb514d9bab8c3ce92e1badbaf" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T, class Deallocator = default_deallocator&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T &gt;::empty </td>
+          <td class="memname">bool <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T, Deallocator &gt;::empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -108,14 +108,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4dcb8d5ea7f58b2d8b43dd59251c171a"></a><!-- doxytag: member="cppa::util::single_reader_queue::pop" ref="a4dcb8d5ea7f58b2d8b43dd59251c171a" args="()" -->
+<a class="anchor" id="a33ffa03dd2885a0d190652d13ddb3698"></a><!-- doxytag: member="cppa::util::single_reader_queue::pop" ref="a33ffa03dd2885a0d190652d13ddb3698" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T, class Deallocator = default_deallocator&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">element_type* <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T &gt;::pop </td>
+          <td class="memname">element_type* <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T, Deallocator &gt;::pop </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -127,14 +127,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae01948ecbff436e323da362b64f396c0"></a><!-- doxytag: member="cppa::util::single_reader_queue::push_back" ref="ae01948ecbff436e323da362b64f396c0" args="(element_type *new_element)" -->
+<a class="anchor" id="a036c3e252ef358d0ea7cb676032e3fdd"></a><!-- doxytag: member="cppa::util::single_reader_queue::push_back" ref="a036c3e252ef358d0ea7cb676032e3fdd" args="(element_type *new_element)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T, class Deallocator = default_deallocator&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T &gt;::push_back </td>
+          <td class="memname">void <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T, Deallocator &gt;::push_back </td>
           <td>(</td>
           <td class="paramtype">element_type *&#160;</td>
           <td class="paramname"><em>new_element</em></td><td>)</td>
@@ -146,14 +146,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5c9518e1302e164804a66148f897f782"></a><!-- doxytag: member="cppa::util::single_reader_queue::push_front" ref="a5c9518e1302e164804a66148f897f782" args="(element_type *element)" -->
+<a class="anchor" id="a929ff3926de9e013a2d9966d90a43ac9"></a><!-- doxytag: member="cppa::util::single_reader_queue::push_front" ref="a929ff3926de9e013a2d9966d90a43ac9" args="(element_type *element)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T, class Deallocator = default_deallocator&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T &gt;::push_front </td>
+          <td class="memname">void <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T, Deallocator &gt;::push_front </td>
           <td>(</td>
           <td class="paramtype">element_type *&#160;</td>
           <td class="paramname"><em>element</em></td><td>)</td>
@@ -166,14 +166,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abc957eee6ceaf59bfc0fbd1eb71d2cb3"></a><!-- doxytag: member="cppa::util::single_reader_queue::push_front" ref="abc957eee6ceaf59bfc0fbd1eb71d2cb3" args="(element_type *first, element_type *last)" -->
+<a class="anchor" id="aec91feec2c9e0c5660e2b2e595115847"></a><!-- doxytag: member="cppa::util::single_reader_queue::push_front" ref="aec91feec2c9e0c5660e2b2e595115847" args="(element_type *first, element_type *last)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T, class Deallocator = default_deallocator&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T &gt;::push_front </td>
+          <td class="memname">void <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T, Deallocator &gt;::push_front </td>
           <td>(</td>
           <td class="paramtype">element_type *&#160;</td>
           <td class="paramname"><em>first</em>, </td>
@@ -196,16 +196,16 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9a434b678dd6f33f8c10b064d2ea7995"></a><!-- doxytag: member="cppa::util::single_reader_queue::push_front" ref="a9a434b678dd6f33f8c10b064d2ea7995" args="(List &amp;&amp;list)" -->
+<a class="anchor" id="aefdd3721b2c1f493547f2437ea8e6423"></a><!-- doxytag: member="cppa::util::single_reader_queue::push_front" ref="aefdd3721b2c1f493547f2437ea8e6423" args="(List &amp;&amp;list)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T, class Deallocator = default_deallocator&lt;T&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename List &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T &gt;::push_front </td>
+          <td class="memname">void <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T, Deallocator &gt;::push_front </td>
           <td>(</td>
           <td class="paramtype">List &amp;&amp;&#160;</td>
           <td class="paramname"><em>list</em></td><td>)</td>
@@ -218,14 +218,14 @@ template&lt;typename List &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a57f26cda89d9337032362bc78cf58d93"></a><!-- doxytag: member="cppa::util::single_reader_queue::try_pop" ref="a57f26cda89d9337032362bc78cf58d93" args="()" -->
+<a class="anchor" id="aa8313f23c32705b7cef4bde7dd5333c5"></a><!-- doxytag: member="cppa::util::single_reader_queue::try_pop" ref="aa8313f23c32705b7cef4bde7dd5333c5" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T&gt; </div>
+template&lt;typename T, class Deallocator = default_deallocator&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">element_type* <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T &gt;::try_pop </td>
+          <td class="memname">element_type* <a class="el" href="classcppa_1_1util_1_1single__reader__queue.html">cppa::util::single_reader_queue</a>&lt; T, Deallocator &gt;::try_pop </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -244,7 +244,7 @@ template&lt;typename T&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:25 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

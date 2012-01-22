@@ -75,25 +75,26 @@
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#af83d6895558aa16edff360cd2fccd60a">tuple</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#a202c587b55714c921f0c361d9e4fd655">tuple</a> (const ElementTypes &amp;...args)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#af0ae14c5343a43d27045ff9a161c1223">tuple</a> (ElementTypes const &amp;...args)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#a84ee791db09558647d0307bc31b1c930">tuple</a> (ElementTypes &amp;&amp;...args)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#a6722ca3a3e9abb457fe100a1c97e514e">size</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#ae02692adef659975450ba8b35996d83d">at</a> (size_t p) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classcppa_1_1uniform__type__info.html">uniform_type_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#a3e25e225ee7e79d40603960ef9629097">utype_at</a> (size_t p) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#af5031654d910f36a9976448d69ecf3e9">at</a> (size_t p) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1uniform__type__info.html">uniform_type_info</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#ada94c0a1dab125dbf200d04a2290e526">type_at</a> (size_t p) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1cow__ptr.html">cow_ptr</a>&lt; InternalData &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#aace812c866c4dca8c55f42f842313fd8">vals</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="related"></a>
 Related Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
 </td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;size_t N, typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___copy_on_write.html#ga0f1c5e333bf343f5fc4d264fd8b8a175">get</a> (const <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt;...&gt; &amp;tup)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">T const &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___copy_on_write.html#ga77dcff6ae357b4ec5ff09cd7ace60dfc">get</a> (<a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt;...&gt; const &amp;tup)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;size_t N, typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___copy_on_write.html#gab4c409d619905c1c1c080060a330aa4b">get_ref</a> (<a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt;...&gt; &amp;tup)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename... Types&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; Types...&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___implicit_conversion.html#gabd9c269d41c986f38dbb1145a65d1935">make_tuple</a> (const Types &amp;...args)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; Types...&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___implicit_conversion.html#gaafb134a76b3aece293e96a69f6b4b312">make_tuple</a> (Types const &amp;...args)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename... LhsTypes, typename... RhsTypes&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#a1aa3307b3618ce2f4fe88e4022de18b4">operator==</a> (const <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; LhsTypes...&gt; &amp;lhs, const <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; RhsTypes...&gt; &amp;rhs)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#ac5fb6c90891a21cd4677658e05fb6eda">operator==</a> (<a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; LhsTypes...&gt; const &amp;lhs, <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; RhsTypes...&gt; const &amp;rhs)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename... LhsTypes, typename... RhsTypes&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#a67731c18c8cee3d4a6ae6ddb503a7503">operator!=</a> (const <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; LhsTypes...&gt; &amp;lhs, const <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; RhsTypes...&gt; &amp;rhs)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1tuple.html#a9a1630b66882bab7ec3f500c08692b3e">operator!=</a> (<a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; LhsTypes...&gt; const &amp;lhs, <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; RhsTypes...&gt; const &amp;rhs)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename... ElementTypes&gt;<br/>
@@ -121,7 +122,7 @@ template&lt;typename... ElementTypes&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a202c587b55714c921f0c361d9e4fd655"></a><!-- doxytag: member="cppa::tuple::tuple" ref="a202c587b55714c921f0c361d9e4fd655" args="(const ElementTypes &amp;...args)" -->
+<a class="anchor" id="af0ae14c5343a43d27045ff9a161c1223"></a><!-- doxytag: member="cppa::tuple::tuple" ref="af0ae14c5343a43d27045ff9a161c1223" args="(ElementTypes const &amp;...args)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -130,7 +131,34 @@ template&lt;typename... ElementTypes&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classcppa_1_1tuple.html">cppa::tuple</a>&lt; ElementTypes &gt;::<a class="el" href="classcppa_1_1tuple.html">tuple</a> </td>
           <td>(</td>
-          <td class="paramtype">const ElementTypes &amp;...&#160;</td>
+          <td class="paramtype">ElementTypes const &amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initializes the tuple with <code>args</code>. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Initialization values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a84ee791db09558647d0307bc31b1c930"></a><!-- doxytag: member="cppa::tuple::tuple" ref="a84ee791db09558647d0307bc31b1c930" args="(ElementTypes &amp;&amp;...args)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... ElementTypes&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcppa_1_1tuple.html">cppa::tuple</a>&lt; ElementTypes &gt;::<a class="el" href="classcppa_1_1tuple.html">tuple</a> </td>
+          <td>(</td>
+          <td class="paramtype">ElementTypes &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
@@ -149,14 +177,14 @@ template&lt;typename... ElementTypes&gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ae02692adef659975450ba8b35996d83d"></a><!-- doxytag: member="cppa::tuple::at" ref="ae02692adef659975450ba8b35996d83d" args="(size_t p) const " -->
+<a class="anchor" id="af5031654d910f36a9976448d69ecf3e9"></a><!-- doxytag: member="cppa::tuple::at" ref="af5031654d910f36a9976448d69ecf3e9" args="(size_t p) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename... ElementTypes&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const void* <a class="el" href="classcppa_1_1tuple.html">cppa::tuple</a>&lt; ElementTypes &gt;::at </td>
+          <td class="memname">void const* <a class="el" href="classcppa_1_1tuple.html">cppa::tuple</a>&lt; ElementTypes &gt;::at </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -192,14 +220,14 @@ template&lt;typename... ElementTypes&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3e25e225ee7e79d40603960ef9629097"></a><!-- doxytag: member="cppa::tuple::utype_at" ref="a3e25e225ee7e79d40603960ef9629097" args="(size_t p) const " -->
+<a class="anchor" id="ada94c0a1dab125dbf200d04a2290e526"></a><!-- doxytag: member="cppa::tuple::type_at" ref="ada94c0a1dab125dbf200d04a2290e526" args="(size_t p) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename... ElementTypes&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classcppa_1_1uniform__type__info.html">uniform_type_info</a>* <a class="el" href="classcppa_1_1tuple.html">cppa::tuple</a>&lt; ElementTypes &gt;::utype_at </td>
+          <td class="memname"><a class="el" href="classcppa_1_1uniform__type__info.html">uniform_type_info</a> const* <a class="el" href="classcppa_1_1tuple.html">cppa::tuple</a>&lt; ElementTypes &gt;::type_at </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -236,7 +264,7 @@ template&lt;typename... ElementTypes&gt; </div>
 </div>
 </div>
 <hr/><h2>Friends And Related Function Documentation</h2>
-<a class="anchor" id="a67731c18c8cee3d4a6ae6ddb503a7503"></a><!-- doxytag: member="cppa::tuple::operator!=" ref="a67731c18c8cee3d4a6ae6ddb503a7503" args="(const tuple&lt; LhsTypes...&gt; &amp;lhs, const tuple&lt; RhsTypes...&gt; &amp;rhs)" -->
+<a class="anchor" id="a9a1630b66882bab7ec3f500c08692b3e"></a><!-- doxytag: member="cppa::tuple::operator!=" ref="a9a1630b66882bab7ec3f500c08692b3e" args="(tuple&lt; LhsTypes...&gt; const &amp;lhs, tuple&lt; RhsTypes...&gt; const &amp;rhs)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -245,13 +273,13 @@ template&lt;typename... LhsTypes, typename... RhsTypes&gt; </div>
         <tr>
           <td class="memname">bool operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; LhsTypes...&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; LhsTypes...&gt; const &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; RhsTypes...&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; RhsTypes...&gt; const &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -275,7 +303,7 @@ template&lt;typename... LhsTypes, typename... RhsTypes&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1aa3307b3618ce2f4fe88e4022de18b4"></a><!-- doxytag: member="cppa::tuple::operator==" ref="a1aa3307b3618ce2f4fe88e4022de18b4" args="(const tuple&lt; LhsTypes...&gt; &amp;lhs, const tuple&lt; RhsTypes...&gt; &amp;rhs)" -->
+<a class="anchor" id="ac5fb6c90891a21cd4677658e05fb6eda"></a><!-- doxytag: member="cppa::tuple::operator==" ref="ac5fb6c90891a21cd4677658e05fb6eda" args="(tuple&lt; LhsTypes...&gt; const &amp;lhs, tuple&lt; RhsTypes...&gt; const &amp;rhs)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -284,13 +312,13 @@ template&lt;typename... LhsTypes, typename... RhsTypes&gt; </div>
         <tr>
           <td class="memname">bool operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; LhsTypes...&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; LhsTypes...&gt; const &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; RhsTypes...&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1tuple.html">tuple</a>&lt; RhsTypes...&gt; const &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -321,7 +349,7 @@ template&lt;typename... LhsTypes, typename... RhsTypes&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:25 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

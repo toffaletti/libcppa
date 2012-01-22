@@ -78,14 +78,14 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename V &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#a1fd51cf7159334a40379842316ebd1fd">primitive_variant</a> (V &amp;&amp;value)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#a8c781811c133807ff5159c7fccdb23aa">primitive_variant</a> (<a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> pt)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#aea89938452c28d0f2f595054786ad9b5">primitive_variant</a> (const <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;other)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#a805f41344c509eca87ff5209bdc73bf1">primitive_variant</a> (<a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> const &amp;other)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#a69425eedb04e41860425352df7072525">primitive_variant</a> (<a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;&amp;other)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename V &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#a4b2b5933c61eaf43aef2a9586257e8ec">operator=</a> (V &amp;&amp;value)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#a5b9a44c30d9dc82187dbab23f7038345">operator=</a> (const <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;other)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#a1e2ff53f889136c03f677c6c26cc782d">operator=</a> (<a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> const &amp;other)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#a5734e61596e6e77b867f1fe26d172ae1">operator=</a> (<a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;&amp;other)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#ac5636545a0b5fc6116cb5a9e88d59ac1">ptype</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const std::type_info &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#adb321d9572e97691f7970c85269abd2a">type</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::type_info const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#aafa3ea1c16b7b5a378fa913899b872ed">type</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="related"></a>
 Related Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
@@ -123,11 +123,11 @@ Related Functions</h2></td></tr>
 <br/>
  }</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___type_system.html#ga22a8f475d1b708c6d70598370ba92d8f">get</a> (const <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;pv)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">T const &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___type_system.html#gadd0a1ff2118aad340e7a49f08cfbc691">get</a> (<a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> const &amp;pv)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___type_system.html#ga933cd1117131023bed7812fa237a42fd">get_ref</a> (<a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;pv)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;primitive_type PT&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___type_system.html#ga744d167a0282d4cb873c665bc2326b4c">get_ref</a> (const <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;pv)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">T const &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___type_system.html#ga7bd0d309951b058562e3ac6a35c751f5">get_ref</a> (<a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> const &amp;pv)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;primitive_type PT&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html#ga933cd1117131023bed7812fa237a42fd">get_ref</a> (<a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;pv)</td></tr>
 </table>
@@ -149,7 +149,7 @@ Related Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Creates an empty variant. </p>
-<dl class="post"><dt><b>Postcondition:</b></dt><dd><code><a class="el" href="classcppa_1_1primitive__variant.html#ac5636545a0b5fc6116cb5a9e88d59ac1" title="Gets the type of this.">ptype()</a> == pt_null &amp;&amp; <a class="el" href="classcppa_1_1primitive__variant.html#adb321d9572e97691f7970c85269abd2a" title="Gets the RTTI type of this.">type()</a> == typeid(void)</code>. </dd></dl>
+<dl class="post"><dt><b>Postcondition:</b></dt><dd><code><a class="el" href="classcppa_1_1primitive__variant.html#ac5636545a0b5fc6116cb5a9e88d59ac1" title="Gets the type of this.">ptype()</a> == pt_null &amp;&amp; <a class="el" href="classcppa_1_1primitive__variant.html#aafa3ea1c16b7b5a378fa913899b872ed" title="Gets the RTTI type of this.">type()</a> == typeid(void)</code>. </dd></dl>
 
 </div>
 </div>
@@ -207,14 +207,14 @@ template&lt;typename V &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aea89938452c28d0f2f595054786ad9b5"></a><!-- doxytag: member="cppa::primitive_variant::primitive_variant" ref="aea89938452c28d0f2f595054786ad9b5" args="(const primitive_variant &amp;other)" -->
+<a class="anchor" id="a805f41344c509eca87ff5209bdc73bf1"></a><!-- doxytag: member="cppa::primitive_variant::primitive_variant" ref="a805f41344c509eca87ff5209bdc73bf1" args="(primitive_variant const &amp;other)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">cppa::primitive_variant::primitive_variant </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> const &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -286,14 +286,14 @@ template&lt;typename V &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5b9a44c30d9dc82187dbab23f7038345"></a><!-- doxytag: member="cppa::primitive_variant::operator=" ref="a5b9a44c30d9dc82187dbab23f7038345" args="(const primitive_variant &amp;other)" -->
+<a class="anchor" id="a1e2ff53f889136c03f677c6c26cc782d"></a><!-- doxytag: member="cppa::primitive_variant::operator=" ref="a1e2ff53f889136c03f677c6c26cc782d" args="(primitive_variant const &amp;other)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a>&amp; cppa::primitive_variant::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> const &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -357,12 +357,12 @@ template&lt;typename V &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adb321d9572e97691f7970c85269abd2a"></a><!-- doxytag: member="cppa::primitive_variant::type" ref="adb321d9572e97691f7970c85269abd2a" args="() const " -->
+<a class="anchor" id="aafa3ea1c16b7b5a378fa913899b872ed"></a><!-- doxytag: member="cppa::primitive_variant::type" ref="aafa3ea1c16b7b5a378fa913899b872ed" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::type_info&amp; cppa::primitive_variant::type </td>
+          <td class="memname">std::type_info const&amp; cppa::primitive_variant::type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -419,7 +419,7 @@ template&lt;primitive_type PT&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:25 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

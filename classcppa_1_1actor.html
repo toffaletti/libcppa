@@ -61,8 +61,7 @@
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">cppa::actor Class Reference</div>  </div>
 </div>
@@ -75,14 +74,10 @@ Inheritance diagram for cppa::actor:</div>
  <div class="center">
   <img src="classcppa_1_1actor.png" usemap="#cppa::actor_map" alt=""/>
   <map id="cppa::actor_map" name="cppa::actor_map">
-<area href="classcppa_1_1channel.html" title="Interface for all message receivers." alt="cppa::channel" shape="rect" coords="130,56,380,80"/>
-<area href="classcppa_1_1ref__counted.html" title="A (thread safe) base class for reference counted objects with an atomic reference count..." alt="cppa::ref_counted" shape="rect" coords="130,0,380,24"/>
-<area href="classcppa_1_1detail_1_1abstract__actor.html" alt="cppa::detail::abstract_actor&lt; actor &gt;" shape="rect" coords="0,168,250,192"/>
-<area href="classcppa_1_1local__actor.html" title="Base class for local running Actors." alt="cppa::local_actor" shape="rect" coords="260,168,510,192"/>
-<area href="classcppa_1_1actor__proxy.html" title="Represents a remote Actor." alt="cppa::actor_proxy" shape="rect" coords="0,224,250,248"/>
-<area href="classcppa_1_1detail_1_1abstract__actor.html" alt="cppa::detail::abstract_actor&lt; local_actor &gt;" shape="rect" coords="260,224,510,248"/>
-<area href="classcppa_1_1detail_1_1converted__thread__context.html" title="Represents a thread that was converted to an Actor." alt="cppa::detail::converted_thread_context" shape="rect" coords="130,280,380,304"/>
-<area href="classcppa_1_1detail_1_1scheduled__actor.html" title="A spawned, scheduled Actor." alt="cppa::detail::scheduled_actor" shape="rect" coords="390,280,640,304"/>
+<area href="classcppa_1_1channel.html" title="Interface for all message receivers." alt="cppa::channel" shape="rect" coords="62,56,176,80"/>
+<area href="classcppa_1_1ref__counted.html" title="A (thread safe) base class for reference counted objects with an atomic reference count..." alt="cppa::ref_counted" shape="rect" coords="62,0,176,24"/>
+<area href="classcppa_1_1actor__proxy.html" title="Represents a remote Actor." alt="cppa::actor_proxy" shape="rect" coords="0,168,114,192"/>
+<area href="classcppa_1_1local__actor.html" title="Base class for local running Actors." alt="cppa::local_actor" shape="rect" coords="124,168,238,192"/>
 </map>
  </div></div>
 
@@ -93,23 +88,21 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a1f4813520d9e42e81418ef5688fa01ce">attach</a> (<a class="el" href="classcppa_1_1attachable.html">attachable</a> *ptr)=0</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a28f8b6881e6becd0e78748deac75dadc">attach_functor</a> (F &amp;&amp;ftor)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#af984afca4a4d83d233d2c88ecab3c25b">detach</a> (const attachable::token &amp;what)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a8a50375df84bd5026f3cfc41dc908a8a">detach</a> (<a class="el" href="structcppa_1_1attachable_1_1token.html">attachable::token</a> const &amp;what)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a241fc28c611582b32745b7ae12427d4e">join</a> (<a class="el" href="namespacecppa.html#a60ee2cb32752d31e00d020c6cb7362e2">group_ptr</a> &amp;what)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a87a1491e1d43994ddf099643b9443c50">leave</a> (const <a class="el" href="namespacecppa.html#a60ee2cb32752d31e00d020c6cb7362e2">group_ptr</a> &amp;what)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#abd6f0d98ef5d860a4f5975fb17b18dd9">leave</a> (<a class="el" href="namespacecppa.html#a60ee2cb32752d31e00d020c6cb7362e2">group_ptr</a> const &amp;what)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a168ff508e1ace0970c80333a57cfcfcf">link_to</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;other)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a9bc15c2a879dad10ba8a2ae8e885e72d">unlink_from</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;other)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a81f264bf10218ec66a04ed2bad609930">establish_backlink</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;other)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a14e2aa6ed4ab11662c3b831c022798cc">remove_backlink</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;other)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a12939ac3ae8018bb96a3b85b39f2570d">link_to</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;&amp;other)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a70c9d68d260abc5df613ab54f6388db4">unlink_from</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;&amp;other)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a0344f0c785fdcec50644d95156cd8168">remove_backlink</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;&amp;to)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#af35550dff1f765a6575e26787619cc7b">establish_backlink</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;&amp;to)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classcppa_1_1process__information.html">process_information</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a87ed615d0b51a21ed8c7963c60b8c58b">parent_process</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a0a47b7dc6a39d66a161f4f0c579fd56a">remove_backlink</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;&amp;other)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#ab4af0a6704ea558b750aee379ec83342">establish_backlink</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;&amp;other)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1process__information.html">process_information</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a8c68152af28a16d55af7027a72f53d52">parent_process</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecppa.html#a6176abcec9771fe0a6138290da091614">process_information_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a4cc1aa76e5a902d82b05c05fa7ade100">parent_process_ptr</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a1bcf6d0dda3abb9ba1811c62efc998c9">id</a> () const </td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#ab8940c67681146f6c907a525ce63558e">by_id</a> (std::uint32_t actor_id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">actor_id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a1bcf6d0dda3abb9ba1811c62efc998c9">id</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a6c2a21b5056fbe82b73ed8e84497b0bd">is_proxy</a> () const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Base class for all actor implementations. </p>
@@ -129,9 +122,16 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Attaches <code>ptr</code> to this actor (the actor takes ownership of <code>ptr</code>). </p>
-<p>The actor will call <code>ptr-&gt;detach(...)</code> on exit or immediately if he already exited.</p>
+<p>Attaches <code>ptr</code> to this actor. </p>
+<p>The actor will call <code>ptr-&gt;detach(...)</code> on exit, or immediately if it already finished execution. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>A callback object that's executed if the actor finishes execution. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><code>true</code> if <code>ptr</code> was successfully attached to the actor; otherwise (actor already exited) <code>false</code>. </dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>The actor takes ownership of <code>ptr</code>. </dd></dl>
 
 </div>
 </div>
@@ -152,40 +152,26 @@ template&lt;typename F &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Attaches the functor or function <code>ftor</code> to this actor. </p>
-<p>The actor executes <code>ftor()</code> on exit or immediatley if he already exited. </p>
+<p>Convenience function that attaches the functor or function <code>ftor</code> to this actor. </p>
+<p>The actor executes <code>ftor()</code> on exit, or immediatley if it already finished execution. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ftor</td><td>A functor, function or lambda expression that's executed if the actor finishes execution. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><code>true</code> if <code>ftor</code> was successfully attached to the actor; otherwise (actor already exited) <code>false</code>. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ab8940c67681146f6c907a525ce63558e"></a><!-- doxytag: member="cppa::actor::by_id" ref="ab8940c67681146f6c907a525ce63558e" args="(std::uint32_t actor_id)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt;<a class="el" href="classcppa_1_1actor.html">actor</a>&gt; cppa::actor::by_id </td>
-          <td>(</td>
-          <td class="paramtype">std::uint32_t&#160;</td>
-          <td class="paramname"><em>actor_id</em></td><td>)</td>
-          <td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get the actor that has the unique identifier <code>actor_id</code>. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>A pointer to the requestet actor or <code>nullptr</code> if no running actor with the ID <code>actor_id</code> was found in this process. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af984afca4a4d83d233d2c88ecab3c25b"></a><!-- doxytag: member="cppa::actor::detach" ref="af984afca4a4d83d233d2c88ecab3c25b" args="(const attachable::token &amp;what)=0" -->
+<a class="anchor" id="a8a50375df84bd5026f3cfc41dc908a8a"></a><!-- doxytag: member="cppa::actor::detach" ref="a8a50375df84bd5026f3cfc41dc908a8a" args="(attachable::token const &amp;what)=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">virtual void cppa::actor::detach </td>
           <td>(</td>
-          <td class="paramtype">const attachable::token &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structcppa_1_1attachable_1_1token.html">attachable::token</a> const &amp;&#160;</td>
           <td class="paramname"><em>what</em></td><td>)</td>
           <td><code> [pure virtual]</code></td>
         </tr>
@@ -221,11 +207,9 @@ template&lt;typename F &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><code>true</code> if this actor is running and added <code>other</code> to its list of linked actors; otherwise <code>false</code>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classcppa_1_1actor__proxy.html#a6d022f1fc98a080b4fc8d77582f1a30a">cppa::actor_proxy</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="af35550dff1f765a6575e26787619cc7b"></a><!-- doxytag: member="cppa::actor::establish_backlink" ref="af35550dff1f765a6575e26787619cc7b" args="(intrusive_ptr&lt; actor &gt; &amp;&amp;to)" -->
+<a class="anchor" id="ab4af0a6704ea558b750aee379ec83342"></a><!-- doxytag: member="cppa::actor::establish_backlink" ref="ab4af0a6704ea558b750aee379ec83342" args="(intrusive_ptr&lt; actor &gt; &amp;&amp;other)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -233,7 +217,7 @@ template&lt;typename F &gt; </div>
           <td class="memname">bool cppa::actor::establish_backlink </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>to</em></td><td>)</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -247,8 +231,7 @@ template&lt;typename F &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><code>true</code> if this actor is running and added <code>other</code> to its list of linked actors; otherwise <code>false</code>. </dd></dl>
- Support for rvalue references. </p>
-
+ 
 </div>
 </div>
 <a class="anchor" id="a1bcf6d0dda3abb9ba1811c62efc998c9"></a><!-- doxytag: member="cppa::actor::id" ref="a1bcf6d0dda3abb9ba1811c62efc998c9" args="() const " -->
@@ -267,6 +250,25 @@ template&lt;typename F &gt; </div>
 
 <p>Gets an integer value that uniquely identifies this Actor in the process it's executed in. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The unique identifier of this actor. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6c2a21b5056fbe82b73ed8e84497b0bd"></a><!-- doxytag: member="cppa::actor::is_proxy" ref="a6c2a21b5056fbe82b73ed8e84497b0bd" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cppa::actor::is_proxy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Checks if this actor is running on a remote node. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd><code>true</code> if this actor represents a remote actor; otherwise <code>false</code>. </dd></dl>
 
 </div>
 </div>
@@ -296,14 +298,14 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a87a1491e1d43994ddf099643b9443c50"></a><!-- doxytag: member="cppa::actor::leave" ref="a87a1491e1d43994ddf099643b9443c50" args="(const group_ptr &amp;what)" -->
+<a class="anchor" id="abd6f0d98ef5d860a4f5975fb17b18dd9"></a><!-- doxytag: member="cppa::actor::leave" ref="abd6f0d98ef5d860a4f5975fb17b18dd9" args="(group_ptr const &amp;what)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void cppa::actor::leave </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacecppa.html#a60ee2cb32752d31e00d020c6cb7362e2">group_ptr</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecppa.html#a60ee2cb32752d31e00d020c6cb7362e2">group_ptr</a> const &amp;&#160;</td>
           <td class="paramname"><em>what</em></td><td>)</td>
           <td></td>
         </tr>
@@ -345,8 +347,6 @@ template&lt;typename F &gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classcppa_1_1actor__proxy.html#a346c923365e78867139e7fe365b60cd3">cppa::actor_proxy</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a12939ac3ae8018bb96a3b85b39f2570d"></a><!-- doxytag: member="cppa::actor::link_to" ref="a12939ac3ae8018bb96a3b85b39f2570d" args="(intrusive_ptr&lt; actor &gt; &amp;&amp;other)" -->
@@ -370,16 +370,15 @@ template&lt;typename F &gt; </div>
   </table>
   </dd>
 </dl>
- Support for rvalue references. </p>
-
+ 
 </div>
 </div>
-<a class="anchor" id="a87ed615d0b51a21ed8c7963c60b8c58b"></a><!-- doxytag: member="cppa::actor::parent_process" ref="a87ed615d0b51a21ed8c7963c60b8c58b" args="() const " -->
+<a class="anchor" id="a8c68152af28a16d55af7027a72f53d52"></a><!-- doxytag: member="cppa::actor::parent_process" ref="a8c68152af28a16d55af7027a72f53d52" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classcppa_1_1process__information.html">process_information</a> &amp; cppa::actor::parent_process </td>
+          <td class="memname"><a class="el" href="classcppa_1_1process__information.html">process_information</a> const &amp; cppa::actor::parent_process </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -436,11 +435,9 @@ template&lt;typename F &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><code>true</code> if this actor is running and removed <code>other</code> from its list of linked actors; otherwise <code>false</code>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classcppa_1_1actor__proxy.html#a702e27779d694060268759937450f200">cppa::actor_proxy</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a0344f0c785fdcec50644d95156cd8168"></a><!-- doxytag: member="cppa::actor::remove_backlink" ref="a0344f0c785fdcec50644d95156cd8168" args="(intrusive_ptr&lt; actor &gt; &amp;&amp;to)" -->
+<a class="anchor" id="a0a47b7dc6a39d66a161f4f0c579fd56a"></a><!-- doxytag: member="cppa::actor::remove_backlink" ref="a0a47b7dc6a39d66a161f4f0c579fd56a" args="(intrusive_ptr&lt; actor &gt; &amp;&amp;other)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -448,7 +445,7 @@ template&lt;typename F &gt; </div>
           <td class="memname">bool cppa::actor::remove_backlink </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>to</em></td><td>)</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -462,8 +459,7 @@ template&lt;typename F &gt; </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><code>true</code> if this actor is running and removed <code>other</code> from its list of linked actors; otherwise <code>false</code>. </dd></dl>
- Support for rvalue references. </p>
-
+ 
 </div>
 </div>
 <a class="anchor" id="a9bc15c2a879dad10ba8a2ae8e885e72d"></a><!-- doxytag: member="cppa::actor::unlink_from" ref="a9bc15c2a879dad10ba8a2ae8e885e72d" args="(intrusive_ptr&lt; actor &gt; &amp;other)=0" -->
@@ -484,13 +480,11 @@ template&lt;typename F &gt; </div>
 <p>Unlinks this actor from <code>other</code>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">oter</td><td>Linked Actor. </td></tr>
+    <tr><td class="paramname">other</td><td>Linked Actor. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Links are automatically removed if the Actor finishes execution. </dd></dl>
-
-<p>Implemented in <a class="el" href="classcppa_1_1actor__proxy.html#a072f7efc8633be64fdc5fb8ac6ae3a0b">cppa::actor_proxy</a>.</p>
 
 </div>
 </div>
@@ -511,13 +505,12 @@ template&lt;typename F &gt; </div>
 <p>Unlinks this actor from <code>other</code>. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">oter</td><td>Linked Actor. </td></tr>
+    <tr><td class="paramname">other</td><td>Linked Actor. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="note"><dt><b>Note:</b></dt><dd>Links are automatically removed if the Actor finishes execution. </dd></dl>
- Support for rvalue references. </p>
-
+ 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -527,7 +520,7 @@ template&lt;typename F &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2011 23:30:24 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jan 22 2012 15:26:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>
