@@ -50,7 +50,7 @@ TD P{margin:0px;}
 .theorem{text-align:left;margin:1ex auto 1ex 0ex;}
 .part{margin:2ex auto;text-align:center}
 .lstlisting{font-family:monospace;white-space:pre;margin-right:auto;margin-left:0pt;text-align:left}
-body{width:600px;margin:auto;padding-top:20px;}
+body{width:600px;margin:auto;padding-top:20px;text-align: justify;}
 </STYLE>
 </HEAD>
 <BODY >
@@ -102,59 +102,70 @@ User Manual</H1><H3 CLASS="titlerest">Dominik Charousset</H3></TD></TR>
 </LI><LI CLASS="li-toc"><A HREF="#htoc24">4.2.2  Context-Switching</A>
 </LI><LI CLASS="li-toc"><A HREF="#htoc25">4.2.3  Event-Based</A>
 </LI></UL>
-</LI><LI CLASS="li-toc"><A HREF="#htoc26">4.3  Management</A>
+</LI></UL>
+</LI><LI CLASS="li-toc"><A HREF="#htoc26">5  Sending Messages</A>
 <UL CLASS="toc"><LI CLASS="li-toc">
-<A HREF="#htoc27">4.3.1  Links</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc28">4.3.2  Monitors</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc29">4.3.3  Error Codes</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc30">4.3.4  Attach Cleanup Code to an Actor</A>
+<A HREF="#htoc27">5.1  Replying to Messages</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc28">5.2  Chained Send</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc29">5.3  Delay Messages</A>
 </LI></UL>
-</LI></UL>
-</LI><LI CLASS="li-toc"><A HREF="#htoc31">5  Sending Messages</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc30">6  Receiving Messages</A>
 <UL CLASS="toc"><LI CLASS="li-toc">
-<A HREF="#htoc32">5.1  Replying to Messages</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc33">5.2  Chained Send</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc34">5.3  Delay Messages</A>
-</LI></UL>
-</LI><LI CLASS="li-toc"><A HREF="#htoc35">6  Receiving Messages</A>
+<A HREF="#htoc31">6.1  Context-Switching and Thread-Mapped Actors</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc32">6.2  Event-Based Actors</A>
 <UL CLASS="toc"><LI CLASS="li-toc">
-<A HREF="#htoc36">6.1  Context-Switching and Thread-Mapped Actors</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc37">6.2  Event-Based Actors</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc38">6.3  Common Pitfalls</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc39">6.4  Timeouts</A>
+<A HREF="#htoc33">6.2.1  State-Based Actors</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc34">6.2.2  Nesting Receives Using <CODE>become</CODE><CODE>/</CODE><CODE>unbecome</CODE></A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc35">6.2.3  Using a Factory to Define Event-Based Actors</A>
 </LI></UL>
-</LI><LI CLASS="li-toc"><A HREF="#htoc40">7  Network Transparency</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc36">6.3  Common Pitfalls</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc37">6.4  Timeouts</A>
+</LI></UL>
+</LI><LI CLASS="li-toc"><A HREF="#htoc38">7  Management</A>
 <UL CLASS="toc"><LI CLASS="li-toc">
-<A HREF="#htoc41">7.1  Publishing of Actors</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc42">7.2  Connecting to Remote Actors</A>
+<A HREF="#htoc39">7.1  Links</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc40">7.2  Monitors</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc41">7.3  Error Codes</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc42">7.4  Attach Cleanup Code to an Actor</A>
 </LI></UL>
-</LI><LI CLASS="li-toc"><A HREF="#htoc43">8  Group Communication</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc43">8  Spawning Actors</A>
 <UL CLASS="toc"><LI CLASS="li-toc">
-<A HREF="#htoc44">8.1  Anonymous Groups</A>
-</LI><LI CLASS="li-toc"><A HREF="#htoc45">8.2  Local Groups</A>
+<A HREF="#htoc44">8.1  Create Actors from Functors</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc45">8.2  Create Class-Based Actors</A>
 </LI></UL>
-</LI><LI CLASS="li-toc"><A HREF="#htoc46">9  Platform-Independent Type System</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc46">9  Network Transparency</A>
 <UL CLASS="toc"><LI CLASS="li-toc">
-<A HREF="#htoc47">9.1  User-Defined Data Types in Messages</A>
+<A HREF="#htoc47">9.1  Publishing of Actors</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc48">9.2  Connecting to Remote Actors</A>
 </LI></UL>
-</LI><LI CLASS="li-toc"><A HREF="#htoc48">10  Appendix</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc49">10  Group Communication</A>
 <UL CLASS="toc"><LI CLASS="li-toc">
-<A HREF="#htoc49">10.1  Class <CODE>option</CODE></A>
+<A HREF="#htoc50">10.1  Anonymous Groups</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc51">10.2  Local Groups</A>
+</LI><LI CLASS="li-toc"><A HREF="#htoc52">10.3  Spawn Actors in Groups</A>
 </LI></UL>
-</LI></UL><P>
-
-
-
-[L,R]
-[C]
-</P><!--TOC section First Steps-->
+</LI><LI CLASS="li-toc"><A HREF="#htoc53">11  Platform-Independent Type System</A>
+<UL CLASS="toc"><LI CLASS="li-toc">
+<A HREF="#htoc54">11.1  User-Defined Data Types in Messages</A>
+</LI></UL>
+</LI><LI CLASS="li-toc"><A HREF="#htoc55">12  Appendix</A>
+<UL CLASS="toc"><LI CLASS="li-toc">
+<A HREF="#htoc56">12.1  Class <CODE>option</CODE></A>
+</LI></UL>
+</LI></UL><!--TOC section First Steps-->
 <H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc1">1</A>  First Steps</H2><!--SEC END --><P>To compile <TT>libcppa</TT>, you will need Automake, Libtool, the Boost Library and a C++11 compiler. To get and compile the sources, open a terminal and type:</P><PRE CLASS="verbatim">git clone git://github.com/Neverlord/libcppa.git
 cd libcppa
-autoreconf -i
-./configure
+mkdir build
+cd build
+cmake ..
 make
 make install [as root, optional]
-</PRE><P>It is recommended to run the unit tests as well.</P><PRE CLASS="verbatim">./unit_testing/unit_tests
+cd ..
+</PRE><P>It is recommended to run the unit tests as well:</P><PRE CLASS="verbatim">[---    if libcppa is not installed    ---]
+export LD_LIBRARY_PATH=$PWD/lib    [Linux ]
+export DYLD_LIBRARY_PATH=$PWD/lib  [Mac OS]
+
+./bin/unit_tests
 </PRE><P>Please submit a bug report that includes (a) your compiler version, (b) your OS, and (c) the output of the unit tests if an error occurs.</P><!--TOC subsection Features Overview-->
 <H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc2">1.1</A>  Features Overview</H3><!--SEC END --><UL CLASS="itemize"><LI CLASS="li-itemize">
 Lightweight, fast and efficient actor implementations
@@ -211,7 +222,7 @@ Linux
 }</DIV><!--TOC section Copy-On-Write Tuples-->
 <H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc6">2</A>  Copy-On-Write Tuples</H2><!--SEC END --><P>
 <A NAME="Sec::Tuples"></A></P><P>The message passing implementation of <TT>libcppa</TT> uses tuples with call-by-value semantic.
-Hence, it is not necessary to declare message types, though, <TT>libcppa</TT> allows users to use user-defined types in messages (see Section <A HREF="#Sec::TypeSystem::UserDefined">9.1</A>).
+Hence, it is not necessary to declare message types, though, <TT>libcppa</TT> allows users to use user-defined types in messages (see Section <A HREF="#Sec::TypeSystem::UserDefined">11.1</A>).
 A call-by-value semantic would cause multiple copies of a tuple if it is send to multiple actors.
 To avoid unnecessary copying overhead, <TT>libcppa</TT> uses a copy-on-write tuple implementation.
 A tuple is implicitly shared between any number of actors, as long as all actors demand only read access.
@@ -239,7 +250,7 @@ any_tuple x3 = make_cow_tuple(10, 20); <FONT COLOR="#7F007F">// any_tuple</FONT>
 <FONT COLOR="blue">auto</FONT> x4 = make_any_tuple(42);          <FONT COLOR="#7F007F">// any_tuple</FONT></DIV><!--TOC subsection Casting Tuples-->
 <H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc8">2.2</A>  Casting Tuples</H3><!--SEC END --><P>The function <CODE>tuple_cast</CODE> restores static type information
 from an <CODE>any_tuple</CODE> object.
-It returns an <CODE>option</CODE> (see Section <A HREF="#Appendix::Option">10.1</A>)
+It returns an <CODE>option</CODE> (see Section <A HREF="#Appendix::Option">12.1</A>)
 for a <CODE>cow_tuple</CODE> of the requested types.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> x1 = make_any_tuple(1, 2, 3);
 <FONT COLOR="blue">auto</FONT> x2_opt = tuple_cast&lt;<FONT COLOR="blue">int</FONT>, <FONT COLOR="blue">int</FONT>, <FONT COLOR="blue">int</FONT>&gt;(x1);
 assert(x2_opt.valid());
@@ -347,7 +358,7 @@ on&lt;<FONT COLOR="blue">int</FONT>&gt;().when(_x1 == std::ref(val)) <FONT COLOR
 others().when(gref(val) == 42)       <FONT COLOR="#7F007F">// (4) matches everything</FONT>
                                      <FONT COLOR="#7F007F">//     as long as val == 42</FONT>
 others().when(std::ref(val) == 42)   <FONT COLOR="#7F007F">// (5) compiler error</FONT></DIV><P>Statement <TT>(5)</TT> is evaluated immediately and returns a boolean, whereas statement <TT>(4)</TT> creates a valid guard expression.
-Thus, you should always use <CODE>gref</CODE> instead of <CODE>std</CODE><CODE>::</CODE><CODE>ref</CODE> to avoid subtle errors.</P><P>The second function, <CODE>gcall</CODE>, encapsulates a function call.
+Thus, you should always use <CODE>gref</CODE> instead of <CODE>std</CODE><CODE>::</CODE><CODE>ref</CODE> to avoid errors.</P><P>The second function, <CODE>gcall</CODE>, encapsulates a function call.
 Its usage is similar to <CODE>std</CODE><CODE>::</CODE><CODE>bind</CODE>, but there is also a short version for unary functions: <CODE>gcall</CODE><CODE>(</CODE><CODE>fun</CODE><CODE>, </CODE><CODE>_x1</CODE><CODE>)</CODE> is equal to <CODE>_x1</CODE><CODE>(</CODE><CODE>fun</CODE><CODE>)</CODE>.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> vec_sorted = [](std::vector&lt;<FONT COLOR="blue">int</FONT>&gt; <FONT COLOR="blue">const</FONT>&amp; vec) {
   <FONT COLOR="blue">return</FONT> std::is_sorted(vec.begin(), vec.end());
 };
@@ -363,7 +374,7 @@ on&lt;std::vector&lt;<FONT COLOR="blue">int</FONT>&gt;&gt;().when(_x1(vec_sorted
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
 <TR><TD VALIGN=middle ALIGN=left> <CODE>not_empty</CODE><CODE>()</CODE></TD><TD VALIGN=middle ALIGN=left>Returns <CODE>!</CODE><CODE>x</CODE><CODE>.</CODE><CODE>empty</CODE><CODE>()</CODE></TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left> <CODE>front</CODE><CODE>()</CODE></TD><TD VALIGN=middle ALIGN=left>Returns an <CODE>option</CODE> (see Section <A HREF="#Appendix::Option">10.1</A>) to <CODE>x</CODE><CODE>.</CODE><CODE>front</CODE><CODE>()</CODE></TD></TR>
+<TR><TD VALIGN=middle ALIGN=left> <CODE>front</CODE><CODE>()</CODE></TD><TD VALIGN=middle ALIGN=left>Returns an <CODE>option</CODE> (see Section <A HREF="#Appendix::Option">12.1</A>) to <CODE>x</CODE><CODE>.</CODE><CODE>front</CODE><CODE>()</CODE></TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
 <TR><TD VALIGN=middle ALIGN=left> <CODE>in</CODE><CODE>(</CODE><CODE>y</CODE><CODE>)</CODE></TD><TD VALIGN=middle ALIGN=left>Returns <CODE><FONT COLOR="blue">true</FONT></CODE> if <CODE>y</CODE> contains <CODE>x</CODE>, <CODE><FONT COLOR="blue">false</FONT></CODE> otherwise</TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
@@ -422,9 +433,15 @@ It provides a common interface for actor operations like trapping exit messages 
 <H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc20">4.1.1</A>  “Keyword” <CODE>self</CODE></H4><!--SEC END --><P>The <CODE>self</CODE> pointer is an essential ingredient of our design.
 It identifies the running actor similar to the implicit <CODE><FONT COLOR="blue">this</FONT></CODE> pointer identifying an object within a member function.
 Unlike <CODE><FONT COLOR="blue">this</FONT></CODE>, though, <CODE>self</CODE> is not limited to a particular scope.
-The <CODE>self</CODE> pointer is used implicitly, whenever an actor calls functions like <CODE>send</CODE> or <CODE>receive</CODE>, but can be accessed to use more advanced actor operations such as linking to another actor, e.g., by calling <CODE>self</CODE><CODE>-&gt;</CODE><CODE>link_to</CODE><CODE>(</CODE><CODE>other</CODE><CODE>)</CODE>.</P><P>A thread that accesses <CODE>self</CODE> is converted on-the-fly to an actor if needed.
+The <CODE>self</CODE> pointer is used implicitly, whenever an actor calls functions like <CODE>send</CODE> or <CODE>receive</CODE>, but can be accessed to use more advanced actor operations such as linking to another actor, e.g., by calling <CODE>self</CODE><CODE>-&gt;</CODE><CODE>link_to</CODE><CODE>(</CODE><CODE>other</CODE><CODE>)</CODE>.
+The <CODE>self</CODE> pointer is convertible to <CODE>actor_ptr</CODE> and <CODE>local_actor</CODE><CODE>*</CODE>, but it is neither copyable nor assignable.
+Thus, <CODE><FONT COLOR="blue">auto</FONT></CODE><CODE> </CODE><CODE>s</CODE><CODE> = </CODE><CODE>self</CODE> will cause a compiler error, while <CODE>actor_ptr</CODE><CODE> </CODE><CODE>s</CODE><CODE> = </CODE><CODE>self</CODE> works as expected.</P><P>A thread that accesses <CODE>self</CODE> is converted on-the-fly to an actor if needed.
 Hence, “everything is an actor” in <TT>libcppa</TT>.</P><!--TOC subsubsection Interface-->
 <H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc21">4.1.2</A>  Interface</H4><!--SEC END --><DIV CLASS="lstlisting"><FONT COLOR="blue">class</FONT> local_actor;</DIV><TABLE CELLSPACING=6 CELLPADDING=0 WIDTH="100%"><TR><TD VALIGN=middle ALIGN=left COLSPAN=2><FONT SIZE=4><B>Member functions</B></FONT></TD></TR>
+<TR><TD VALIGN=middle ALIGN=left>&nbsp;</TD></TR>
+<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
+<TR><TD VALIGN=middle ALIGN=left> <CODE>quit</CODE><CODE>(</CODE><CODE>uint32_t</CODE><CODE> </CODE><CODE>reason</CODE><CODE> = </CODE><CODE>normal</CODE><CODE>)</CODE></TD><TD VALIGN=middle ALIGN=left>Finishes execution of this actor</TD></TR>
+<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
 <TR><TD VALIGN=middle ALIGN=left>&nbsp;</TD></TR>
 <TR><TD ALIGN=left NOWRAP COLSPAN=2><B>Observers</B></TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
@@ -456,79 +473,17 @@ It is recommended to use detached actors whenever an actor could starve other ac
 Detached actors also could be used for actors that need to stay responsive, independent of the current work load.
 However, threads to not scale well.
 Hence, detached actors should be used only in small numbers for long-lived actors.</P><!--TOC subsubsection Context-Switching-->
-<H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc24">4.2.2</A>  Context-Switching</H4><!--SEC END --><P>Context-switching actors have an own control flow allow to spawn arbitrary functions as actors.
+<H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc24">4.2.2</A>  Context-Switching</H4><!--SEC END --><P>Context-switching actors have an own control flow and allow developers to spawn arbitrary functions as actors.
 The downside of context-switching actors is that each actor needs to allocate its own stack.
 This seriously impacts the performance for short-lived actors and is not applicable for large-scale actor systems.
 This implementations allows for an easy migration of previously threaded application, but a system should not contain more than a few hundred context-switching actors.</P><!--TOC subsubsection Event-Based-->
 <H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc25">4.2.3</A>  Event-Based</H4><!--SEC END --><P>This is the recommended implementation for most use cases.
 Event-based actors have a small memory footprint and are thus very lightweight.
 The behavior-based API makes it harder to nest receives, but this implementation clearly scales best.
-See Section <A HREF="#Sec::Receive::EventBased">6.2</A> for a few examples.</P><!--TOC subsection Management-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc26">4.3</A>  Management</H3><!--SEC END --><P><TT>libcppa</TT> adapts Erlang’s well-established fault propagation model.
-It allows to build actor subsystem in which either all actors are alive or have collectively failed.</P><!--TOC subsubsection Links-->
-<H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc27">4.3.1</A>  Links</H4><!--SEC END --><P>Linked actors monitor each other.
-An actor sends an exit message to all of its links as part of its termination.
-The default behavior for actors receiving such an exit message is to die for the same reason, if the exit reason is non-normal.
-Actors can <I>trap</I> exit messages to handle them manually.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> worker = spawn(...);
-<FONT COLOR="#7F007F">// receive exit messages as regular messages</FONT>
-self-&gt;trap_exit(<FONT COLOR="blue">true</FONT>);
-<FONT COLOR="#7F007F">// monitor spawned actor</FONT>
-self-&gt;link_to(worker);
-<FONT COLOR="#7F007F">// wait until worker exited</FONT>
-receive (
-  on(atom(<FONT COLOR="#007F00">"EXIT"</FONT>), exit_reason::normal) &gt;&gt; []() {
-    <FONT COLOR="#7F007F">// worker finished computation</FONT>
-  },
-  on&lt;atom(<FONT COLOR="#007F00">"EXIT"</FONT>), std::uint32_t&gt;() &gt;&gt; [](std::uint32_t reason) {
-    <FONT COLOR="#7F007F">// worker died unexpectedly</FONT>
-  }
-);</DIV><!--TOC subsubsection Monitors-->
-<H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc28">4.3.2</A>  Monitors</H4><!--SEC END --><P>A monitor observes the lifetime of an actor.
-Monitored actors send a down message to all monitors as part of their termination.
-Unlike exit messages, down messages are always treated like any other ordinary message.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> worker = spawn(...);
-<FONT COLOR="#7F007F">// monitor spawned actor</FONT>
-self-&gt;monitor(worker);
-<FONT COLOR="#7F007F">// wait until worker exited</FONT>
-receive (
-  on(atom(<FONT COLOR="#007F00">"DOWN"</FONT>), exit_reason::normal) &gt;&gt; []() {
-    <FONT COLOR="#7F007F">// worker finished computation</FONT>
-  },
-  on(atom(<FONT COLOR="#007F00">"DOWN"</FONT>), arg_match) &gt;&gt; [](std::uint32_t reason) {
-    <FONT COLOR="#7F007F">// worker died unexpectedly</FONT>
-  }
-);</DIV><P>Monitors are redundant.
-Hence, actors will receive one down message for each monitor.</P><!--TOC subsubsection Error Codes-->
-<H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc29">4.3.3</A>  Error Codes</H4><!--SEC END --><P>All error codes are defined in the namespace <CODE>cppa</CODE><CODE>::</CODE><CODE>exit_reason</CODE>.</P><TABLE CELLSPACING=6 CELLPADDING=0 WIDTH="100%"><TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left> <CODE>normal</CODE></TD><TD VALIGN=middle ALIGN=left>Actor finished execution without error</TD></TR>
-<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left> <CODE>unhandled_exception</CODE></TD><TD VALIGN=middle ALIGN=left>Actor was killed due to an unhandled exception</TD></TR>
-<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left> <CODE>unallowed_function_call</CODE></TD><TD VALIGN=middle ALIGN=left>Indicates that an event-based actor tried to use blocking receive calls</TD></TR>
-<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left> <CODE>remote_link_unreachable</CODE></TD><TD VALIGN=middle ALIGN=left>Indicates that a remote actor became unreachable, e.g., due to connection error</TD></TR>
-<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left> <CODE>user_defined</CODE></TD><TD VALIGN=middle ALIGN=left>Minimum value for user-defined exit codes</TD></TR>
-<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
-</TABLE><!--TOC subsubsection Attach Cleanup Code to an Actor-->
-<H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc30">4.3.4</A>  Attach Cleanup Code to an Actor</H4><!--SEC END --><P>Actors can attach cleanup code to other actors.
-This code is executed immediately if the actor has already exited.
-Keep in mind that <CODE>self</CODE> refers to the currently running actor.
-Thus, <CODE>self</CODE> refers to the terminating actor and not to the actor that attached a functor to it.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> worker = spawn(...);
-actor_ptr observer = self;
-<FONT COLOR="#7F007F">// "monitor" spawned actor</FONT>
-worker-&gt;attach_functor([observer](std::uint32_t reason) {
-  <FONT COLOR="#7F007F">// this callback is invoked from worker =&gt; self == worker</FONT>
-  send(observer, atom(<FONT COLOR="#007F00">"DONE"</FONT>));
-});
-<FONT COLOR="#7F007F">// wait until worker exited</FONT>
-receive (
-  on(atom(<FONT COLOR="#007F00">"DONE"</FONT>)) &gt;&gt; []() {
-    <FONT COLOR="#7F007F">// worker terminated</FONT>
-  }
-);</DIV><P><B>Note</B>: It is possible to attach code to remote actors, but the cleanup code will run on the local machine.
+See Section <A HREF="#Sec::Receive::EventBased">6.2</A> for a few examples.
 
 </P><!--TOC section Sending Messages-->
-<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc31">5</A>  Sending Messages</H2><!--SEC END --><P>
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc26">5</A>  Sending Messages</H2><!--SEC END --><P>
 <A NAME="Sec::Send"></A></P><P>Messages can be sent by using either the function <CODE>send</CODE> or <CODE><FONT COLOR="blue">operator</FONT></CODE><CODE>&lt;&lt;</CODE>. The variadic template function <CODE>send</CODE> has the following signature.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">template</FONT>&lt;typename... Args&gt;
 <FONT COLOR="blue">void</FONT> send(actor_ptr whom, Args&amp;&amp;... what);</DIV><P>The variadic template pack <CODE>what</CODE><CODE>...</CODE> is converted to a dynamically typed tuple (see Section <A HREF="#Sec::Tuples::DynamicallyTypedTuples">2.1</A>) and then enqueued to the mailbox of <CODE>whom</CODE>.
 The following example shows two equal sends, one using <CODE>send</CODE> and the other using <CODE><FONT COLOR="blue">operator</FONT></CODE><CODE>&lt;&lt;</CODE>.</P><DIV CLASS="lstlisting">actor_ptr other = spawn(...);
@@ -538,20 +493,20 @@ However, note that you should not use <CODE>send</CODE> if you already have an i
 <FONT COLOR="blue">auto</FONT> msg = make_any_tuple(1, 2, 3);
 send(other, msg); <FONT COLOR="#7F007F">// oops, creates a new tuple that contains msg</FONT>
 other &lt;&lt; msg; <FONT COLOR="#7F007F">// ok</FONT></DIV><!--TOC subsection Replying to Messages-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc32">5.1</A>  Replying to Messages</H3><!--SEC END --><P>
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc27">5.1</A>  Replying to Messages</H3><!--SEC END --><P>
 <A NAME="Sec::Send::Reply"></A></P><P>During callback invokation, <CODE>self</CODE><CODE>-&gt;</CODE><CODE>last_sender</CODE><CODE>()</CODE> is set.
 This identifies the sender of the received message and is used implicitly by the function <CODE>reply</CODE>.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">template</FONT>&lt;typename... Args&gt;
 <FONT COLOR="blue">void</FONT> reply(Args&amp;&amp;... what) {
   send(self-&gt;last_sender(), std::forward&lt;Args&gt;(what)...);
 }</DIV><P>As you can see, <CODE>reply</CODE> is nothing but syntactic sugar for <CODE>send</CODE>.</P><P>However, one could also use <CODE>self</CODE><CODE>-&gt;</CODE><CODE>last_sender</CODE><CODE>()</CODE> directly for replying to messages.
 For example, <CODE>self</CODE><CODE>-&gt;</CODE><CODE>last_sender</CODE><CODE>() &lt;&lt; </CODE><CODE>self</CODE><CODE>-&gt;</CODE><CODE>last_dequeued</CODE><CODE>()</CODE> sends the received message back to the sender.</P><!--TOC subsection Chained Send-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc33">5.2</A>  Chained Send</H3><!--SEC END --><P>
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc28">5.2</A>  Chained Send</H3><!--SEC END --><P>
 <A NAME="Sec::Send::ChainedSend"></A></P><P>Sending a message to a cooperatively scheduled actor usually causes the receiving actor to be put into the scheduler’s job queue if it is currently blocked, i.e., is waiting for a new message.
 This job queue is accessed by worker threads.
 The <I>chaining</I> optimization does not cause the receiver to be put into the scheduler’s job queue if it is currently blocked.
 The receiver is stored as successor of the currently running actor instead.
 Hence, the active worker thread does not need to access the job queue, which significantly speeds up execution.
-However, this optimization can be inefficient if an actor does first sends a message and then starts computation.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">void</FONT> foo(actor_ptr other) {
+However, this optimization can be inefficient if an actor first sends a message and then starts computation.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">void</FONT> foo(actor_ptr other) {
   send(other, ...);
   very_long_computation();
   <FONT COLOR="#7F007F">// ...</FONT>
@@ -571,7 +526,7 @@ However, this optimization can be disabled by calling <CODE>self</CODE><CODE>-&g
   very_long_computation();
   <FONT COLOR="#7F007F">// ...</FONT>
 }</DIV><!--TOC subsection Delay Messages-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc34">5.3</A>  Delay Messages</H3><!--SEC END --><P>Messages can be delayed, e.g., to implement time-based polling strategies, by using the two functions <CODE>delayed_send</CODE> and <CODE>delayed_reply</CODE>.</P><DIV CLASS="lstlisting">delayed_send(self, std::chrono::seconds(1), atom(<FONT COLOR="#007F00">"poll"</FONT>));
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc29">5.3</A>  Delay Messages</H3><!--SEC END --><P>Messages can be delayed, e.g., to implement time-based polling strategies, by using the two functions <CODE>delayed_send</CODE> and <CODE>delayed_reply</CODE>.</P><DIV CLASS="lstlisting">delayed_send(self, std::chrono::seconds(1), atom(<FONT COLOR="#007F00">"poll"</FONT>));
 receive_loop (
   on(atom(<FONT COLOR="#007F00">"poll"</FONT>)) &gt;&gt; []() {
     <FONT COLOR="#7F007F">// poll a resource...</FONT>
@@ -579,10 +534,10 @@ receive_loop (
     delayed_send(self, std::chrono::seconds(1), atom(<FONT COLOR="#007F00">"poll"</FONT>));
   }
 );</DIV><!--TOC section Receiving Messages-->
-<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc35">6</A>  Receiving Messages</H2><!--SEC END --><P>
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc30">6</A>  Receiving Messages</H2><!--SEC END --><P>
 <A NAME="Sec::Receive"></A></P><P>Event-based actors differ in receiving messages from context-switching and thread-mapped actors: the former define their behavior as a message handler that is invoked whenever a new messages arrives in the actor’s mailbox, whereas the latter use an explicit receive function.
 The current <I>behavior</I> of an actor is its response to the <I>next</I> incoming message and includes (a) sending messages to other actors, (b) creation of more actors, and (c) setting a new behavior.</P><!--TOC subsection Context-Switching and Thread-Mapped Actors-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc36">6.1</A>  Context-Switching and Thread-Mapped Actors</H3><!--SEC END --><P>
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc31">6.1</A>  Context-Switching and Thread-Mapped Actors</H3><!--SEC END --><P>
 <A NAME="Sec::Receive::Function"></A></P><P>The function <CODE>receive</CODE> sequentially iterates over all elements in the mailbox beginning with the first.
 It takes a partial function that is applied to the elements in the mailbox until an element was matched by the partial function.
 An actor calling <CODE>receive</CODE> is blocked until it successfully dequeued a message from its mailbox or an optional timeout occurs.</P><DIV CLASS="lstlisting">receive (
@@ -625,8 +580,8 @@ do_receive (
     ++received;
   }
 ).until(gref(received) &gt;= 10);</DIV></TD></TR>
-</TABLE><P>The examples above illustrate the usage of the three loops <CODE>receive_loop</CODE>, <CODE>receive_for</CODE> and <CODE>do_receive</CODE><CODE>(...).</CODE><CODE>until</CODE>.
-It is possible to nest receives, and receive loops.</P><DIV CLASS="lstlisting">receive_loop (
+</TABLE><P>The examples above illustrate the correct usage of the three loops <CODE>receive_loop</CODE>, <CODE>receive_for</CODE> and <CODE>do_receive</CODE><CODE>(...).</CODE><CODE>until</CODE>.
+It is possible to nest receives and receive loops.</P><DIV CLASS="lstlisting">receive_loop (
   on&lt;<FONT COLOR="blue">int</FONT>&gt;() &gt;&gt; [](<FONT COLOR="blue">int</FONT> value1) {
     receive (
       on&lt;<FONT COLOR="blue">float</FONT>&gt;() &gt;&gt; [&amp;](<FONT COLOR="blue">float</FONT> value2) {
@@ -635,9 +590,10 @@ It is possible to nest receives, and receive loops.</P><DIV CLASS="lstlisting">r
     );
   }
 );</DIV><!--TOC subsection Event-Based Actors-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc37">6.2</A>  Event-Based Actors</H3><!--SEC END --><P>
-<A NAME="Sec::Receive::EventBased"></A></P><P>An event-based actor defined as a class uses <CODE>become</CODE> to set its behavior.
-The given behavior is then executed until it is replaced by another call to <CODE>become</CODE> or the actor finishes execution.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">class</FONT> printer : <FONT COLOR="blue">public</FONT> event_based_actor {
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc32">6.2</A>  Event-Based Actors</H3><!--SEC END --><P>
+<A NAME="Sec::Receive::EventBased"></A></P><P>An event-based actor uses <CODE>become</CODE> to set its behavior.
+The given behavior is then executed until it is replaced by another call to <CODE>become</CODE> or the actor finishes execution.
+A subtype of <CODE>event_based_actor</CODE> must implement the pure virtual member function <CODE>init</CODE>.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">class</FONT> printer : <FONT COLOR="blue">public</FONT> event_based_actor {
   <FONT COLOR="blue">void</FONT> init() {
     become (
       others() &gt;&gt; []() {
@@ -645,42 +601,109 @@ The given behavior is then executed until it is replaced by another call to <COD
       }
     );
   }
-};</DIV><P>Actors inheriting from <CODE>event_based_actor</CODE> must implement the virtual member function <CODE>init</CODE>.
-Another way to implement event-based actors is provided by the class <CODE>fsm_actor</CODE>.
-This base class automatically calls <CODE>become</CODE><CODE>(&amp;</CODE><CODE>init_state</CODE><CODE>)</CODE> in its <CODE>init</CODE> member function.
-Hence, a subclass must only provide a member of type <CODE>behavior</CODE> named <CODE>init_state</CODE>.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">struct</FONT> fsm_printer : fsm_actor&lt;fsm_printer&gt; {
+};</DIV><!--TOC subsubsection State-Based Actors-->
+<H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc33">6.2.1</A>  State-Based Actors</H4><!--SEC END --><P>Another way to implement event-based actors is provided by the class <CODE>sb_actor</CODE> (“State-Based Actor”).
+This base class calls <CODE>become</CODE><CODE>(&amp;</CODE><CODE>init_state</CODE><CODE>)</CODE> in its <CODE>init</CODE> member function.
+Hence, a subclass must only provide a member of type <CODE>behavior</CODE> named <CODE>init_state</CODE>.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">struct</FONT> printer : sb_actor&lt;printer&gt; {
   behavior init_state = (
     others() &gt;&gt; []() {
       cout &lt;&lt; to_string(self-&gt;last_received()) &lt;&lt; endl;
     }
   );
-};</DIV><P>Note that <CODE>fsm_actor</CODE> uses the curiously recurring template pattern. Thus, the derived class must be given as template parameter.
-This technique allows <CODE>fsm_actor</CODE> to access the <CODE>init_state</CODE> member of a derived class.</P><P>The third event-based base class for event-based actors is <CODE>stacked_event_based_actor</CODE> and provides the additional member function <CODE>unbecome</CODE>.
-As the name suggests, this implementation provides a <I>behavior stack</I>.
-A call to <CODE>become</CODE> pushes a new behavior to the stack, whereas a call to <CODE>unbecome</CODE> pops an element.
-An actor always executes the behavior on top of its stack.
-Thus, <CODE>unbecome</CODE> returns to the previously set behavior.
-This can be used to “nest” receives, but can lead to stack overflows.</P><DIV CLASS="lstlisting"><FONT COLOR="#7F007F">// receives {int, float} sequences</FONT>
-<FONT COLOR="blue">struct</FONT> testee : stacked_event_based_actor {
+};</DIV><P>Note that <CODE>sb_actor</CODE> uses the Curiously Recurring Template Pattern. Thus, the derived class must be given as template parameter.
+This technique allows <CODE>sb_actor</CODE> to access the <CODE>init_state</CODE> member of a derived class.</P><P>The following example illustrates a more advanced state-based actor that implements a stack with a fixed maximum number of elements.
+Note that this example uses non-static member initialization and thus currently compiles only with Clang ≥ 3.2.
+Users of GCC must set the member variables in the constructor.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">class</FONT> fixed_stack : <FONT COLOR="blue">public</FONT> sb_actor&lt;fixed_stack&gt; {
+
+    <FONT COLOR="#7F007F">// grant access to the private init_state member</FONT>
+    <FONT COLOR="blue">friend</FONT> <FONT COLOR="blue">class</FONT> sb_actor&lt;fixed_stack&gt;;
+
+    <FONT COLOR="blue">static</FONT> <FONT COLOR="blue">constexpr</FONT> <FONT COLOR="blue">size_t</FONT> max_size = 10;
+
+    std::vector&lt;<FONT COLOR="blue">int</FONT>&gt; data;
+
+    behavior empty = (
+        on(atom(<FONT COLOR="#007F00">"push"</FONT>), arg_match) &gt;&gt; [=](<FONT COLOR="blue">int</FONT> what) {
+            data.push_back(what);
+            become(&amp;filled);
+        },
+        on(atom(<FONT COLOR="#007F00">"pop"</FONT>)) &gt;&gt; [=]() {
+            reply(atom(<FONT COLOR="#007F00">"failure"</FONT>));
+        }
+    );
+
+    behavior filled = (
+        on(atom(<FONT COLOR="#007F00">"push"</FONT>), arg_match) &gt;&gt; [=](<FONT COLOR="blue">int</FONT> what) {
+            data.push_back(what);
+            <FONT COLOR="blue">if</FONT> (data.size() == max_size)
+                become(&amp;full);
+        },
+        on(atom(<FONT COLOR="#007F00">"pop"</FONT>)) &gt;&gt; [=]() {
+            reply(atom(<FONT COLOR="#007F00">"ok"</FONT>), data.back());
+            data.pop_back();
+            <FONT COLOR="blue">if</FONT> (data.empty())
+                become(&amp;empty);
+        }
+    );
+
+    behavior full = (
+        on(atom(<FONT COLOR="#007F00">"push"</FONT>), arg_match) &gt;&gt; [=](<FONT COLOR="blue">int</FONT>) { },
+        on(atom(<FONT COLOR="#007F00">"pop"</FONT>)) &gt;&gt; [=]() {
+            reply(atom(<FONT COLOR="#007F00">"ok"</FONT>), data.back());
+            data.pop_back();
+            become(&amp;filled);
+        }
+    );
+
+    behavior&amp; init_state = empty;
+
+};</DIV><!--TOC subsubsection Nesting Receives Using <CODE>become</CODE><CODE>/</CODE><CODE>unbecome</CODE>-->
+<H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc34">6.2.2</A>  Nesting Receives Using <CODE>become</CODE><CODE>/</CODE><CODE>unbecome</CODE></H4><!--SEC END --><P>Nesting receives in an event-based actor is slightly more difficult compared to context-switching or thread-mapped actors, since <CODE>become</CODE> does not block.
+An actor has to set a new behavior calling <CODE>become</CODE> with the <CODE>keep_behavior</CODE> policy to wait for the required message and then return to the previous behavior by using <CODE>unbecome</CODE>, as shown in the example below.</P><DIV CLASS="lstlisting"><FONT COLOR="#7F007F">// receives {int, float} sequences</FONT>
+<FONT COLOR="blue">struct</FONT> testee : event_based_actor {
   <FONT COLOR="blue">void</FONT> init() {
     become (
       on&lt;<FONT COLOR="blue">int</FONT>&gt;() &gt;&gt; [=](<FONT COLOR="blue">int</FONT> value1) {
         become (
+          <FONT COLOR="#7F007F">// the keep_behavior policy stores the current behavior</FONT>
+          <FONT COLOR="#7F007F">// on the behavior stack to be able to return to this</FONT>
+          <FONT COLOR="#7F007F">// behavior later on by calling unbecome()</FONT>
+          keep_behavior,
           on&lt;<FONT COLOR="blue">float</FONT>&gt;() &gt;&gt; [=](<FONT COLOR="blue">float</FONT> value2) {
             cout &lt;&lt; value1 &lt;&lt; <FONT COLOR="#007F00">" =&gt; "</FONT> &lt;&lt; value2 &lt;&lt; endl;
+            <FONT COLOR="#7F007F">// restore previous behavior</FONT>
             unbecome();
           }
         );
       }
     );
   }
-};</DIV><P>An actor finishes execution with normal exit reason if the behavior stack is empty after calling <CODE>unbecome</CODE>.</P><!--TOC subsection Common Pitfalls-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc38">6.3</A>  Common Pitfalls</H3><!--SEC END --><UL CLASS="itemize"><LI CLASS="li-itemize">
+};</DIV><P>An event-based actor finishes execution with normal exit reason if the behavior stack is empty after calling <CODE>unbecome</CODE>.
+The default policy of <CODE>become</CODE> is <CODE>discard_behavior</CODE> that causes an actor to override its current behavior.
+The policy flag must be the first argument of <CODE>become</CODE>.</P><!--TOC subsubsection Using a Factory to Define Event-Based Actors-->
+<H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc35">6.2.3</A>  Using a Factory to Define Event-Based Actors</H4><!--SEC END --><P>
+<A NAME="Sec::Receive::EventBased::Factory"></A></P><P>The previously introduced ways to define event-based actors always required a class definition.
+A factory provides an ad-hoc way to define event-based actors using lambda expressions or other functors.
+The factory <CODE>factory</CODE><CODE>::</CODE><CODE>event_based</CODE> takes a functor that is used as <CODE>event_based_actor</CODE><CODE>::</CODE><CODE>init</CODE> implementation.
+Hence, the functor should call <CODE>become</CODE> to set an initial behavior.
+Note that you have to call <CODE>self</CODE><CODE>-&gt;</CODE><CODE>become</CODE>, since <CODE>become</CODE> is not available via the <CODE><FONT COLOR="blue">this</FONT></CODE> pointer.</P><P>Though <CODE>event_based_actor</CODE><CODE>::</CODE><CODE>init</CODE> has zero arguments, the functor can take any number of pointer arguments.
+The factory then creates an actor with a member variable for each of those arguments and calls the functor with pointers to the actor’s member variables.
+The member variables can be initialized with user-defined values passed to the <CODE>spawn</CODE> member function of the created factory, as shown in the following example.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> f = factory::event_based([](std::string* name) {
+    self-&gt;become (
+        on(atom(<FONT COLOR="#007F00">"get_name"</FONT>)) &gt;&gt; [name]() {
+            reply(atom(<FONT COLOR="#007F00">"name"</FONT>), *name);
+        }
+   );
+});
+<FONT COLOR="blue">auto</FONT> a1 = f.spawn(<FONT COLOR="#007F00">"alice"</FONT>);
+<FONT COLOR="blue">auto</FONT> a2 = f.spawn(<FONT COLOR="#007F00">"bob"</FONT>);
+<FONT COLOR="blue">auto</FONT> a3 = f.spawn(); <FONT COLOR="#7F007F">// a3 has an empty name</FONT></DIV><!--TOC subsection Common Pitfalls-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc36">6.3</A>  Common Pitfalls</H3><!--SEC END --><UL CLASS="itemize"><LI CLASS="li-itemize">
 <CODE>become</CODE> does <I>not</I> block.
 It always returns immediately.
 Thus, you should <I>always</I> capture by value in event-based actors, because all references on the stack will cause undefined behavior if a lambda is executed.
 </LI></UL><!--TOC subsection Timeouts-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc39">6.4</A>  Timeouts</H3><!--SEC END --><P>
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc37">6.4</A>  Timeouts</H3><!--SEC END --><P>
 <A NAME="Sec::Receive::Timeouts"></A></P><P>During receive, an actor is blocked until it dequeues a message from its mailbox that matches the given pattern.
 If no such message ever arrives, the actor is blocked forever.
 This might be desirable if the actor only provides a service and should not do anything else.
@@ -720,17 +743,136 @@ Using a zero-duration timeout causes <CODE>receive</CODE> to not block.</P><P><T
 However, note that the precision depends on the operating system and your local work load.
 Thus, you should not depend on a certain clock resolution.
 
+</P><!--TOC section Management-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc38">7</A>  Management</H2><!--SEC END --><P><TT>libcppa</TT> adapts Erlang’s well-established fault propagation model.
+It allows to build actor subsystem in which either all actors are alive or have collectively failed.</P><!--TOC subsection Links-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc39">7.1</A>  Links</H3><!--SEC END --><P>Linked actors monitor each other.
+An actor sends an exit message to all of its links as part of its termination.
+The default behavior for actors receiving such an exit message is to die for the same reason, if the exit reason is non-normal.
+Actors can <I>trap</I> exit messages to handle them manually.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> worker = spawn(...);
+<FONT COLOR="#7F007F">// receive exit messages as regular messages</FONT>
+self-&gt;trap_exit(<FONT COLOR="blue">true</FONT>);
+<FONT COLOR="#7F007F">// monitor spawned actor</FONT>
+self-&gt;link_to(worker);
+<FONT COLOR="#7F007F">// wait until worker exited</FONT>
+receive (
+  on(atom(<FONT COLOR="#007F00">"EXIT"</FONT>), exit_reason::normal) &gt;&gt; []() {
+    <FONT COLOR="#7F007F">// worker finished computation</FONT>
+  },
+  on(atom(<FONT COLOR="#007F00">"EXIT"</FONT>), arg_match) &gt;&gt; [](std::uint32_t reason) {
+    <FONT COLOR="#7F007F">// worker died unexpectedly</FONT>
+  }
+);</DIV><!--TOC subsection Monitors-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc40">7.2</A>  Monitors</H3><!--SEC END --><P>A monitor observes the lifetime of an actor.
+Monitored actors send a down message to all monitors as part of their termination.
+Unlike exit messages, down messages are always treated like any other ordinary message.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> worker = spawn(...);
+<FONT COLOR="#7F007F">// monitor spawned actor</FONT>
+self-&gt;monitor(worker);
+<FONT COLOR="#7F007F">// wait until worker exited</FONT>
+receive (
+  on(atom(<FONT COLOR="#007F00">"DOWN"</FONT>), exit_reason::normal) &gt;&gt; []() {
+    <FONT COLOR="#7F007F">// worker finished computation</FONT>
+  },
+  on(atom(<FONT COLOR="#007F00">"DOWN"</FONT>), arg_match) &gt;&gt; [](std::uint32_t reason) {
+    <FONT COLOR="#7F007F">// worker died unexpectedly</FONT>
+  }
+);</DIV><P>Monitors are redundant.
+Hence, actors will receive one down message for each monitor.</P><!--TOC subsection Error Codes-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc41">7.3</A>  Error Codes</H3><!--SEC END --><P>All error codes are defined in the namespace <CODE>cppa</CODE><CODE>::</CODE><CODE>exit_reason</CODE>.</P><TABLE CELLSPACING=6 CELLPADDING=0 WIDTH="100%"><TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
+<TR><TD VALIGN=middle ALIGN=left> <CODE>normal</CODE></TD><TD VALIGN=middle ALIGN=left>Actor finished execution without error</TD></TR>
+<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
+<TR><TD VALIGN=middle ALIGN=left> <CODE>unhandled_exception</CODE></TD><TD VALIGN=middle ALIGN=left>Actor was killed due to an unhandled exception</TD></TR>
+<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
+<TR><TD VALIGN=middle ALIGN=left> <CODE>unallowed_function_call</CODE></TD><TD VALIGN=middle ALIGN=left>Indicates that an event-based actor tried to use blocking receive calls</TD></TR>
+<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
+<TR><TD VALIGN=middle ALIGN=left> <CODE>remote_link_unreachable</CODE></TD><TD VALIGN=middle ALIGN=left>Indicates that a remote actor became unreachable, e.g., due to connection error</TD></TR>
+<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
+<TR><TD VALIGN=middle ALIGN=left> <CODE>user_defined</CODE></TD><TD VALIGN=middle ALIGN=left>Minimum value for user-defined exit codes</TD></TR>
+<TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
+</TABLE><!--TOC subsection Attach Cleanup Code to an Actor-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc42">7.4</A>  Attach Cleanup Code to an Actor</H3><!--SEC END --><P>Actors can attach cleanup code to other actors.
+This code is executed immediately if the actor has already exited.
+Keep in mind that <CODE>self</CODE> refers to the currently running actor.
+Thus, <CODE>self</CODE> refers to the terminating actor and not to the actor that attached a functor to it.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> worker = spawn(...);
+actor_ptr observer = self;
+<FONT COLOR="#7F007F">// "monitor" spawned actor</FONT>
+worker-&gt;attach_functor([observer](std::uint32_t reason) {
+  <FONT COLOR="#7F007F">// this callback is invoked from worker =&gt; self == worker</FONT>
+  send(observer, atom(<FONT COLOR="#007F00">"DONE"</FONT>));
+});
+<FONT COLOR="#7F007F">// wait until worker exited</FONT>
+receive (
+  on(atom(<FONT COLOR="#007F00">"DONE"</FONT>)) &gt;&gt; []() {
+    <FONT COLOR="#7F007F">// worker terminated</FONT>
+  }
+);</DIV><P><B>Note</B>: It is possible to attach code to remote actors, but the cleanup code will run on the local machine.
+
+</P><!--TOC section Spawning Actors-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc43">8</A>  Spawning Actors</H2><!--SEC END --><P>Actors are created using the function <CODE>spawn</CODE>.
+The arguments passed to <CODE>spawn</CODE> depend on the actor’s implementation.</P><!--TOC subsection Create Actors from Functors-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc44">8.1</A>  Create Actors from Functors</H3><!--SEC END --><P>The recommended way to implement both context-switching and thread-mapped actors is to use functors, e.g., a free function or lambda expression.
+The arguments to the functor are passed to <CODE>spawn</CODE> as additional arguments.
+The optional <CODE>scheduling_hint</CODE> template parameter of <CODE>spawn</CODE> decides whether an actor should run in its own thread or use context-switching.
+The flag <CODE>detached</CODE> causes <CODE>spawn</CODE> to create a thread-mapped actor, whereas <CODE>scheduled</CODE>, the default flag, causes it to create a context-switching actor.
+The function <CODE>spawn</CODE> provides a quite similar usage as <CODE>std</CODE><CODE>::</CODE><CODE>thread</CODE>, as shown in the examples below.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">#include</FONT> <FONT COLOR="#007F00">"cppa/cppa.hpp"</FONT>
+
+<FONT COLOR="blue">using</FONT> <FONT COLOR="blue">namespace</FONT> cppa;
+
+<FONT COLOR="blue">void</FONT> fun1();
+<FONT COLOR="blue">void</FONT> fun2(<FONT COLOR="blue">int</FONT> arg1, std::string arg2);
+
+<FONT COLOR="blue">int</FONT> main() {
+  <FONT COLOR="#7F007F">// spawn context-switching actors</FONT>
+  <FONT COLOR="blue">auto</FONT> a1 = spawn(fun1); <FONT COLOR="#7F007F">// equal to spawn&lt;scheduled&gt;(fun1)</FONT>
+  <FONT COLOR="blue">auto</FONT> a2 = spawn(fun2, 42, <FONT COLOR="#007F00">"hello actor"</FONT>);
+  <FONT COLOR="blue">auto</FONT> a3 = spawn&lt;scheduled&gt;(fun2, 42, <FONT COLOR="#007F00">"hello actor"</FONT>);
+  <FONT COLOR="blue">auto</FONT> a4 = spawn([]() { <FONT COLOR="#7F007F">/* ... */</FONT> }); <FONT COLOR="#7F007F">// spawn a lambda expression</FONT>
+  <FONT COLOR="blue">auto</FONT> a5 = spawn([](<FONT COLOR="blue">int</FONT>) { <FONT COLOR="#7F007F">/* ... */</FONT> }, 42);
+  <FONT COLOR="#7F007F">// spawn thread-mapped actors</FONT>
+  <FONT COLOR="blue">auto</FONT> a6 = spawn&lt;detached&gt;(fun1);
+  <FONT COLOR="blue">auto</FONT> a7 = spawn&lt;detached&gt;([]() { <FONT COLOR="#7F007F">/* ... */</FONT> });
+  <FONT COLOR="blue">auto</FONT> a8 = spawn&lt;detached&gt;(fun2, 0, <FONT COLOR="#007F00">"zero"</FONT>);
+  <FONT COLOR="#7F007F">// ...</FONT>
+}</DIV><P>Though it is possible to subtype <CODE>context_switching_actor</CODE> to implement a class-based actor using context-switching, it is not recommended.
+In general, context-switching and thread-mapped actors are intended to ease migration of existing applications or to implement managing actors on-the-fly using lambda expressions.
+Class-based actors should be a subtype of <CODE>event_based_actor</CODE>, since this is the recommended actor implementation of <TT>libcppa</TT>.</P><P><B>Note</B>: <CODE>spawn</CODE><CODE>(</CODE><CODE>fun</CODE><CODE>, </CODE><CODE>arg0</CODE><CODE>, ...)</CODE> is <I>not</I> the same as <CODE>spawn</CODE><CODE>(</CODE><CODE>std</CODE><CODE>::</CODE><CODE>bind</CODE><CODE>(</CODE><CODE>fun</CODE><CODE>, </CODE><CODE>arg0</CODE><CODE>, ...))</CODE>!
+For example, a call to <CODE>spawn</CODE><CODE>(</CODE><CODE>fun</CODE><CODE>, </CODE><CODE>self</CODE><CODE>, ...)</CODE> will pass a pointer to the calling actor to the newly created actor, as expected, whereas <CODE>spawn</CODE><CODE>(</CODE><CODE>std</CODE><CODE>::</CODE><CODE>bind</CODE><CODE>(</CODE><CODE>fun</CODE><CODE>, </CODE><CODE>self</CODE><CODE>, ...))</CODE> wraps the type of <CODE>self</CODE> into the function wrapper and evaluates <CODE>self</CODE> on function invocation.
+Thus, the actor will end up having a pointer to itself rather than a pointer to the actor that created it.</P><!--TOC subsection Create Class-Based Actors-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc45">8.2</A>  Create Class-Based Actors</H3><!--SEC END --><P>Spawning class-based actors is straightforward and uses the function <CODE>spawn</CODE> as well.
+The template parameter is the implementing class rather than a <CODE>scheduling_hint</CODE>, since class-based actors are always scheduled.
+All arguments are forwarded to the constructor, as shown in the following example.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">#include</FONT> <FONT COLOR="#007F00">"cppa/cppa.hpp"</FONT>
+
+<FONT COLOR="blue">using</FONT> <FONT COLOR="blue">namespace</FONT> cppa;
+
+<FONT COLOR="blue">class</FONT> my_actor1 : <FONT COLOR="blue">public</FONT> event_based_actor { <FONT COLOR="#7F007F">/* ... */</FONT> };
+
+<FONT COLOR="blue">class</FONT> my_actor2 : <FONT COLOR="blue">public</FONT> sb_actor&lt;my_actor2&gt; {
+  <FONT COLOR="#7F007F">/* ... */</FONT>
+ <FONT COLOR="blue">public</FONT>:
+  my_actor2(<FONT COLOR="blue">int</FONT> value1, <FONT COLOR="blue">float</FONT> value 2) {
+    <FONT COLOR="#7F007F">// ...</FONT>
+  }
+};
+
+<FONT COLOR="blue">int</FONT> main() {
+  <FONT COLOR="blue">auto</FONT> a1 = spawn&lt;my_actor1&gt;();
+  <FONT COLOR="blue">auto</FONT> a2 = spawn&lt;my_actor2&gt;(1, 2.0f);
+  <FONT COLOR="#7F007F">// ...</FONT>
+}</DIV><P>For spawning event-based actors without implementing an own class see Section <A HREF="#Sec::Receive::EventBased::Factory">6.2.3</A>.
+To spawn actors as members of a group see Section <A HREF="#Sec::Group::Spawn">10.3</A>.
+
 </P><!--TOC section Network Transparency-->
-<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc40">7</A>  Network Transparency</H2><!--SEC END --><P>All actor operations as well as sending messages are network transparent.
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc46">9</A>  Network Transparency</H2><!--SEC END --><P>All actor operations as well as sending messages are network transparent.
 Remote actors are represented by actor proxies that forward all messages.</P><!--TOC subsection Publishing of Actors-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc41">7.1</A>  Publishing of Actors</H3><!--SEC END --><DIV CLASS="lstlisting"><FONT COLOR="blue">void</FONT> publish(actor_ptr whom, std::uint16_t port)</DIV><P>The function <CODE>publish</CODE> binds an actor to a given port.
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc47">9.1</A>  Publishing of Actors</H3><!--SEC END --><DIV CLASS="lstlisting"><FONT COLOR="blue">void</FONT> publish(actor_ptr whom, std::uint16_t port)</DIV><P>The function <CODE>publish</CODE> binds an actor to a given port.
 It throws <CODE>network_error</CODE> if socket related errors occur or <CODE>bind_failure</CODE> if the specified port is already in use.</P><DIV CLASS="lstlisting">publish(self, 4242);
 receive_loop (
   on(atom(<FONT COLOR="#007F00">"ping"</FONT>), arg_match) &gt;&gt; [](<FONT COLOR="blue">int</FONT> i) {
     reply(atom(<FONT COLOR="#007F00">"pong"</FONT>), i);
   }
 );</DIV><!--TOC subsection Connecting to Remote Actors-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc42">7.2</A>  Connecting to Remote Actors</H3><!--SEC END --><DIV CLASS="lstlisting">actor_ptr remote_actor(<FONT COLOR="blue">const</FONT> <FONT COLOR="blue">char</FONT>* host, std::uint16_t port)</DIV><P>The function <CODE>remote_actor</CODE> tries to connect to the actor at given host and port or throws <CODE>network_error</CODE> if the connection failed.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> pong = remote_actor(<FONT COLOR="#007F00">"localhost"</FONT>, 4242);
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc48">9.2</A>  Connecting to Remote Actors</H3><!--SEC END --><DIV CLASS="lstlisting">actor_ptr remote_actor(<FONT COLOR="blue">const</FONT> <FONT COLOR="blue">char</FONT>* host, std::uint16_t port)</DIV><P>The function <CODE>remote_actor</CODE> connects to the actor at given host and port.
+A <CODE>network_error</CODE> is thrown if the connection failed.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">auto</FONT> pong = remote_actor(<FONT COLOR="#007F00">"localhost"</FONT>, 4242);
 send(pong, atom(<FONT COLOR="#007F00">"ping"</FONT>), 0);
 <FONT COLOR="blue">bool</FONT> done = <FONT COLOR="blue">false</FONT>;
 do_receive (
@@ -741,25 +883,45 @@ do_receive (
     reply(atom(<FONT COLOR="#007F00">"ping"</FONT>), i+1);
   }
 ).until(gref(done));</DIV><!--TOC section Group Communication-->
-<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc43">8</A>  Group Communication</H2><!--SEC END --><P><TT>libcppa</TT> supports publish/subscribe-based group communication.
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc49">10</A>  Group Communication</H2><!--SEC END --><P>
+<A NAME="Sec::Group"></A></P><P><TT>libcppa</TT> supports publish/subscribe-based group communication.
 Actors can join and leave groups and send messages to groups.</P><DIV CLASS="lstlisting">std::string group_module = ...;
 std::string group_id = ...;
-group_ptr grp = group::get(group_module, group_id);
+<FONT COLOR="blue">auto</FONT> grp = group::get(group_module, group_id);
 self-&gt;join(grp);
 send(grp, atom(<FONT COLOR="#007F00">"test"</FONT>));
 self-&gt;leave(grp);</DIV><!--TOC subsection Anonymous Groups-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc44">8.1</A>  Anonymous Groups</H3><!--SEC END --><P>Groups created on-the-fly with <CODE>group</CODE><CODE>::</CODE><CODE>anonymous</CODE><CODE>()</CODE> can be used to coordinate a set of workers.
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc50">10.1</A>  Anonymous Groups</H3><!--SEC END --><P>
+<A NAME="Sec::Group::Anonymous"></A></P><P>Groups created on-the-fly with <CODE>group</CODE><CODE>::</CODE><CODE>anonymous</CODE><CODE>()</CODE> can be used to coordinate a set of workers.
 Each call to <CODE>group</CODE><CODE>::</CODE><CODE>anonymous</CODE><CODE>()</CODE> returns a new group instance.</P><!--TOC subsection Local Groups-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc45">8.2</A>  Local Groups</H3><!--SEC END --><P>The <CODE><FONT COLOR="#007F00"><CODE>"local"</CODE></FONT></CODE> group module creates groups for in-process communication.
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc51">10.2</A>  Local Groups</H3><!--SEC END --><P>
+<A NAME="Sec::Group::Local"></A></P><P>The <CODE><FONT COLOR="#007F00"><CODE>"local"</CODE></FONT></CODE> group module creates groups for in-process communication.
 For example, a group for GUI related events could be identified by <CODE>group</CODE><CODE>::</CODE><CODE>get</CODE><CODE>(</CODE><CODE><FONT COLOR="#007F00"><CODE>"local"</CODE></FONT></CODE><CODE>, </CODE><CODE><FONT COLOR="#007F00"><CODE>"GUI events"</CODE></FONT></CODE><CODE>)</CODE>.
-The group ID <CODE><FONT COLOR="#007F00"><CODE>"GUI events"</CODE></FONT></CODE> uniquely identifies a singleton group instance of the module <CODE><FONT COLOR="#007F00"><CODE>"local"</CODE></FONT></CODE>.</P><!--TOC section Platform-Independent Type System-->
-<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc46">9</A>  Platform-Independent Type System</H2><!--SEC END --><P>
+The group ID <CODE><FONT COLOR="#007F00"><CODE>"GUI events"</CODE></FONT></CODE> uniquely identifies a singleton group instance of the module <CODE><FONT COLOR="#007F00"><CODE>"local"</CODE></FONT></CODE>.</P><!--TOC subsection Spawn Actors in Groups-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc52">10.3</A>  Spawn Actors in Groups</H3><!--SEC END --><P>
+<A NAME="Sec::Group::Spawn"></A></P><P>The function <CODE>spawn_in_group</CODE> can be used to create actors as members of a group.
+The function causes the newly created actors to call <CODE>self</CODE><CODE>-&gt;</CODE><CODE>join</CODE><CODE>(...)</CODE> immediately and before <CODE>spawn_in_group</CODE> returns. 
+The usage of <CODE>spawn_in_group</CODE> is equal to <CODE>spawn</CODE>, except for an additional group argument.
+The group handle is always the first argument, as shown in the examples below.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">void</FONT> fun1();
+<FONT COLOR="blue">void</FONT> fun2(<FONT COLOR="blue">int</FONT>, <FONT COLOR="blue">float</FONT>);
+<FONT COLOR="blue">class</FONT> my_actor1 : event_based_actor { <FONT COLOR="#7F007F">/* ... */</FONT> };
+<FONT COLOR="blue">class</FONT> my_actor2 : event_based_actor {
+  <FONT COLOR="#7F007F">// ...</FONT>
+  my_actor2(<FONT COLOR="blue">const</FONT> std::string&amp; str) { <FONT COLOR="#7F007F">/* ... */</FONT> }
+};
+<FONT COLOR="#7F007F">// ...</FONT>
+<FONT COLOR="blue">auto</FONT> grp = group::get(...);
+<FONT COLOR="blue">auto</FONT> a1 = spawn_in_group(grp, fun1);
+<FONT COLOR="blue">auto</FONT> a2 = spawn_in_group(grp, fun2, 1, 2.0f);
+<FONT COLOR="blue">auto</FONT> a3 = spawn_in_group&lt;my_actor1&gt;(grp);
+<FONT COLOR="blue">auto</FONT> a4 = spawn_in_group&lt;my_actor2&gt;(grp, <FONT COLOR="#007F00">"hello my_actor2!"</FONT>);</DIV><!--TOC section Platform-Independent Type System-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc53">11</A>  Platform-Independent Type System</H2><!--SEC END --><P>
 <A NAME="Sec::TypeSystem"></A></P><P><TT>libcppa</TT> provides a fully network transparent communication between actors.
 Thus, <TT>libcppa</TT> needs to serialize and deserialize messages.
 Unfortunately, this is not possible using the RTTI system of C++.
 <TT>libcppa</TT> uses its own RTTI based on the class <CODE>uniform_type_info</CODE>, since it is not possible to extend <CODE>std</CODE><CODE>::</CODE><CODE><FONT COLOR="blue">type_info</FONT></CODE>.</P><P>Unlike <CODE>std</CODE><CODE>::</CODE><CODE><FONT COLOR="blue">type_info</FONT></CODE><CODE>::</CODE><CODE>name</CODE><CODE>()</CODE>, <CODE>uniform_type_info</CODE><CODE>::</CODE><CODE>name</CODE><CODE>()</CODE> is guaranteed to return the same name on all supported platforms. Furthermore, it allows to create an instance of a type by name.</P><DIV CLASS="lstlisting"><FONT COLOR="#7F007F">// creates a signed, 32 bit integer</FONT>
 cppa::object i = cppa::uniform_typeid&lt;<FONT COLOR="blue">int</FONT>&gt;()-&gt;create();</DIV><P>However, you should rarely if ever need to use <CODE>object</CODE> or <CODE>uniform_type_info</CODE>.</P><!--TOC subsection User-Defined Data Types in Messages-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc47">9.1</A>  User-Defined Data Types in Messages</H3><!--SEC END --><P>
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc54">11.1</A>  User-Defined Data Types in Messages</H3><!--SEC END --><P>
 <A NAME="Sec::TypeSystem::UserDefined"></A></P><P>All user-defined types must be explicitly “announced” so that <TT>libcppa</TT> can (de)serialize them correctly, as shown in the example below.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">#include</FONT> <FONT COLOR="#007F00">"cppa/cppa.hpp"</FONT>
 <FONT COLOR="blue">using</FONT> <FONT COLOR="blue">namespace</FONT> cppa;
 
@@ -775,8 +937,8 @@ See the announce examples 1 – 4 of the standard distribution for more details.
 You have to implement serialize/deserialize by yourself if your class does implement an unsupported data structure.
 See <CODE>announce_example_5</CODE><CODE>.</CODE><CODE>cpp</CODE> in the examples folder.
 </P><!--TOC section Appendix-->
-<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc48">10</A>  Appendix</H2><!--SEC END --><!--TOC subsection Class <CODE>option</CODE>-->
-<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc49">10.1</A>  Class <CODE>option</CODE></H3><!--SEC END --><P>
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc55">12</A>  Appendix</H2><!--SEC END --><!--TOC subsection Class <CODE>option</CODE>-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc56">12.1</A>  Class <CODE>option</CODE></H3><!--SEC END --><P>
 <A NAME="Appendix::Option"></A></P><P>Defined in header <CODE><FONT COLOR="#007F00"><CODE>"cppa/option.hpp"</CODE></FONT></CODE>.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">template</FONT>&lt;typename T&gt;
 <FONT COLOR="blue">class</FONT> option;</DIV><P>Represents an optional value.</P><TABLE CELLSPACING=6 CELLPADDING=0 WIDTH="100%"><TR><TD ALIGN=left NOWRAP COLSPAN=2><FONT SIZE=4><B>Member types</B></FONT></TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
@@ -801,13 +963,13 @@ See <CODE>announce_example_5</CODE><CODE>.</CODE><CODE>cpp</CODE> in the example
 <TR><TD ALIGN=left NOWRAP COLSPAN=2><B>Observers</B></TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
 <TR><TD VALIGN=middle ALIGN=left> <CODE><FONT COLOR="blue">bool</FONT></CODE><CODE> </CODE><CODE>valid</CODE><CODE>()</CODE></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left><CODE>explicit</CODE><CODE> </CODE><CODE><FONT COLOR="blue">operator</FONT></CODE><CODE> </CODE><CODE><FONT COLOR="blue">bool</FONT></CODE><CODE>()</CODE></TD><TD VALIGN=middle ALIGN=left>Returns <CODE><FONT COLOR="blue">true</FONT></CODE> if <CODE><FONT COLOR="blue">this</FONT></CODE> represents a value</TD></TR>
+<TR><TD VALIGN=middle ALIGN=left><CODE>explicit</CODE><CODE> </CODE><CODE><FONT COLOR="blue">operator</FONT></CODE><CODE> </CODE><CODE><FONT COLOR="blue">bool</FONT></CODE><CODE>()</CODE></TD><TD VALIGN=middle ALIGN=left>Returns <CODE><FONT COLOR="blue">true</FONT></CODE> if <CODE><FONT COLOR="blue">this</FONT></CODE> has a value</TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
 <TR><TD VALIGN=middle ALIGN=left> <CODE><FONT COLOR="blue">bool</FONT></CODE><CODE> </CODE><CODE>empty</CODE><CODE>()</CODE></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left><CODE><FONT COLOR="blue">bool</FONT></CODE><CODE> </CODE><CODE><FONT COLOR="blue">operator</FONT></CODE><CODE>!()</CODE></TD><TD VALIGN=middle ALIGN=left>Returns <CODE><FONT COLOR="blue">true</FONT></CODE> if <CODE><FONT COLOR="blue">this</FONT></CODE> does <B>not</B> represent a value</TD></TR>
+<TR><TD VALIGN=middle ALIGN=left><CODE><FONT COLOR="blue">bool</FONT></CODE><CODE> </CODE><CODE><FONT COLOR="blue">operator</FONT></CODE><CODE>!()</CODE></TD><TD VALIGN=middle ALIGN=left>Returns <CODE><FONT COLOR="blue">true</FONT></CODE> if <CODE><FONT COLOR="blue">this</FONT></CODE> does <B>not</B> has a value</TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
 <TR><TD VALIGN=middle ALIGN=left> <CODE><FONT COLOR="blue">const</FONT></CODE><CODE> </CODE><CODE>T</CODE><CODE>&amp; </CODE><CODE>get</CODE><CODE>()</CODE></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left><CODE><FONT COLOR="blue">const</FONT></CODE><CODE> </CODE><CODE>T</CODE><CODE>&amp; </CODE><CODE><FONT COLOR="blue">operator</FONT></CODE><CODE>*()</CODE></TD><TD VALIGN=middle ALIGN=left>Access the stored value</TD></TR>
+<TR><TD VALIGN=middle ALIGN=left><CODE><FONT COLOR="blue">const</FONT></CODE><CODE> </CODE><CODE>T</CODE><CODE>&amp; </CODE><CODE><FONT COLOR="blue">operator</FONT></CODE><CODE>*()</CODE></TD><TD VALIGN=middle ALIGN=left>Access stored value</TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
 <TR><TD VALIGN=middle ALIGN=left> <CODE><FONT COLOR="blue">const</FONT></CODE><CODE> </CODE><CODE>T</CODE><CODE>&amp; </CODE><CODE>get_or_else</CODE><CODE>(</CODE><CODE><FONT COLOR="blue">const</FONT></CODE><CODE> </CODE><CODE>T</CODE><CODE>&amp; </CODE><CODE>x</CODE><CODE>)</CODE></TD><TD VALIGN=middle ALIGN=left>Returns <CODE>get</CODE><CODE>()</CODE> if valid, <CODE>x</CODE> otherwise</TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
@@ -815,7 +977,7 @@ See <CODE>announce_example_5</CODE><CODE>.</CODE><CODE>cpp</CODE> in the example
 <TR><TD ALIGN=left NOWRAP COLSPAN=2><B>Modifiers</B></TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
 <TR><TD VALIGN=middle ALIGN=left> <CODE>T</CODE><CODE>&amp; </CODE><CODE>get</CODE><CODE>()</CODE></TD></TR>
-<TR><TD VALIGN=middle ALIGN=left><CODE>T</CODE><CODE>&amp; </CODE><CODE><FONT COLOR="blue">operator</FONT></CODE><CODE>*()</CODE></TD><TD VALIGN=middle ALIGN=left>Access the stored value</TD></TR>
+<TR><TD VALIGN=middle ALIGN=left><CODE>T</CODE><CODE>&amp; </CODE><CODE><FONT COLOR="blue">operator</FONT></CODE><CODE>*()</CODE></TD><TD VALIGN=middle ALIGN=left>Access stored value</TD></TR>
 <TR><TD CLASS="hbar" COLSPAN=2></TD></TR>
 </TABLE><!--CUT END -->
 <!--HTMLFOOT-->

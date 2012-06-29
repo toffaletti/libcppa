@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['ref_5fcounted',['ref_counted',['../classcppa_1_1ref__counted.html',1,'cppa']]],
+  ['rm_5fref',['rm_ref',['../structcppa_1_1util_1_1rm__ref.html',1,'cppa::util']]]
+];
