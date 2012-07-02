@@ -603,7 +603,7 @@ A subtype of <CODE>event_based_actor</CODE> must implement the pure virtual memb
   }
 };</DIV><!--TOC subsubsection State-Based Actors-->
 <H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc33">6.2.1</A>  State-Based Actors</H4><!--SEC END --><P>Another way to implement event-based actors is provided by the class <CODE>sb_actor</CODE> (“State-Based Actor”).
-This base class calls <CODE>become</CODE><CODE>(&amp;</CODE><CODE>init_state</CODE><CODE>)</CODE> in its <CODE>init</CODE> member function.
+This base class calls <CODE>become</CODE><CODE>(</CODE><CODE>init_state</CODE><CODE>)</CODE> in its <CODE>init</CODE> member function.
 Hence, a subclass must only provide a member of type <CODE>behavior</CODE> named <CODE>init_state</CODE>.</P><DIV CLASS="lstlisting"><FONT COLOR="blue">struct</FONT> printer : sb_actor&lt;printer&gt; {
   behavior init_state = (
     others() &gt;&gt; []() {
@@ -625,7 +625,7 @@ Users of GCC must set the member variables in the constructor.</P><DIV CLASS="ls
     behavior empty = (
         on(atom(<FONT COLOR="#007F00">"push"</FONT>), arg_match) &gt;&gt; [=](<FONT COLOR="blue">int</FONT> what) {
             data.push_back(what);
-            become(&amp;filled);
+            become(filled);
         },
         on(atom(<FONT COLOR="#007F00">"pop"</FONT>)) &gt;&gt; [=]() {
             reply(atom(<FONT COLOR="#007F00">"failure"</FONT>));
@@ -636,13 +636,13 @@ Users of GCC must set the member variables in the constructor.</P><DIV CLASS="ls
         on(atom(<FONT COLOR="#007F00">"push"</FONT>), arg_match) &gt;&gt; [=](<FONT COLOR="blue">int</FONT> what) {
             data.push_back(what);
             <FONT COLOR="blue">if</FONT> (data.size() == max_size)
-                become(&amp;full);
+                become(full);
         },
         on(atom(<FONT COLOR="#007F00">"pop"</FONT>)) &gt;&gt; [=]() {
             reply(atom(<FONT COLOR="#007F00">"ok"</FONT>), data.back());
             data.pop_back();
             <FONT COLOR="blue">if</FONT> (data.empty())
-                become(&amp;empty);
+                become(empty);
         }
     );
 
@@ -651,7 +651,7 @@ Users of GCC must set the member variables in the constructor.</P><DIV CLASS="ls
         on(atom(<FONT COLOR="#007F00">"pop"</FONT>)) &gt;&gt; [=]() {
             reply(atom(<FONT COLOR="#007F00">"ok"</FONT>), data.back());
             data.pop_back();
-            become(&amp;filled);
+            become(filled);
         }
     );
 
