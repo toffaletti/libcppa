@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,8 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2cdac72ac5fda5794bf53d88847032e"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae2cdac72ac5fda5794bf53d88847032e"></a>
 template&lt;typename F &gt; </td></tr>
 <tr class="memitem:ae2cdac72ac5fda5794bf53d88847032e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>behavior</b> (const timeout_definition&lt; F &gt; &amp;arg)</td></tr>
-<tr class="memitem:a7aefd1f48964583f3d069a008d8a983a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7aefd1f48964583f3d069a008d8a983a"></a>
-typename Args&#160;</td><td class="memItemRight" valign="bottom"><b>behavior</b> (const match_expr&lt; Cases...&gt; &amp;arg0, const Args &amp;...args)</td></tr>
+<tr class="memitem:a38db32f505602653d1e503c4394ab50f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38db32f505602653d1e503c4394ab50f"></a>
+typename Args&#160;</td><td class="memItemRight" valign="bottom"><b>behavior</b> (const match_expr&lt; Cases...&gt; &amp;arg0, const Arg1 &amp;arg1, const Args &amp;...args)</td></tr>
 <tr class="memitem:a4b2fdfd9e6edb7b64844391a6178a2e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b2fdfd9e6edb7b64844391a6178a2e2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handle_timeout</b> ()</td></tr>
 <tr class="memitem:ae50422f178c7a8e61aacb74c240bceb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae50422f178c7a8e61aacb74c240bceb5"></a>
@@ -160,6 +160,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (<a cl
 Public Attributes</h2></td></tr>
 <tr class="memitem:a39877f15ddd2b055abb5dd0fb1897dc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39877f15ddd2b055abb5dd0fb1897dc3"></a>
 arg&#160;</td><td class="memItemRight" valign="bottom"><b>timeout</b></td></tr>
+<tr class="memitem:a591946e8dc585b1ef0400c949ae88e7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a591946e8dc585b1ef0400c949ae88e7b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Arg1</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -180,7 +182,7 @@ typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 16:29:19 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 14:00:33 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

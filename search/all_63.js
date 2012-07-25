@@ -1,6 +1,7 @@
 var searchData=
 [
   ['chained_5fenqueue',['chained_enqueue',['../classcppa_1_1actor.html#aa937fa58a766eb253591b6414e3c2ee0',1,'cppa::actor']]],
+  ['chained_5fsync_5fenqueue',['chained_sync_enqueue',['../classcppa_1_1actor.html#ad68c41daf3936e96180af6d75ae2f2c0',1,'cppa::actor']]],
   ['chaining',['chaining',['../classcppa_1_1local__actor.html#a6751d66e216f80dc3540ebb5a749b24d',1,'cppa::local_actor::chaining() const '],['../classcppa_1_1local__actor.html#ab892fb8f10a189c81c8f296d762a594b',1,'cppa::local_actor::chaining(bool new_value)']]],
   ['channel',['channel',['../classcppa_1_1channel.html',1,'cppa']]],
   ['channel_5fptr',['channel_ptr',['../classcppa_1_1channel.html#ac7df8ed0bb6003f386e088bb0dedb1df',1,'cppa::channel']]],
@@ -15,6 +16,9 @@ var searchData=
   ['comparable_3c_20intrusive_5fptr_3c_20behavior_5fimpl_20_3e_20_3e',['comparable&lt; intrusive_ptr&lt; behavior_impl &gt; &gt;',['../classcppa_1_1util_1_1comparable.html',1,'cppa::util']]],
   ['comparable_3c_20intrusive_5fptr_3c_20behavior_5fimpl_20_3e_2c_20const_20behavior_5fimpl_20_2a_20_3e',['comparable&lt; intrusive_ptr&lt; behavior_impl &gt;, const behavior_impl * &gt;',['../classcppa_1_1util_1_1comparable.html',1,'cppa::util']]],
   ['comparable_3c_20intrusive_5fptr_3c_20behavior_5fimpl_20_3e_2c_20std_3a_3anullptr_5ft_20_3e',['comparable&lt; intrusive_ptr&lt; behavior_impl &gt;, std::nullptr_t &gt;',['../classcppa_1_1util_1_1comparable.html',1,'cppa::util']]],
+  ['comparable_3c_20intrusive_5fptr_3c_20channel_20_3e_20_3e',['comparable&lt; intrusive_ptr&lt; channel &gt; &gt;',['../classcppa_1_1util_1_1comparable.html',1,'cppa::util']]],
+  ['comparable_3c_20intrusive_5fptr_3c_20channel_20_3e_2c_20const_20channel_20_2a_20_3e',['comparable&lt; intrusive_ptr&lt; channel &gt;, const channel * &gt;',['../classcppa_1_1util_1_1comparable.html',1,'cppa::util']]],
+  ['comparable_3c_20intrusive_5fptr_3c_20channel_20_3e_2c_20std_3a_3anullptr_5ft_20_3e',['comparable&lt; intrusive_ptr&lt; channel &gt;, std::nullptr_t &gt;',['../classcppa_1_1util_1_1comparable.html',1,'cppa::util']]],
   ['comparable_3c_20intrusive_5fptr_3c_20detail_3a_3aabstract_5ftuple_20_3e_20_3e',['comparable&lt; intrusive_ptr&lt; detail::abstract_tuple &gt; &gt;',['../classcppa_1_1util_1_1comparable.html',1,'cppa::util']]],
   ['comparable_3c_20intrusive_5fptr_3c_20detail_3a_3aabstract_5ftuple_20_3e_2c_20const_20detail_3a_3aabstract_5ftuple_20_2a_20_3e',['comparable&lt; intrusive_ptr&lt; detail::abstract_tuple &gt;, const detail::abstract_tuple * &gt;',['../classcppa_1_1util_1_1comparable.html',1,'cppa::util']]],
   ['comparable_3c_20intrusive_5fptr_3c_20detail_3a_3aabstract_5ftuple_20_3e_2c_20std_3a_3anullptr_5ft_20_3e',['comparable&lt; intrusive_ptr&lt; detail::abstract_tuple &gt;, std::nullptr_t &gt;',['../classcppa_1_1util_1_1comparable.html',1,'cppa::util']]],

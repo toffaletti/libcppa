@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,7 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -121,12 +120,6 @@ Inheritance diagram for cppa::group:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group_1_1module.html">module</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module interface.  <a href="classcppa_1_1group_1_1module.html#details">More...</a><br/></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ab7e2ad078acc38de31a139d15129e6df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7e2ad078acc38de31a139d15129e6df"></a>
-typedef std::unique_ptr<br class="typebreak"/>
-&lt; unsubscriber &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>subscription</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -173,8 +166,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>unsubscribe</
 Friends</h2></td></tr>
 <tr class="memitem:ab1d3ce2151816e84ce74cc11a5cc3bd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1d3ce2151816e84ce74cc11a5cc3bd0"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::group_manager</b></td></tr>
-<tr class="memitem:a1bc0d48af5c53462429a7794821a03ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bc0d48af5c53462429a7794821a03ac"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>unsubscriber</b></td></tr>
+<tr class="memitem:a36fc40fc9a9b4952ad88b22e7d9d3d0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36fc40fc9a9b4952ad88b22e7d9d3d0e"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>subscription</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="related"></a>
 Related Functions</h2></td></tr>
@@ -214,7 +207,7 @@ typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&
 
 <p>Returns an anonymous group. </p>
 <p>Each calls to this member function returns a new instances of an anonymous group. Anonymous groups can be used whenever a set of actors wants to communicate over an exclusive channel. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dining_philosophers_8cpp-example.html#a6">dining_philosophers.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dining_philosophers_8cpp-example.html#a7">dining_philosophers.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -287,7 +280,7 @@ typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 16:29:20 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 14:00:33 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,6 +91,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &lt; std::is_base_of&lt; channel, C &gt;<br class="typebreak"/>
 ::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b">cppa::send</a> (const intrusive_ptr&lt; C &gt; &amp;whom, Args &amp;&amp;...what)</td></tr>
 <tr class="memdesc:ga3d831d687613a6a5ebc143b7e347858b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>{what...}</code> as a message to <code>whom</code>.  <a href="#ga3d831d687613a6a5ebc143b7e347858b"></a><br/></td></tr>
+<tr class="memitem:ga48f4fbdf4bb8d1d262bec9eeb6d053c9"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ga48f4fbdf4bb8d1d262bec9eeb6d053c9"><td class="memTemplItemLeft" align="right" valign="top">message_future&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga48f4fbdf4bb8d1d262bec9eeb6d053c9">cppa::sync_send</a> (const <a class="el" href="classcppa_1_1actor.html#a15b74113cbde6221df8f00c25b6c2a56">actor_ptr</a> &amp;whom, Args &amp;&amp;...what)</td></tr>
+<tr class="memdesc:ga48f4fbdf4bb8d1d262bec9eeb6d053c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>{what...}</code> as a synchronous message to <code>whom</code>.  <a href="#ga48f4fbdf4bb8d1d262bec9eeb6d053c9"></a><br/></td></tr>
+<tr class="memitem:ga46e8a8ef945c5f751e0caa1ae1f9d1a2"><td class="memItemLeft" align="right" valign="top">sync_recv_helper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga46e8a8ef945c5f751e0caa1ae1f9d1a2">cppa::receive_response</a> (message_future handle)</td></tr>
+<tr class="memdesc:ga46e8a8ef945c5f751e0caa1ae1f9d1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles a synchronous response message in an event-based way.  <a href="#ga46e8a8ef945c5f751e0caa1ae1f9d1a2"></a><br/></td></tr>
 <tr class="memitem:gac8769898500320bfc51235a5fe771b11"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:gac8769898500320bfc51235a5fe771b11"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#gac8769898500320bfc51235a5fe771b11">cppa::reply</a> (Args &amp;&amp;...what)</td></tr>
 <tr class="memdesc:gac8769898500320bfc51235a5fe771b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the sender of the last received message.  <a href="#gac8769898500320bfc51235a5fe771b11"></a><br/></td></tr>
@@ -285,7 +290,7 @@ template&lt;class Rep , class Period , typename... Args&gt; </div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a4">dancing_kirby.cpp</a>, and <a class="el" href="dining_philosophers_8cpp-example.html#a5">dining_philosophers.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a4">dancing_kirby.cpp</a>, and <a class="el" href="dining_philosophers_8cpp-example.html#a6">dining_philosophers.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -326,6 +331,37 @@ template&lt;class C &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd><code>whom</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga46e8a8ef945c5f751e0caa1ae1f9d1a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sync_recv_helper cppa::receive_response </td>
+          <td>(</td>
+          <td class="paramtype">message_future&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handles a synchronous response message in an event-based way. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>A future for a synchronous response. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions:</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>if given behavior does not has a valid timeout definition </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>if <code>handle</code> is not valid or if the actor already received the response for <code>handle</code> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -392,14 +428,60 @@ template&lt;class C , typename... Args&gt; </div>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition:</dt><dd><code>sizeof...(Args) &gt; 0</code> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_1_8cpp-example.html#a0">announce_example_1.cpp</a>, <a class="el" href="announce_example_2_8cpp-example.html#a1">announce_example_2.cpp</a>, <a class="el" href="announce_example_3_8cpp-example.html#a1">announce_example_3.cpp</a>, <a class="el" href="announce_example_4_8cpp-example.html#a2">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a16">announce_example_5.cpp</a>, <a class="el" href="dancing_kirby_8cpp-example.html#a0">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#a4">dining_philosophers.cpp</a>, <a class="el" href="hello_world_example_8cpp-example.html#a3">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a7">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_1_8cpp-example.html#a0">announce_example_1.cpp</a>, <a class="el" href="announce_example_2_8cpp-example.html#a1">announce_example_2.cpp</a>, <a class="el" href="announce_example_3_8cpp-example.html#a1">announce_example_3.cpp</a>, <a class="el" href="announce_example_4_8cpp-example.html#a2">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a16">announce_example_5.cpp</a>, <a class="el" href="dancing_kirby_8cpp-example.html#a0">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#a5">dining_philosophers.cpp</a>, <a class="el" href="hello_world_example_8cpp-example.html#a3">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a8">math_actor_example.cpp</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="ga48f4fbdf4bb8d1d262bec9eeb6d053c9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">message_future cppa::sync_send </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcppa_1_1actor.html#a15b74113cbde6221df8f00c25b6c2a56">actor_ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>whom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>what</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends <code>{what...}</code> as a synchronous message to <code>whom</code>. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">whom</td><td>Receiver of the message. </td></tr>
+    <tr><td class="paramname">what</td><td>Message elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>A handle identifying a future to the response of <code>whom</code>. </dd></dl>
+<dl class="section warning"><dt>Warning:</dt><dd>The returned handle is actor specific and the response to the sent message cannot be received by another actor. </dd></dl>
+<dl class="section pre"><dt>Precondition:</dt><dd><code>sizeof...(Args) &gt; 0</code> </dd></dl>
+<dl class="exception"><dt>Exceptions:</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>if <code>whom == nullptr</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 16:29:19 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 14:00:33 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

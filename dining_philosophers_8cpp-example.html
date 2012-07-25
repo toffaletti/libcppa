@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,11 +99,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <a name="_a1"></a><a class="code" href="classcppa_1_1behavior.html" title="Describes the behavior of an actor.">behavior</a>&amp; init_state; <span class="comment">// a reference to available</span></div>
 <div class="line">    <a class="code" href="classcppa_1_1behavior.html" title="Describes the behavior of an actor.">behavior</a> available;</div>
 <div class="line"></div>
-<div class="line">    <a class="code" href="classcppa_1_1behavior.html" title="Describes the behavior of an actor.">behavior</a> taken_by(<span class="keyword">const</span> actor_ptr&amp; philos) {</div>
+<div class="line">    <a class="code" href="classcppa_1_1behavior.html" title="Describes the behavior of an actor.">behavior</a> taken_by(<span class="keyword">const</span> <a name="_a2"></a><a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&amp; philos) {</div>
 <div class="line">        <span class="comment">// create a behavior new on-the-fly</span></div>
 <div class="line">        <span class="keywordflow">return</span> (</div>
-<div class="line">            <a name="a2"></a><a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a name="a3"></a><a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;take&quot;</span>), actor_ptr&gt;() &gt;&gt; [=](actor_ptr other) {</div>
-<div class="line">                <a name="a4"></a><a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(other, <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;busy&quot;</span>), <span class="keyword">this</span>);</div>
+<div class="line">            <a name="a3"></a><a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a name="a4"></a><a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;take&quot;</span>), <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&gt;() &gt;&gt; [=](<a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a> other) {</div>
+<div class="line">                <a name="a5"></a><a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(other, <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;busy&quot;</span>), <span class="keyword">this</span>);</div>
 <div class="line">            },</div>
 <div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>(<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;put&quot;</span>), philos) &gt;&gt; [=]() {</div>
 <div class="line">                become(available);</div>
@@ -113,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">    chopstick() : init_state(available) {</div>
 <div class="line">        available = (</div>
-<div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;take&quot;</span>), actor_ptr&gt;() &gt;&gt; [=](actor_ptr philos) {</div>
+<div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;take&quot;</span>), <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&gt;() &gt;&gt; [=](<a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a> philos) {</div>
 <div class="line">                <a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(philos, <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;taken&quot;</span>), <span class="keyword">this</span>);</div>
 <div class="line">                become(taken_by(philos));</div>
 <div class="line">            }</div>
@@ -158,8 +158,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="keyword">struct </span>philosopher : <a class="code" href="classcppa_1_1sb__actor.html" title="A base class for state-based actors using the Curiously Recurring Template Pattern to initialize the ...">sb_actor</a>&lt;philosopher&gt; {</div>
 <div class="line"></div>
 <div class="line">    std::string name; <span class="comment">// the name of this philosopher</span></div>
-<div class="line">    actor_ptr left;   <span class="comment">// left chopstick</span></div>
-<div class="line">    actor_ptr right;  <span class="comment">// right chopstick</span></div>
+<div class="line">    <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a> left;   <span class="comment">// left chopstick</span></div>
+<div class="line">    <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a> right;  <span class="comment">// right chopstick</span></div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// note: we have to define all behaviors in the constructor because</span></div>
 <div class="line">    <span class="comment">//       non-static member initialization are not (yet) implemented in GCC</span></div>
@@ -170,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <a class="code" href="classcppa_1_1behavior.html" title="Describes the behavior of an actor.">behavior</a> init_state;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// wait for second chopstick</span></div>
-<div class="line">    <a class="code" href="classcppa_1_1behavior.html" title="Describes the behavior of an actor.">behavior</a> waiting_for(<span class="keyword">const</span> actor_ptr&amp; what) {</div>
+<div class="line">    <a class="code" href="classcppa_1_1behavior.html" title="Describes the behavior of an actor.">behavior</a> waiting_for(<span class="keyword">const</span> <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&amp; what) {</div>
 <div class="line">        <span class="keywordflow">return</span> (</div>
 <div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>(<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;taken&quot;</span>), what) &gt;&gt; [=]() {</div>
 <div class="line">                <span class="comment">// create message in memory to avoid interleaved</span></div>
@@ -184,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                    &lt;&lt; <span class="stringliteral">&quot; and starts to eat\n&quot;</span>;</div>
 <div class="line">                cout &lt;&lt; oss.str();</div>
 <div class="line">                <span class="comment">// eat some time</span></div>
-<div class="line">                <a name="a5"></a><a class="code" href="group___message_handling.html#ga25c7716305b5d9480e1eae16098989ee" title="Sends a message to whom that is delayed by rel_time.">delayed_send</a>(<span class="keyword">this</span>, seconds(5), <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;think&quot;</span>));</div>
+<div class="line">                <a name="a6"></a><a class="code" href="group___message_handling.html#ga25c7716305b5d9480e1eae16098989ee" title="Sends a message to whom that is delayed by rel_time.">delayed_send</a>(<span class="keyword">this</span>, seconds(5), <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;think&quot;</span>));</div>
 <div class="line">                become(eating);</div>
 <div class="line">            },</div>
 <div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>(<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;busy&quot;</span>), what) &gt;&gt; [=]() {</div>
@@ -195,7 +195,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        );</div>
 <div class="line">    }</div>
 <div class="line"></div>
-<div class="line">    philosopher(<span class="keyword">const</span> std::string&amp; n, <span class="keyword">const</span> actor_ptr&amp; l, <span class="keyword">const</span> actor_ptr&amp; r)</div>
+<div class="line">    philosopher(<span class="keyword">const</span> std::string&amp; n, <span class="keyword">const</span> <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&amp; l, <span class="keyword">const</span> <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&amp; r)</div>
 <div class="line">        : name(n), left(l), right(r) {</div>
 <div class="line">        <span class="comment">// a philosopher that receives {eat} stops thinking and becomes hungry</span></div>
 <div class="line">        thinking = (</div>
@@ -213,18 +213,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>(<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;taken&quot;</span>), right) &gt;&gt; [=]() {</div>
 <div class="line">                become(waiting_for(left));</div>
 <div class="line">            },</div>
-<div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;busy&quot;</span>), actor_ptr&gt;() &gt;&gt; [=]() {</div>
+<div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;busy&quot;</span>), <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&gt;() &gt;&gt; [=]() {</div>
 <div class="line">                become(denied);</div>
 <div class="line">            }</div>
 <div class="line">        );</div>
 <div class="line">        <span class="comment">// philosopher was not able to obtain the first chopstick</span></div>
 <div class="line">        denied = (</div>
-<div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;taken&quot;</span>), actor_ptr&gt;() &gt;&gt; [=](actor_ptr&amp; ptr) {</div>
+<div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;taken&quot;</span>), <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&gt;() &gt;&gt; [=](<a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&amp; ptr) {</div>
 <div class="line">                <a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(ptr, <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;put&quot;</span>), <span class="keyword">this</span>);</div>
 <div class="line">                <a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(<span class="keyword">this</span>, <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;eat&quot;</span>));</div>
 <div class="line">                become(thinking);</div>
 <div class="line">            },</div>
-<div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;busy&quot;</span>), actor_ptr&gt;() &gt;&gt; [=]() {</div>
+<div class="line">            <a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;busy&quot;</span>), <a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&gt;() &gt;&gt; [=]() {</div>
 <div class="line">                <a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(<span class="keyword">this</span>, <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;eat&quot;</span>));</div>
 <div class="line">                become(thinking);</div>
 <div class="line">            }</div>
@@ -262,7 +262,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    }</div>
 <div class="line">    cout &lt;&lt; endl;</div>
 <div class="line">    <span class="comment">// a group to address all philosophers</span></div>
-<div class="line">    <span class="keyword">auto</span> dinner_club = <a name="a6"></a><a class="code" href="classcppa_1_1group.html#af7e024c27adcf2b5970b85cb1b1572f2" title="Returns an anonymous group.">group::anonymous</a>();</div>
+<div class="line">    <span class="keyword">auto</span> dinner_club = <a name="a7"></a><a class="code" href="classcppa_1_1group.html#af7e024c27adcf2b5970b85cb1b1572f2" title="Returns an anonymous group.">group::anonymous</a>();</div>
 <div class="line">    <span class="comment">// spawn five philosopher, each joining the Dinner Club</span></div>
 <div class="line">    std::vector&lt;std::string&gt; names = { <span class="stringliteral">&quot;Plato&quot;</span>, <span class="stringliteral">&quot;Hume&quot;</span>, <span class="stringliteral">&quot;Kant&quot;</span>,</div>
 <div class="line">                                       <span class="stringliteral">&quot;Nietzsche&quot;</span>, <span class="stringliteral">&quot;Descartes&quot;</span> };</div>
@@ -275,13 +275,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="comment">// tell philosophers to start thinking</span></div>
 <div class="line">    <a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(dinner_club, <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;think&quot;</span>));</div>
 <div class="line">    <span class="comment">// real philosophers are never done</span></div>
-<div class="line">    <a name="a7"></a><a class="code" href="namespacecppa.html#a185090573ffb146384ccdfa94172c23e" title="Blocks execution of this actor until all other actors finished execution.">await_all_others_done</a>();</div>
+<div class="line">    <a name="a8"></a><a class="code" href="namespacecppa.html#a185090573ffb146384ccdfa94172c23e" title="Blocks execution of this actor until all other actors finished execution.">await_all_others_done</a>();</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 16:29:19 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 14:00:33 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

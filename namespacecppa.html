@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -159,6 +159,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An intrusive, reference counting smart pointer impelementation.  <a href="classcppa_1_1intrusive__ptr.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1local__actor.html">local_actor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for local running Actors.  <a href="classcppa_1_1local__actor.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1message__id__t.html">message_id_t</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1object.html">object</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstraction class that stores an instance of an announced type.  <a href="classcppa_1_1object.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1option.html">option</a></td></tr>
@@ -186,6 +187,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:aa911b41078aff43f355b1d64dc4b7475"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa911b41078aff43f355b1d64dc4b7475"></a>
+typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>actor_ptr</b></td></tr>
+<tr class="memitem:a60ee2cb32752d31e00d020c6cb7362e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60ee2cb32752d31e00d020c6cb7362e2"></a>
+typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1group.html">group</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>group_ptr</b></td></tr>
+<tr class="memitem:a0ac06fc2f69fb1021d95310238161c4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac06fc2f69fb1021d95310238161c4e"></a>
+typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1channel.html">channel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>channel_ptr</b></td></tr>
+<tr class="memitem:a46190b719f248a02b0dcf748ac76b10f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46190b719f248a02b0dcf748ac76b10f"></a>
+typedef behavior_policy&lt; false &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>keep_behavior_t</b></td></tr>
+<tr class="memitem:a7ea2a0fe3f2f2a7f451d667a22b5940e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ea2a0fe3f2f2a7f451d667a22b5940e"></a>
+typedef behavior_policy&lt; true &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>discard_behavior_t</b></td></tr>
 <tr class="memitem:ae02290ba27f0e00874bd507875e460e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae02290ba27f0e00874bd507875e460e2"></a>
 typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a><br class="typebreak"/>
 &lt; <a class="el" href="classcppa_1_1scheduled__actor.html">scheduled_actor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scheduled_actor_ptr</b></td></tr>
@@ -345,12 +356,17 @@ template&lt;typename Arg0 , typename... Args&gt; </td></tr>
 , is_timeout_definition&lt; Args &gt;<br class="typebreak"/>
 ...&gt;, <a class="el" href="classcppa_1_1behavior.html">behavior</a>, <a class="el" href="structcppa_1_1util_1_1wrapped.html">util::wrapped</a><br class="typebreak"/>
 &lt; <a class="el" href="classcppa_1_1partial__function.html">partial_function</a> &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>match_expr_convert</b> (const Arg0 &amp;arg0, const Args &amp;...args)</td></tr>
+<tr class="memitem:aca28f3fe16f1c4f5e027401a1f574b5a"><td class="memTemplParams" colspan="2"><a class="anchor" id="aca28f3fe16f1c4f5e027401a1f574b5a"></a>
+template&lt;typename... Lhs, typename F &gt; </td></tr>
+<tr class="memitem:aca28f3fe16f1c4f5e027401a1f574b5a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1behavior.html">behavior</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator,</b> (const match_expr&lt; Lhs...&gt; &amp;lhs, const timeout_definition&lt; F &gt; &amp;rhs)</td></tr>
 <tr class="memitem:a185090573ffb146384ccdfa94172c23e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a185090573ffb146384ccdfa94172c23e">await_all_others_done</a> ()</td></tr>
 <tr class="memdesc:a185090573ffb146384ccdfa94172c23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks execution of this actor until all other actors finished execution.  <a href="#a185090573ffb146384ccdfa94172c23e"></a><br/></td></tr>
-<tr class="memitem:ad3d81c1373f45ac17a07f3ccae89f7f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#ad3d81c1373f45ac17a07f3ccae89f7f3">publish</a> (actor_ptr whom, std::uint16_t port)</td></tr>
+<tr class="memitem:ad3d81c1373f45ac17a07f3ccae89f7f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#ad3d81c1373f45ac17a07f3ccae89f7f3">publish</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> whom, std::uint16_t port)</td></tr>
 <tr class="memdesc:ad3d81c1373f45ac17a07f3ccae89f7f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes <code>whom</code> at <code>port</code>.  <a href="#ad3d81c1373f45ac17a07f3ccae89f7f3"></a><br/></td></tr>
-<tr class="memitem:a76739f7f372b92999ee9b80d332093bd"><td class="memItemLeft" align="right" valign="top">actor_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a76739f7f372b92999ee9b80d332093bd">remote_actor</a> (const char *host, std::uint16_t port)</td></tr>
+<tr class="memitem:a76739f7f372b92999ee9b80d332093bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a76739f7f372b92999ee9b80d332093bd">remote_actor</a> (const char *host, std::uint16_t port)</td></tr>
 <tr class="memdesc:a76739f7f372b92999ee9b80d332093bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a new connection to the actor at <code>host</code> on given <code>port</code>.  <a href="#a76739f7f372b92999ee9b80d332093bd"></a><br/></td></tr>
+<tr class="memitem:a1e44ab5ef88ac98dd909f3a09bbf181d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a1e44ab5ef88ac98dd909f3a09bbf181d">remote_actor</a> (const std::string &amp;host, std::uint16_t port)</td></tr>
+<tr class="memdesc:a1e44ab5ef88ac98dd909f3a09bbf181d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a new connection to the actor at <code>host</code> on given <code>port</code>.   <a href="#a1e44ab5ef88ac98dd909f3a09bbf181d"></a><br/></td></tr>
 <tr class="memitem:aaa221547ef879ba5b42f7cc7820f90e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1object.html">object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#aaa221547ef879ba5b42f7cc7820f90e1">from_string</a> (const std::string &amp;what)</td></tr>
 <tr class="memdesc:aaa221547ef879ba5b42f7cc7820f90e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string created by <a class="el" href="namespacecppa.html#a76a9f2873d0e97eb7ceffb6101e8e507">to_string</a> to its original value.  <a href="#aaa221547ef879ba5b42f7cc7820f90e1"></a><br/></td></tr>
 <tr class="memitem:aed3c7758be0a4d0f89cffda5ba392079"><td class="memTemplParams" colspan="2"><a class="anchor" id="aed3c7758be0a4d0f89cffda5ba392079"></a>
@@ -448,6 +464,10 @@ template&lt;typename... Lhs, typename... Rhs&gt; </td></tr>
 <tr class="memitem:a3a48d275a74aa6dcd0f0c0d032062f47"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3a48d275a74aa6dcd0f0c0d032062f47"></a>
 template&lt;typename Arg0 , typename... Args&gt; </td></tr>
 <tr class="memitem:a3a48d275a74aa6dcd0f0c0d032062f47"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; behavior_impl &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>match_expr_concat</b> (const Arg0 &amp;arg0, const Args &amp;...args)</td></tr>
+<tr class="memitem:a9970a81e4fc1ec92f11953d29197cd5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9970a81e4fc1ec92f11953d29197cd5d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classcppa_1_1message__id__t.html">message_id_t</a> &amp;lhs, const <a class="el" href="classcppa_1_1message__id__t.html">message_id_t</a> &amp;rhs)</td></tr>
+<tr class="memitem:a7538f0e3be2bfe64f6b54f88896484c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7538f0e3be2bfe64f6b54f88896484c0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classcppa_1_1message__id__t.html">message_id_t</a> &amp;lhs, const <a class="el" href="classcppa_1_1message__id__t.html">message_id_t</a> &amp;rhs)</td></tr>
 <tr class="memitem:a9e103f83664c764b44799700daa1e83e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e103f83664c764b44799700daa1e83e"></a>
 const <a class="el" href="classcppa_1_1uniform__type__info.html">uniform_type_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>uniform_typeid</b> (const std::type_info &amp;)</td></tr>
 <tr class="memitem:ac1d771014d43e74ef4e17073bebaa2ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1d771014d43e74ef4e17073bebaa2ed"></a>
@@ -508,6 +528,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>equal</b> (const <a c
 <tr class="memitem:a601985961b1a9a8bbb73119d95fdb24a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a601985961b1a9a8bbb73119d95fdb24a"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a601985961b1a9a8bbb73119d95fdb24a">to_string</a> (const T &amp;what)</td></tr>
 <tr class="memdesc:a601985961b1a9a8bbb73119d95fdb24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a value to a string representation.  <a href="#a601985961b1a9a8bbb73119d95fdb24a"></a><br/></td></tr>
+<tr class="memitem:ac9456f6c3944e9f8f47ec8fc678d99d5"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac9456f6c3944e9f8f47ec8fc678d99d5"></a>
+template&lt;size_t N, typename... Ts&gt; </td></tr>
+<tr class="memitem:ac9456f6c3944e9f8f47ec8fc678d99d5"><td class="memTemplItemLeft" align="right" valign="top">util::at&lt; N, Ts...&gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const util::type_list&lt; Ts...&gt; &amp;)</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:gac75843b3cdee57feeb6844a5568e4bfa"><td class="memTemplParams" colspan="2">template&lt;class C &gt; </td></tr>
 <tr class="memitem:gac75843b3cdee57feeb6844a5568e4bfa"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
@@ -520,33 +543,38 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>equal</b> (const <a c
 &lt; std::is_base_of&lt; <a class="el" href="classcppa_1_1channel.html">channel</a>, C &gt;<br class="typebreak"/>
 ::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b">send</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; C &gt; &amp;whom, Args &amp;&amp;...what)</td></tr>
 <tr class="memdesc:ga3d831d687613a6a5ebc143b7e347858b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>{what...}</code> as a message to <code>whom</code>.  <a href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b"></a><br/></td></tr>
+<tr class="memitem:ga48f4fbdf4bb8d1d262bec9eeb6d053c9"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ga48f4fbdf4bb8d1d262bec9eeb6d053c9"><td class="memTemplItemLeft" align="right" valign="top">message_future&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga48f4fbdf4bb8d1d262bec9eeb6d053c9">sync_send</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> &amp;whom, Args &amp;&amp;...what)</td></tr>
+<tr class="memdesc:ga48f4fbdf4bb8d1d262bec9eeb6d053c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>{what...}</code> as a synchronous message to <code>whom</code>.  <a href="group___message_handling.html#ga48f4fbdf4bb8d1d262bec9eeb6d053c9"></a><br/></td></tr>
+<tr class="memitem:ga46e8a8ef945c5f751e0caa1ae1f9d1a2"><td class="memItemLeft" align="right" valign="top">sync_recv_helper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga46e8a8ef945c5f751e0caa1ae1f9d1a2">receive_response</a> (message_future handle)</td></tr>
+<tr class="memdesc:ga46e8a8ef945c5f751e0caa1ae1f9d1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles a synchronous response message in an event-based way.  <a href="group___message_handling.html#ga46e8a8ef945c5f751e0caa1ae1f9d1a2"></a><br/></td></tr>
 <tr class="memitem:gac8769898500320bfc51235a5fe771b11"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:gac8769898500320bfc51235a5fe771b11"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#gac8769898500320bfc51235a5fe771b11">reply</a> (Args &amp;&amp;...what)</td></tr>
 <tr class="memdesc:gac8769898500320bfc51235a5fe771b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the sender of the last received message.  <a href="group___message_handling.html#gac8769898500320bfc51235a5fe771b11"></a><br/></td></tr>
 <tr class="memitem:ga25c7716305b5d9480e1eae16098989ee"><td class="memTemplParams" colspan="2">template&lt;class Rep , class Period , typename... Args&gt; </td></tr>
-<tr class="memitem:ga25c7716305b5d9480e1eae16098989ee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga25c7716305b5d9480e1eae16098989ee">delayed_send</a> (const channel_ptr &amp;whom, const std::chrono::duration&lt; Rep, Period &gt; &amp;rel_time, Args &amp;&amp;...what)</td></tr>
+<tr class="memitem:ga25c7716305b5d9480e1eae16098989ee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga25c7716305b5d9480e1eae16098989ee">delayed_send</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">channel_ptr</a> &amp;whom, const std::chrono::duration&lt; Rep, Period &gt; &amp;rel_time, Args &amp;&amp;...what)</td></tr>
 <tr class="memdesc:ga25c7716305b5d9480e1eae16098989ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to <code>whom</code> that is delayed by <code>rel_time</code>.  <a href="group___message_handling.html#ga25c7716305b5d9480e1eae16098989ee"></a><br/></td></tr>
 <tr class="memitem:ga17ee2317aaf1c830d7e24ed00bb81de2"><td class="memTemplParams" colspan="2">template&lt;class Rep , class Period , typename... Args&gt; </td></tr>
 <tr class="memitem:ga17ee2317aaf1c830d7e24ed00bb81de2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga17ee2317aaf1c830d7e24ed00bb81de2">delayed_reply</a> (const std::chrono::duration&lt; Rep, Period &gt; &amp;rel_time, Args &amp;&amp;...what)</td></tr>
 <tr class="memdesc:ga17ee2317aaf1c830d7e24ed00bb81de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a reply message that is delayed by <code>rel_time</code>.  <a href="group___message_handling.html#ga17ee2317aaf1c830d7e24ed00bb81de2"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ga6dfaa32fe8444afd935a2810672c704a"><td class="memTemplParams" colspan="2">template&lt;scheduling_hint Hint, typename Fun , typename... Args&gt; </td></tr>
-<tr class="memitem:ga6dfaa32fe8444afd935a2810672c704a"><td class="memTemplItemLeft" align="right" valign="top">actor_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#ga6dfaa32fe8444afd935a2810672c704a">spawn</a> (Fun &amp;&amp;fun, Args &amp;&amp;...args)</td></tr>
+<tr class="memitem:ga6dfaa32fe8444afd935a2810672c704a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#ga6dfaa32fe8444afd935a2810672c704a">spawn</a> (Fun &amp;&amp;fun, Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:ga6dfaa32fe8444afd935a2810672c704a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a new context-switching or thread-mapped <a class="el" href="classcppa_1_1actor.html">actor</a> that executes <code>fun(args...)</code>.  <a href="group___actor_creation.html#ga6dfaa32fe8444afd935a2810672c704a"></a><br/></td></tr>
 <tr class="memitem:gad1993d81268448dca0fdbba3d5e63e5e"><td class="memTemplParams" colspan="2">template&lt;typename Fun , typename... Args&gt; </td></tr>
-<tr class="memitem:gad1993d81268448dca0fdbba3d5e63e5e"><td class="memTemplItemLeft" align="right" valign="top">actor_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#gad1993d81268448dca0fdbba3d5e63e5e">spawn</a> (Fun &amp;&amp;fun, Args &amp;&amp;...args)</td></tr>
+<tr class="memitem:gad1993d81268448dca0fdbba3d5e63e5e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#gad1993d81268448dca0fdbba3d5e63e5e">spawn</a> (Fun &amp;&amp;fun, Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:gad1993d81268448dca0fdbba3d5e63e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a new context-switching <a class="el" href="classcppa_1_1actor.html">actor</a> that executes <code>fun(args...)</code>.  <a href="group___actor_creation.html#gad1993d81268448dca0fdbba3d5e63e5e"></a><br/></td></tr>
 <tr class="memitem:ga4fa40915e311247aaa5fd5e4f7f05994"><td class="memTemplParams" colspan="2">template&lt;scheduling_hint Hint, typename Fun , typename... Args&gt; </td></tr>
-<tr class="memitem:ga4fa40915e311247aaa5fd5e4f7f05994"><td class="memTemplItemLeft" align="right" valign="top">actor_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#ga4fa40915e311247aaa5fd5e4f7f05994">spawn_in_group</a> (const group_ptr &amp;grp, Fun &amp;&amp;fun, Args &amp;&amp;...args)</td></tr>
+<tr class="memitem:ga4fa40915e311247aaa5fd5e4f7f05994"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#ga4fa40915e311247aaa5fd5e4f7f05994">spawn_in_group</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">group_ptr</a> &amp;grp, Fun &amp;&amp;fun, Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:ga4fa40915e311247aaa5fd5e4f7f05994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a new context-switching or thread-mapped <a class="el" href="classcppa_1_1actor.html">actor</a> that executes <code>fun(args...)</code> and joins <code>grp</code> immediately.  <a href="group___actor_creation.html#ga4fa40915e311247aaa5fd5e4f7f05994"></a><br/></td></tr>
 <tr class="memitem:ga6e054e5361a4a35e8a39d5144639ccd1"><td class="memTemplParams" colspan="2">template&lt;typename Fun , typename... Args&gt; </td></tr>
-<tr class="memitem:ga6e054e5361a4a35e8a39d5144639ccd1"><td class="memTemplItemLeft" align="right" valign="top">actor_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#ga6e054e5361a4a35e8a39d5144639ccd1">spawn_in_group</a> (Fun &amp;&amp;fun, Args &amp;&amp;...args)</td></tr>
+<tr class="memitem:ga6e054e5361a4a35e8a39d5144639ccd1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#ga6e054e5361a4a35e8a39d5144639ccd1">spawn_in_group</a> (Fun &amp;&amp;fun, Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:ga6e054e5361a4a35e8a39d5144639ccd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a new context-switching <a class="el" href="classcppa_1_1actor.html">actor</a> that executes <code>fun(args...)</code> and joins <code>grp</code> immediately.  <a href="group___actor_creation.html#ga6e054e5361a4a35e8a39d5144639ccd1"></a><br/></td></tr>
 <tr class="memitem:gae9db68cd073839b4e21e0f21a93524c2"><td class="memTemplParams" colspan="2">template&lt;class ActorImpl , typename... Args&gt; </td></tr>
-<tr class="memitem:gae9db68cd073839b4e21e0f21a93524c2"><td class="memTemplItemLeft" align="right" valign="top">actor_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#gae9db68cd073839b4e21e0f21a93524c2">spawn</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="memitem:gae9db68cd073839b4e21e0f21a93524c2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#gae9db68cd073839b4e21e0f21a93524c2">spawn</a> (Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:gae9db68cd073839b4e21e0f21a93524c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns an actor of type <code>ActorImpl</code>.  <a href="group___actor_creation.html#gae9db68cd073839b4e21e0f21a93524c2"></a><br/></td></tr>
 <tr class="memitem:gaeea1cdccd0a64c12de45dfe9eb2c7e1f"><td class="memTemplParams" colspan="2">template&lt;class ActorImpl , typename... Args&gt; </td></tr>
-<tr class="memitem:gaeea1cdccd0a64c12de45dfe9eb2c7e1f"><td class="memTemplItemLeft" align="right" valign="top">actor_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#gaeea1cdccd0a64c12de45dfe9eb2c7e1f">spawn_in_group</a> (const group_ptr &amp;grp, Args &amp;&amp;...args)</td></tr>
+<tr class="memitem:gaeea1cdccd0a64c12de45dfe9eb2c7e1f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___actor_creation.html#gaeea1cdccd0a64c12de45dfe9eb2c7e1f">spawn_in_group</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">group_ptr</a> &amp;grp, Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:gaeea1cdccd0a64c12de45dfe9eb2c7e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns an actor of type <code>ActorImpl</code> that joins <code>grp</code> immediately.  <a href="group___actor_creation.html#gaeea1cdccd0a64c12de45dfe9eb2c7e1f"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
@@ -622,7 +650,7 @@ template&lt;size_t Size&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>A compact representation of <code>str</code>. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_1_8cpp-example.html#a1">announce_example_1.cpp</a>, <a class="el" href="dancing_kirby_8cpp-example.html#a1">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#a3">dining_philosophers.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a2">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_1_8cpp-example.html#a1">announce_example_1.cpp</a>, <a class="el" href="dancing_kirby_8cpp-example.html#a1">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#a4">dining_philosophers.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a2">math_actor_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -643,7 +671,7 @@ template&lt;size_t Size&gt; </div>
 <dl class="section warning"><dt>Warning:</dt><dd>This function will cause a deadlock if called from multiple actors. </dd>
 <dd>
 Do not call this function in cooperatively scheduled actors. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dining_philosophers_8cpp-example.html#a7">dining_philosophers.cpp</a>, <a class="el" href="hello_world_example_8cpp-example.html#a4">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a11">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dining_philosophers_8cpp-example.html#a8">dining_philosophers.cpp</a>, <a class="el" href="hello_world_example_8cpp-example.html#a4">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a12">math_actor_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1002,7 +1030,7 @@ template&lt;typename Arg0 , typename... Args&gt; </div>
 
 <p>Left-hand side of a partial function expression that matches values. </p>
 <p>This overload can be used with the wildcards <a class="el" href="namespacecppa.html#a18bab167555966e432564cdee1611825">val</a>, <a class="el" href="namespacecppa.html#a6fd601df8b1aff0ef276f80a103c5f4e">any_vals</a> and <a class="el" href="namespacecppa.html#a8b4879d9cdef5c6c0995b30ee37d935e">arg_match</a>. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a3">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#a2">dining_philosophers.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a1">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a3">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#a3">dining_philosophers.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a1">math_actor_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1109,7 +1137,7 @@ template&lt;atom_value... Atoms, typename... Ts&gt; </div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_2_8cpp-example.html#a2">announce_example_2.cpp</a>, <a class="el" href="announce_example_3_8cpp-example.html#a2">announce_example_3.cpp</a>, <a class="el" href="hello_world_example_8cpp-example.html#a0">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a8">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_2_8cpp-example.html#a2">announce_example_2.cpp</a>, <a class="el" href="announce_example_3_8cpp-example.html#a2">announce_example_3.cpp</a>, <a class="el" href="hello_world_example_8cpp-example.html#a0">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a9">math_actor_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1224,7 +1252,7 @@ template&lt;typename Statement &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">actor_ptr cppa::remote_actor </td>
+          <td class="memname"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> cppa::remote_actor </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>host</em>, </td>
@@ -1252,6 +1280,43 @@ template&lt;typename Statement &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>An <a class="el" href="">actor_ptr</a> to the proxy instance representing a remote actor. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1e44ab5ef88ac98dd909f3a09bbf181d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> cppa::remote_actor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Establish a new connection to the actor at <code>host</code> on given <code>port</code>.  </p>
+<p><dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">host</td><td>Valid hostname or IP address. </td></tr>
+    <tr><td class="paramname">port</td><td>TCP port. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>An <a class="el" href="">actor_ptr</a> to the proxy instance representing a remote actor. </dd></dl>
+ </p>
 
 </div>
 </div>
@@ -1308,7 +1373,7 @@ template&lt;typename Statement &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd><code>what</code> as string. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_4_8cpp-example.html#a4">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a18">announce_example_5.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a9">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_4_8cpp-example.html#a4">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a18">announce_example_5.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a10">math_actor_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1414,7 +1479,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 16:29:19 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 14:00:33 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

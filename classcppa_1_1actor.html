@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,7 +124,12 @@ Inheritance diagram for cppa::actor:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa937fa58a766eb253591b6414e3c2ee0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa937fa58a766eb253591b6414e3c2ee0"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#aa937fa58a766eb253591b6414e3c2ee0">chained_enqueue</a> (<a class="el" href="classcppa_1_1actor.html">actor</a> *sender, <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> msg)</td></tr>
-<tr class="memdesc:aa937fa58a766eb253591b6414e3c2ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueues <code>msg</code> to the actor's mailbox and returns true if this actor is an scheduled actor that successfully changed its state to <code>pending</code>. <br/></td></tr>
+<tr class="memdesc:aa937fa58a766eb253591b6414e3c2ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueues <code>msg</code> to the actor's mailbox and returns true if this actor is an scheduled actor that successfully changed its state to <code>pending</code> in response to the enqueue operation. <br/></td></tr>
+<tr class="memitem:aff5de7ef1e44e9504379e5ec01b9e66c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#aff5de7ef1e44e9504379e5ec01b9e66c">sync_enqueue</a> (<a class="el" href="classcppa_1_1actor.html">actor</a> *sender, <a class="el" href="classcppa_1_1message__id__t.html">message_id_t</a> <a class="el" href="classcppa_1_1actor.html#a1bcf6d0dda3abb9ba1811c62efc998c9">id</a>, <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> msg)=0</td></tr>
+<tr class="memdesc:aff5de7ef1e44e9504379e5ec01b9e66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueues <code>msg</code> as a synchronous message to this actor's mailbox.  <a href="#aff5de7ef1e44e9504379e5ec01b9e66c"></a><br/></td></tr>
+<tr class="memitem:ad68c41daf3936e96180af6d75ae2f2c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad68c41daf3936e96180af6d75ae2f2c0"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#ad68c41daf3936e96180af6d75ae2f2c0">chained_sync_enqueue</a> (<a class="el" href="classcppa_1_1actor.html">actor</a> *sender, <a class="el" href="classcppa_1_1message__id__t.html">message_id_t</a> <a class="el" href="classcppa_1_1actor.html#a1bcf6d0dda3abb9ba1811c62efc998c9">id</a>, <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> msg)</td></tr>
+<tr class="memdesc:ad68c41daf3936e96180af6d75ae2f2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueues <code>msg</code> as a reply to <code>request_id</code> to this actor's mailbox and returns true if this actor is an scheduled actor that successfully changed its state to <code>pending</code> in response to the enqueue operation. <br/></td></tr>
 <tr class="memitem:a1f4813520d9e42e81418ef5688fa01ce"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a1f4813520d9e42e81418ef5688fa01ce">attach</a> (<a class="el" href="classcppa_1_1attachable.html">attachable</a> *ptr)=0</td></tr>
 <tr class="memdesc:a1f4813520d9e42e81418ef5688fa01ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches <code>ptr</code> to this actor.  <a href="#a1f4813520d9e42e81418ef5688fa01ce"></a><br/></td></tr>
 <tr class="memitem:a28f8b6881e6becd0e78748deac75dadc"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
@@ -514,6 +519,51 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aff5de7ef1e44e9504379e5ec01b9e66c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void cppa::actor::sync_enqueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1actor.html">actor</a> *&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1message__id__t.html">message_id_t</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a>&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enqueues <code>msg</code> as a synchronous message to this actor's mailbox. </p>
+<dl class="section pre"><dt>Precondition:</dt><dd><code>id.valid()</code> </dd></dl>
+
+<p>Implemented in <a class="el" href="classcppa_1_1actor__proxy.html#a627ee2f2c7637deca62e5b7df704812d">cppa::actor_proxy</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a9bc15c2a879dad10ba8a2ae8e885e72d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -574,7 +624,7 @@ template&lt;typename F &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 16:29:19 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 14:00:33 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

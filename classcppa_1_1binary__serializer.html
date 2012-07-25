@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,6 +128,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a2a7ce763b47c05d4a44a06ee3b2612d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a single value to the data sink.  <a href="#a2a7ce763b47c05d4a44a06ee3b2612d7"></a><br/></td></tr>
 <tr class="memitem:a9360a41b37ff9229057150819e75e1a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1binary__serializer.html#a9360a41b37ff9229057150819e75e1a4">write_tuple</a> (size_t <a class="el" href="classcppa_1_1binary__serializer.html#a383d4d0011ce7df95c7d7b93898f0ed1">size</a>, const <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> *values)</td></tr>
 <tr class="memdesc:a9360a41b37ff9229057150819e75e1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes <code>num</code> values as a tuple to the data sink.  <a href="#a9360a41b37ff9229057150819e75e1a4"></a><br/></td></tr>
+<tr class="memitem:add8a6246d6b79d6110ca17612cb54344"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1binary__serializer.html#add8a6246d6b79d6110ca17612cb54344">write_raw</a> (size_t num_bytes, const void *<a class="el" href="classcppa_1_1binary__serializer.html#aa6e69e3a0a28d5c8ab75b00a6a64e556">data</a>)</td></tr>
+<tr class="memdesc:add8a6246d6b79d6110ca17612cb54344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a raw block of data.  <a href="#add8a6246d6b79d6110ca17612cb54344"></a><br/></td></tr>
 <tr class="memitem:a383d4d0011ce7df95c7d7b93898f0ed1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a383d4d0011ce7df95c7d7b93898f0ed1"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1binary__serializer.html#a383d4d0011ce7df95c7d7b93898f0ed1">size</a> () const </td></tr>
 <tr class="memdesc:a383d4d0011ce7df95c7d7b93898f0ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of written bytes. <br/></td></tr>
@@ -188,6 +190,51 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classcppa_1_1serializer.html#ad87c5557dc2582f1df7e6c8770c49286">cppa::serializer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add8a6246d6b79d6110ca17612cb54344"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cppa::binary_serializer::write_raw </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a raw block of data. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_bytes</td><td>The size of <code>data</code> in bytes. </td></tr>
+    <tr><td class="paramname">data</td><td>Raw data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classcppa_1_1serializer.html#a2fc173f2e014fef7238bee7890a1d00c">cppa::serializer</a>.</p>
 
 </div>
 </div>
@@ -276,7 +323,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 16:29:19 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 14:00:33 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

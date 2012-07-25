@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -134,20 +134,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">};</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// utility function</span></div>
-<div class="line"><span class="keywordtype">int</span> fetch_result(actor_ptr&amp; calculator, <a class="code" href="namespacecppa.html#a5dd69804058d7adaef774fd953c63b97" title="The value type of atoms.">atom_value</a> operation, <span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b) {</div>
+<div class="line"><span class="keywordtype">int</span> fetch_result(<a name="_a7"></a><a class="code" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">actor_ptr</a>&amp; calculator, <a class="code" href="namespacecppa.html#a5dd69804058d7adaef774fd953c63b97" title="The value type of atoms.">atom_value</a> operation, <span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b) {</div>
 <div class="line">    <span class="comment">// send request</span></div>
-<div class="line">    <a name="a7"></a><a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(calculator, operation, a, b);</div>
+<div class="line">    <a name="a8"></a><a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(calculator, operation, a, b);</div>
 <div class="line">    <span class="comment">// wait for result</span></div>
 <div class="line">    <span class="keywordtype">int</span> result;</div>
-<div class="line">    <a name="a8"></a><a class="code" href="namespacecppa.html#a671f171f6353ab9c5c859842a242faab" title="Dequeues the next message from the mailbox that&#39;s matched by bhvr and executes the corresponding call...">receive</a>(<a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;result&quot;</span>), <span class="keywordtype">int</span>&gt;() &gt;&gt; [&amp;](<span class="keywordtype">int</span> r) { result = r; });</div>
+<div class="line">    <a name="a9"></a><a class="code" href="namespacecppa.html#a671f171f6353ab9c5c859842a242faab" title="Dequeues the next message from the mailbox that&#39;s matched by bhvr and executes the corresponding call...">receive</a>(<a class="code" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808" title="Left-hand side of a partial function expression that matches values.">on</a>&lt;<a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;result&quot;</span>), <span class="keywordtype">int</span>&gt;() &gt;&gt; [&amp;](<span class="keywordtype">int</span> r) { result = r; });</div>
 <div class="line">    <span class="comment">// print and return result</span></div>
-<div class="line">    cout &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a name="a9"></a><a class="code" href="namespacecppa.html#a76a9f2873d0e97eb7ceffb6101e8e507" title="Returns what as a string representation.">to_string</a>(operation) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; result &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a name="a10"></a><a class="code" href="namespacecppa.html#a76a9f2873d0e97eb7ceffb6101e8e507" title="Returns what as a string representation.">to_string</a>(operation) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; result &lt;&lt; endl;</div>
 <div class="line">    <span class="keywordflow">return</span> result;</div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <span class="comment">// spawn a context-switching actor that invokes math_fun</span></div>
-<div class="line">    <span class="keyword">auto</span> a1 = <a name="a10"></a><a class="code" href="group___actor_creation.html#ga6dfaa32fe8444afd935a2810672c704a" title="Spawns a new context-switching or thread-mapped actor that executes fun(args...).">spawn</a>(math_fun);</div>
+<div class="line">    <span class="keyword">auto</span> a1 = <a name="a11"></a><a class="code" href="group___actor_creation.html#ga6dfaa32fe8444afd935a2810672c704a" title="Spawns a new context-switching or thread-mapped actor that executes fun(args...).">spawn</a>(math_fun);</div>
 <div class="line">    <span class="comment">// spawn an event-based math actor</span></div>
 <div class="line">    <span class="keyword">auto</span> a2 = spawn&lt;math_actor&gt;();</div>
 <div class="line">    <span class="comment">// do some testing on both implementations</span></div>
@@ -159,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(a1, <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;quit&quot;</span>));</div>
 <div class="line">    <a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(a2, <a class="code" href="namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47" title="Creates an atom from given string literal.">atom</a>(<span class="stringliteral">&quot;quit&quot;</span>));</div>
 <div class="line">    <span class="comment">// wait until all spawned actors are terminated</span></div>
-<div class="line">    <a name="a11"></a><a class="code" href="namespacecppa.html#a185090573ffb146384ccdfa94172c23e" title="Blocks execution of this actor until all other actors finished execution.">await_all_others_done</a>();</div>
+<div class="line">    <a name="a12"></a><a class="code" href="namespacecppa.html#a185090573ffb146384ccdfa94172c23e" title="Blocks execution of this actor until all other actors finished execution.">await_all_others_done</a>();</div>
 <div class="line">    <span class="comment">// done</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
@@ -167,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 16:29:19 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 25 2012 14:00:33 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

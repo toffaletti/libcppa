@@ -12,6 +12,7 @@ var searchData=
   ['instances',['instances',['../classcppa_1_1uniform__type__info.html#a5190c6fcdbfffdf433d68026cb902002',1,'cppa::uniform_type_info']]],
   ['intrusive_5fptr',['intrusive_ptr',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20behavior_5fimpl_20_3e',['intrusive_ptr&lt; behavior_impl &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
+  ['intrusive_5fptr_3c_20channel_20_3e',['intrusive_ptr&lt; channel &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20detail_3a_3aabstract_5ftuple_20_3e',['intrusive_ptr&lt; detail::abstract_tuple &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20group_20_3e',['intrusive_ptr&lt; group &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['is_5fanything',['is_anything',['../structcppa_1_1is__anything.html',1,'cppa']]],
