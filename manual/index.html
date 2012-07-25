@@ -471,7 +471,7 @@ Developers can opt-out of this cooperative scheduling by using thread-mapped act
 Furthermore, this type is used for actors created with <CODE>spawn</CODE><CODE>&lt;</CODE><CODE>detached</CODE><CODE>&gt;</CODE>.
 It is recommended to use detached actors whenever an actor could starve other actors, e.g., by calling time-expensive, blocking system calls.
 Detached actors also could be used for actors that need to stay responsive, independent of the current work load.
-However, threads to not scale well.
+However, threads do not scale well.
 Hence, detached actors should be used only in small numbers for long-lived actors.</P><!--TOC subsubsection Context-Switching-->
 <H4 CLASS="subsubsection"><!--SEC ANCHOR --><A NAME="htoc24">4.2.2</A>  Context-Switching</H4><!--SEC END --><P>Context-switching actors have an own control flow and allow developers to spawn arbitrary functions as actors.
 The downside of context-switching actors is that each actor needs to allocate its own stack.
@@ -958,7 +958,7 @@ The two functions <CODE>receive_response</CODE> and <CODE>handle_response</CODE>
 Hence, a message sent via <CODE>send</CODE><CODE>(</CODE><CODE>whom</CODE><CODE>, </CODE><CODE>self</CODE><CODE>-&gt;</CODE><CODE>last_dequeued</CODE><CODE>())</CODE> will not yield the expected result, since it wraps <CODE>self</CODE><CODE>-&gt;</CODE><CODE>last_dequeued</CODE><CODE>()</CODE> into another <CODE>any_tuple</CODE> instance.
 </LI></UL><!--TOC subsection Sharing-->
 <H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc57">12.4</A>  Sharing</H3><!--SEC END --><UL CLASS="itemize"><LI CLASS="li-itemize">
-It’s strongly recommended to <B>not</B> share states between actors.
+It is strongly recommended to <B>not</B> share states between actors.
 In particular, no actor shall ever access member variables of another actor.
 Accessing shared memory segments concurrently can cause undefined behavior that is incredibly hard to find and debug.
 However, sharing <I>data</I> between actors is fine, as long as the data is <I>immutable</I> and all actors access the data only via smart pointers such as <CODE>std</CODE><CODE>::</CODE><CODE>shared_ptr</CODE>.
