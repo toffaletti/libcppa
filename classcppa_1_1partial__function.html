@@ -90,7 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#friends">Friends</a>  </div>
   <div class="headertitle">
 <div class="title">cppa::partial_function Class Reference</div>  </div>
 </div><!--header-->
@@ -100,23 +100,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="classcppa_1_1partial__function.html#details">More...</a></p>
 
 <p><code>#include &lt;partial_function.hpp&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for cppa::partial_function:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classcppa_1_1partial__function.png" usemap="#cppa::partial_function_map" alt=""/>
-  <map id="cppa::partial_function_map" name="cppa::partial_function_map">
-<area href="classcppa_1_1behavior.html" title="Describes the behavior of an actor." alt="cppa::behavior" shape="rect" coords="0,56,133,80"/>
-</map>
- </div></div>
 
 <p><a href="classcppa_1_1partial__function-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae605255b97ff0d38c5cb437d5cf0087c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae605255b97ff0d38c5cb437d5cf0087c"></a>
+<tr class="memitem:ac02e46621d082180d1ccf0437b48fae0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac02e46621d082180d1ccf0437b48fae0"></a>
 typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a><br class="typebreak"/>
-&lt; behavior_impl &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>impl_ptr</b></td></tr>
+&lt; detail::behavior_impl &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>impl_ptr</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -134,17 +125,14 @@ Public Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>undefined</b> () const </td></tr>
 <tr class="memitem:aeb760069c1047ebe1402fc2f3b393d93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb760069c1047ebe1402fc2f3b393d93"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>defined_at</b> (const <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;value)</td></tr>
-<tr class="memitem:a5a483c8bb81bc567afbec1944cdfb4aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a483c8bb81bc567afbec1944cdfb4aa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (<a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;value)</td></tr>
-<tr class="memitem:ae32916b2a7361eeaf59a748f69f9bc2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae32916b2a7361eeaf59a748f69f9bc2f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;value)</td></tr>
-<tr class="memitem:a95328e6b234448513255e6321eefb766"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95328e6b234448513255e6321eefb766"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (<a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;&amp;value)</td></tr>
+<tr class="memitem:adec43de3c66b703f6afd8c75b8039ead"><td class="memTemplParams" colspan="2"><a class="anchor" id="adec43de3c66b703f6afd8c75b8039ead"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adec43de3c66b703f6afd8c75b8039ead"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T &amp;&amp;arg)</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a6d740309c7dcc2d9dcb35e271360801a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d740309c7dcc2d9dcb35e271360801a"></a>
-<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; behavior_impl &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_impl</b></td></tr>
+<tr class="heading"><td colspan="2"><h2><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:afd0874b1a232632873a3de894645f5fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd0874b1a232632873a3de894645f5fd"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>behavior</b></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A partial function implementation for <a class="el" href="classcppa_1_1any__tuple.html">any_tuples</a>. </p>
@@ -154,7 +142,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2012 14:00:33 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 10 2012 11:07:19 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

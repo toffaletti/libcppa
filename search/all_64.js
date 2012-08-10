@@ -2,8 +2,10 @@ var searchData=
 [
   ['data',['data',['../classcppa_1_1binary__serializer.html#aa6e69e3a0a28d5c8ab75b00a6a64e556',1,'cppa::binary_serializer']]],
   ['deduce_5fref_5ftype',['deduce_ref_type',['../structcppa_1_1util_1_1deduce__ref__type.html',1,'cppa::util']]],
-  ['delayed_5freply',['delayed_reply',['../group___message_handling.html#ga17ee2317aaf1c830d7e24ed00bb81de2',1,'cppa']]],
-  ['delayed_5fsend',['delayed_send',['../group___message_handling.html#ga25c7716305b5d9480e1eae16098989ee',1,'cppa']]],
+  ['delayed_5freply',['delayed_reply',['../group___message_handling.html#ga6602d51b68565e23211ae034d7b00b06',1,'cppa']]],
+  ['delayed_5freply_5ftuple',['delayed_reply_tuple',['../group___message_handling.html#ga9406a01669ed4787cefb44f7dac0e101',1,'cppa']]],
+  ['delayed_5fsend',['delayed_send',['../group___message_handling.html#ga779e91c3e3bda10ad356004de80abc86',1,'cppa']]],
+  ['delayed_5fsend_5ftuple',['delayed_send_tuple',['../group___message_handling.html#ga9c243f8d541dc374ba38c0792285531b',1,'cppa']]],
   ['delete_5finstance',['delete_instance',['../classcppa_1_1uniform__type__info.html#a3193d402e2550fc09dee4b4ffee2d33d',1,'cppa::uniform_type_info::delete_instance()'],['../classcppa_1_1util_1_1abstract__uniform__type__info.html#a76708273fee5e6de788f385beb10d91d',1,'cppa::util::abstract_uniform_type_info::delete_instance()']]],
   ['demonitor',['demonitor',['../classcppa_1_1local__actor.html#adf613697189438ec487fe6b8cce5fba4',1,'cppa::local_actor']]],
   ['dequeue',['dequeue',['../classcppa_1_1event__based__actor.html#a46b4fb7f6c1b1e35c14d071297e012bb',1,'cppa::event_based_actor::dequeue(behavior &amp;)'],['../classcppa_1_1event__based__actor.html#a5bcb64c4381642deb42613ebd70c1dca',1,'cppa::event_based_actor::dequeue(partial_function &amp;)'],['../classcppa_1_1local__actor.html#a03e1d058acf5aaaedae562139d2c28b6',1,'cppa::local_actor::dequeue(partial_function &amp;pfun)=0'],['../classcppa_1_1local__actor.html#a109b1f58f9e0298c600889a8954d5fa0',1,'cppa::local_actor::dequeue(behavior &amp;bhvr)=0']]],

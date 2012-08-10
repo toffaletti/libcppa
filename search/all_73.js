@@ -7,6 +7,7 @@ var searchData=
   ['seek_5fobject',['seek_object',['../classcppa_1_1binary__deserializer.html#a485be43208045062a79d936b5ca0cba8',1,'cppa::binary_deserializer::seek_object()'],['../classcppa_1_1deserializer.html#aac302b6a8c6e3f2c0006750968b7a975',1,'cppa::deserializer::seek_object()']]],
   ['self',['self',['../namespacecppa.html#abdc77f5b27edd9e40908860db20e666d',1,'cppa']]],
   ['send',['send',['../group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b',1,'cppa']]],
+  ['send_5ftuple',['send_tuple',['../group___message_handling.html#ga3ae2b7f14f29131233296643035e5128',1,'cppa']]],
   ['serialize',['serialize',['../classcppa_1_1uniform__type__info.html#a49feca24516d39c1ecaae1801403941e',1,'cppa::uniform_type_info']]],
   ['serializer',['serializer',['../classcppa_1_1serializer.html',1,'cppa']]],
   ['set_5fscheduler',['set_scheduler',['../namespacecppa.html#a9fd959a7ff3c017ded6b64ee72dcec97',1,'cppa']]],
@@ -23,5 +24,6 @@ var searchData=
   ['subscribe',['subscribe',['../classcppa_1_1group.html#aabeb55e4593f8f25e15863ecde26542b',1,'cppa::group']]],
   ['subtype',['subtype',['../structcppa_1_1attachable_1_1token.html#ab5d5ae4f2de90cc506485f4bec93b4a9',1,'cppa::attachable::token']]],
   ['sync_5fenqueue',['sync_enqueue',['../classcppa_1_1actor.html#aff5de7ef1e44e9504379e5ec01b9e66c',1,'cppa::actor::sync_enqueue()'],['../classcppa_1_1actor__proxy.html#a627ee2f2c7637deca62e5b7df704812d',1,'cppa::actor_proxy::sync_enqueue()']]],
-  ['sync_5fsend',['sync_send',['../group___message_handling.html#ga48f4fbdf4bb8d1d262bec9eeb6d053c9',1,'cppa']]]
+  ['sync_5fsend',['sync_send',['../group___message_handling.html#ga48f4fbdf4bb8d1d262bec9eeb6d053c9',1,'cppa']]],
+  ['sync_5fsend_5ftuple',['sync_send_tuple',['../group___message_handling.html#ga5067369f214ff6f8581b87b9c730ed30',1,'cppa']]]
 ];
