@@ -27,5 +27,6 @@ var searchData=
   ['context_5fswitching_5factor',['context_switching_actor',['../classcppa_1_1context__switching__actor.html',1,'cppa']]],
   ['cow_5fptr',['cow_ptr',['../classcppa_1_1cow__ptr.html',1,'cppa']]],
   ['cow_5fptr_3c_20detail_3a_3aabstract_5ftuple_20_3e',['cow_ptr&lt; detail::abstract_tuple &gt;',['../classcppa_1_1cow__ptr.html',1,'cppa']]],
-  ['cow_5ftuple',['cow_tuple',['../classcppa_1_1cow__tuple.html',1,'cppa']]]
+  ['cow_5ftuple_3c_20head_2c_20tail_2e_2e_2e_3e',['cow_tuple&lt; Head, Tail...&gt;',['../classcppa_1_1cow__tuple_3_01_head_00_01_tail_8_8_8_4.html',1,'cppa']]],
+  ['cppa_5fexception',['cppa_exception',['../classcppa_1_1cppa__exception.html',1,'cppa']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data',['data',['../classcppa_1_1binary__serializer.html#aa6e69e3a0a28d5c8ab75b00a6a64e556',1,'cppa::binary_serializer']]],
   ['delayed_5freply',['delayed_reply',['../group___message_handling.html#ga6602d51b68565e23211ae034d7b00b06',1,'cppa']]],
   ['delayed_5freply_5ftuple',['delayed_reply_tuple',['../group___message_handling.html#ga9406a01669ed4787cefb44f7dac0e101',1,'cppa']]],
   ['delayed_5fsend',['delayed_send',['../group___message_handling.html#ga779e91c3e3bda10ad356004de80abc86',1,'cppa']]],

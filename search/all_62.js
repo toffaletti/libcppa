@@ -5,6 +5,7 @@ var searchData=
   ['begin_5fsequence',['begin_sequence',['../classcppa_1_1binary__deserializer.html#ac3858a074cec83241da7737bd90b5953',1,'cppa::binary_deserializer::begin_sequence()'],['../classcppa_1_1binary__serializer.html#a5897bff0c9e990d3f4bc2380152d8463',1,'cppa::binary_serializer::begin_sequence()'],['../classcppa_1_1deserializer.html#ab7342c6023ac82b8fc2e1c90db265f93',1,'cppa::deserializer::begin_sequence()'],['../classcppa_1_1serializer.html#a5ff6beb06c8bb85de11fdfb33f0ea0aa',1,'cppa::serializer::begin_sequence()']]],
   ['behavior',['behavior',['../classcppa_1_1behavior.html',1,'cppa']]],
   ['binary_5fdeserializer',['binary_deserializer',['../classcppa_1_1binary__deserializer.html',1,'cppa']]],
+  ['binary_5fserializer',['binary_serializer',['../classcppa_1_1binary__serializer.html#acd28bc8b2f18fc2f5d645fcec6f45de0',1,'cppa::binary_serializer']]],
   ['binary_5fserializer',['binary_serializer',['../classcppa_1_1binary__serializer.html',1,'cppa']]],
   ['bind_5ffailure',['bind_failure',['../classcppa_1_1bind__failure.html',1,'cppa']]]
 ];

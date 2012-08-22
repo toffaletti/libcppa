@@ -35,7 +35,7 @@ var searchData=
   ['pt_5fuint8',['pt_uint8',['../group___type_system.html#gga5a8afa49a3547b610d4a50b3ab1dceb6a88cb8022596d4673fede279849a67c9e',1,'cppa']]],
   ['ptr',['ptr',['../structcppa_1_1attachable_1_1token.html#ab2c49d1030e066dfd4ef314e7ac51442',1,'cppa::attachable::token::ptr()'],['../classcppa_1_1intrusive_1_1forward__iterator.html#ad5a7ab4ebc8e780e30bfb498d37352c4',1,'cppa::intrusive::forward_iterator::ptr()'],['../classcppa_1_1intrusive_1_1forward__iterator.html#a10d0f7286997641818c423c48b9db7de',1,'cppa::intrusive::forward_iterator::ptr() const ']]],
   ['ptype',['ptype',['../classcppa_1_1primitive__variant.html#ac5636545a0b5fc6116cb5a9e88d59ac1',1,'cppa::primitive_variant']]],
-  ['publish',['publish',['../namespacecppa.html#ad3d81c1373f45ac17a07f3ccae89f7f3',1,'cppa']]],
+  ['publish',['publish',['../namespacecppa.html#ad3d81c1373f45ac17a07f3ccae89f7f3',1,'cppa::publish(actor_ptr whom, std::uint16_t port)'],['../namespacecppa.html#a1d483079b5f832ecb73ed740ac42b157',1,'cppa::publish(actor_ptr whom, std::unique_ptr&lt; util::acceptor &gt; acceptor)']]],
   ['purge_5frefs',['purge_refs',['../structcppa_1_1util_1_1purge__refs.html',1,'cppa::util']]],
   ['push_5fback',['push_back',['../classcppa_1_1intrusive_1_1singly__linked__list.html#ad5ce473b1474b8d8d27aacb36ae1c220',1,'cppa::intrusive::singly_linked_list']]],
   ['push_5ffront',['push_front',['../classcppa_1_1intrusive_1_1singly__linked__list.html#a90e758981ea91ad72096e832c87a0509',1,'cppa::intrusive::singly_linked_list']]]

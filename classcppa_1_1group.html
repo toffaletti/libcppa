@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.3.3</span>
+   &#160;<span id="projectnumber">Version 0.4</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,9 +89,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="#related">Related Functions</a>  </div>
   <div class="headertitle">
@@ -121,10 +123,21 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group_1_1module.html">module</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module interface.  <a href="classcppa_1_1group_1_1module.html#details">More...</a><br/></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7b7c3b31da3fde31b3967bf7ce75aac4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b7c3b31da3fde31b3967bf7ce75aac4"></a>
+typedef <a class="el" href="classcppa_1_1group_1_1module.html">module</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>module_ptr</b></td></tr>
+<tr class="memitem:a00d9eccf7c216816ef330e77703a1a85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00d9eccf7c216816ef330e77703a1a85"></a>
+typedef std::unique_ptr&lt; <a class="el" href="classcppa_1_1group_1_1module.html">module</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>unique_module_ptr</b></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a22476aaf85f8a9a7459183a9f56fd8e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22476aaf85f8a9a7459183a9f56fd8e6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (<a class="el" href="classcppa_1_1serializer.html">serializer</a> *sink)=0</td></tr>
 <tr class="memitem:a0ca2805302d4af52ed0d5052bbf3bce9"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#a0ca2805302d4af52ed0d5052bbf3bce9">identifier</a> () const </td></tr>
 <tr class="memdesc:a0ca2805302d4af52ed0d5052bbf3bce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string representation of the group identifier.  <a href="#a0ca2805302d4af52ed0d5052bbf3bce9"></a><br/></td></tr>
+<tr class="memitem:af792b3a32f1c7e11eaf2e3d96712222f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af792b3a32f1c7e11eaf2e3d96712222f"></a>
+<a class="el" href="classcppa_1_1group_1_1module.html">module_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_module</b> () const </td></tr>
 <tr class="memitem:a2a366f8a319cb300c6ec1874b2eb296a"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#a2a366f8a319cb300c6ec1874b2eb296a">module_name</a> () const </td></tr>
 <tr class="memdesc:a2a366f8a319cb300c6ec1874b2eb296a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the module.  <a href="#a2a366f8a319cb300c6ec1874b2eb296a"></a><br/></td></tr>
 <tr class="memitem:aabeb55e4593f8f25e15863ecde26542b"><td class="memItemLeft" align="right" valign="top">virtual subscription&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#aabeb55e4593f8f25e15863ecde26542b">subscribe</a> (const <a class="el" href="classcppa_1_1channel.html#ac7df8ed0bb6003f386e088bb0dedb1df">channel_ptr</a> &amp;who)=0</td></tr>
@@ -149,23 +162,33 @@ static <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&l
 <tr class="memdesc:a27268c44307a292136b607d7aaf6c5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the group associated with <code>group_identifier</code> from the module <code>module_name</code>. . <br/></td></tr>
 <tr class="memitem:af7e024c27adcf2b5970b85cb1b1572f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1group.html">group</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#af7e024c27adcf2b5970b85cb1b1572f2">anonymous</a> ()</td></tr>
 <tr class="memdesc:af7e024c27adcf2b5970b85cb1b1572f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an anonymous group.  <a href="#af7e024c27adcf2b5970b85cb1b1572f2"></a><br/></td></tr>
-<tr class="memitem:ad8a69a374587d3d44a7dac627453dfba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a69a374587d3d44a7dac627453dfba"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#ad8a69a374587d3d44a7dac627453dfba">add_module</a> (<a class="el" href="classcppa_1_1group_1_1module.html">module</a> *)</td></tr>
-<tr class="memdesc:ad8a69a374587d3d44a7dac627453dfba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new group module to the libcppa group management. . <br/></td></tr>
+<tr class="memitem:a53508e073e6fc0466ba1dfa3fbacf908"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53508e073e6fc0466ba1dfa3fbacf908"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#a53508e073e6fc0466ba1dfa3fbacf908">add_module</a> (unique_module_ptr)</td></tr>
+<tr class="memdesc:a53508e073e6fc0466ba1dfa3fbacf908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new group module to the libcppa group management. . <br/></td></tr>
+<tr class="memitem:a05701fc9264cae44815d466e25b1bf95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05701fc9264cae44815d466e25b1bf95"></a>
+static <a class="el" href="classcppa_1_1group_1_1module.html">module_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1group.html#a05701fc9264cae44815d466e25b1bf95">get_module</a> (const std::string &amp;<a class="el" href="classcppa_1_1group.html#a2a366f8a319cb300c6ec1874b2eb296a">module_name</a>)</td></tr>
+<tr class="memdesc:a05701fc9264cae44815d466e25b1bf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the module associated with <code>module_name</code>. . <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae152a518a2cc8eb55d1cd0267b350472"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae152a518a2cc8eb55d1cd0267b350472"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>group</b> (std::string &amp;&amp;id, std::string &amp;&amp;mod_name)</td></tr>
-<tr class="memitem:aa60d6d11930a94a779f3358a3c2745c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa60d6d11930a94a779f3358a3c2745c3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>group</b> (const std::string &amp;id, const std::string &amp;mod_name)</td></tr>
+<tr class="memitem:a85c5212f5d25cdea6076b892c1e5ae95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85c5212f5d25cdea6076b892c1e5ae95"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>group</b> (<a class="el" href="classcppa_1_1group_1_1module.html">module_ptr</a> <a class="el" href="classcppa_1_1group_1_1module.html">module</a>, std::string group_id)</td></tr>
 <tr class="memitem:aea80ccf4ed62839fc5915846731934fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea80ccf4ed62839fc5915846731934fb"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>unsubscribe</b> (const <a class="el" href="classcppa_1_1channel.html#ac7df8ed0bb6003f386e088bb0dedb1df">channel_ptr</a> &amp;who)=0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a987042f94a4120f5592a7fdc044b1c26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a987042f94a4120f5592a7fdc044b1c26"></a>
+<a class="el" href="classcppa_1_1group_1_1module.html">module_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_module</b></td></tr>
+<tr class="memitem:aabe2c384f634bc44d232764d35e457e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabe2c384f634bc44d232764d35e457e0"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_identifier</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ab1d3ce2151816e84ce74cc11a5cc3bd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1d3ce2151816e84ce74cc11a5cc3bd0"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::group_manager</b></td></tr>
+<tr class="memitem:a4a8dd69dcca33d63d12b27990bf75f8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a8dd69dcca33d63d12b27990bf75f8f"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::peer_connection</b></td></tr>
 <tr class="memitem:a36fc40fc9a9b4952ad88b22e7d9d3d0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36fc40fc9a9b4952ad88b22e7d9d3d0e"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>subscription</b></td></tr>
 </table><table class="memberdecls">
@@ -206,7 +229,7 @@ typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&
 </div><div class="memdoc">
 
 <p>Returns an anonymous group. </p>
-<p>Each calls to this member function returns a new instances of an anonymous group. Anonymous groups can be used whenever a set of actors wants to communicate over an exclusive channel. </p>
+<p>Each calls to this member function returns a new instance of an anonymous group. Anonymous groups can be used whenever a set of actors wants to communicate using an exclusive channel. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="dining_philosophers_8cpp-example.html#a7">dining_philosophers.cpp</a>.</dd>
 </dl>
 </div>
@@ -280,7 +303,7 @@ typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 10 2012 11:21:29 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2012 16:16:53 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
