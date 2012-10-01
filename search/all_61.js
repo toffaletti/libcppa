@@ -21,6 +21,7 @@ var searchData=
   ['any_5fvals',['any_vals',['../namespacecppa.html#a6fd601df8b1aff0ef276f80a103c5f4e',1,'cppa']]],
   ['anything',['anything',['../structcppa_1_1anything.html',1,'cppa']]],
   ['arg_5fmatch',['arg_match',['../namespacecppa.html#a8b4879d9cdef5c6c0995b30ee37d935e',1,'cppa']]],
+  ['assert_5ftype_5fname',['assert_type_name',['../classcppa_1_1uniform__type__info.html#a77bb4580739187f06bd676e541a0f0ce',1,'cppa::uniform_type_info::assert_type_name(deserializer *src, const std::string &amp;tname)'],['../classcppa_1_1uniform__type__info.html#a7ac84f9f75721eafb7ec20355f5cfd32',1,'cppa::uniform_type_info::assert_type_name(deserializer *src) const ']]],
   ['at',['at',['../classcppa_1_1any__tuple.html#ab0974b18e1e4daf3fb4386eb2989c51b',1,'cppa::any_tuple::at()'],['../classcppa_1_1cow__tuple_3_01_head_00_01_tail_8_8_8_4.html#ab5f57c8d82bbdb634a16d225022af1f9',1,'cppa::cow_tuple&lt; Head, Tail...&gt;::at()']]],
   ['atom',['atom',['../namespacecppa.html#a9ed5b5aa07c384b14899beae80974d47',1,'cppa']]],
   ['atom_5fvalue',['atom_value',['../namespacecppa.html#a5dd69804058d7adaef774fd953c63b97',1,'cppa']]],

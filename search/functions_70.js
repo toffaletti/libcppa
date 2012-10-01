@@ -12,7 +12,8 @@ var searchData=
   ['pt_5fdispatch',['pt_dispatch',['../namespacecppa_1_1util.html#a38dc2b1191c41a94d3cc2b02471a6782',1,'cppa::util']]],
   ['ptr',['ptr',['../classcppa_1_1intrusive_1_1forward__iterator.html#ad5a7ab4ebc8e780e30bfb498d37352c4',1,'cppa::intrusive::forward_iterator::ptr()'],['../classcppa_1_1intrusive_1_1forward__iterator.html#a10d0f7286997641818c423c48b9db7de',1,'cppa::intrusive::forward_iterator::ptr() const ']]],
   ['ptype',['ptype',['../classcppa_1_1primitive__variant.html#ac5636545a0b5fc6116cb5a9e88d59ac1',1,'cppa::primitive_variant']]],
-  ['publish',['publish',['../namespacecppa.html#ad3d81c1373f45ac17a07f3ccae89f7f3',1,'cppa::publish(actor_ptr whom, std::uint16_t port)'],['../namespacecppa.html#a1d483079b5f832ecb73ed740ac42b157',1,'cppa::publish(actor_ptr whom, std::unique_ptr&lt; util::acceptor &gt; acceptor)']]],
+  ['publish',['publish',['../namespacecppa.html#a487e6c08f5f4f7de4775418547f7e93e',1,'cppa::publish(actor_ptr whom, std::uint16_t port, const char *addr=nullptr)'],['../namespacecppa.html#a1d483079b5f832ecb73ed740ac42b157',1,'cppa::publish(actor_ptr whom, std::unique_ptr&lt; util::acceptor &gt; acceptor)']]],
+  ['publish_5flocal_5fgroups_5fat',['publish_local_groups_at',['../namespacecppa.html#ae213a56201820111919afe92aa287586',1,'cppa']]],
   ['push_5fback',['push_back',['../classcppa_1_1intrusive_1_1singly__linked__list.html#ad5ce473b1474b8d8d27aacb36ae1c220',1,'cppa::intrusive::singly_linked_list']]],
   ['push_5ffront',['push_front',['../classcppa_1_1intrusive_1_1singly__linked__list.html#a90e758981ea91ad72096e832c87a0509',1,'cppa::intrusive::singly_linked_list']]]
 ];

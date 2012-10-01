@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.4</span>
+   &#160;<span id="projectnumber">Version 0.4.2</span>
    </div>
   </td>
  </tr>
@@ -142,9 +142,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5190c6fcdbfffdf433d68026cb902002"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; const <br class="typebreak"/>
 <a class="el" href="classcppa_1_1uniform__type__info.html">uniform_type_info</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1uniform__type__info.html#a5190c6fcdbfffdf433d68026cb902002">instances</a> ()</td></tr>
 <tr class="memdesc:a5190c6fcdbfffdf433d68026cb902002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all instances.  <a href="#a5190c6fcdbfffdf433d68026cb902002"></a><br/></td></tr>
+<tr class="memitem:a77bb4580739187f06bd676e541a0f0ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1uniform__type__info.html#a77bb4580739187f06bd676e541a0f0ce">assert_type_name</a> (<a class="el" href="classcppa_1_1deserializer.html">deserializer</a> *src, const std::string &amp;tname)</td></tr>
+<tr class="memdesc:a77bb4580739187f06bd676e541a0f0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks wheter <code>src-&gt;seek_object()</code> returns <code>tname</code> and throws an exception if not.  <a href="#a77bb4580739187f06bd676e541a0f0ce"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7ac84f9f75721eafb7ec20355f5cfd32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1uniform__type__info.html#a7ac84f9f75721eafb7ec20355f5cfd32">assert_type_name</a> (<a class="el" href="classcppa_1_1deserializer.html">deserializer</a> *src) const </td></tr>
+<tr class="memdesc:a7ac84f9f75721eafb7ec20355f5cfd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks wheter <code>src-&gt;seek_object()</code> returns <a class="el" href="classcppa_1_1uniform__type__info.html#a2691e562da3909c199070181d01ec068">name()</a> and throws an exception if not.  <a href="#a7ac84f9f75721eafb7ec20355f5cfd32"></a><br/></td></tr>
 <tr class="memitem:a8bf15738476e258fe22dfe035052fee8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bf15738476e258fe22dfe035052fee8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>uniform_type_info</b> (const std::string &amp;uniform_name)</td></tr>
 <tr class="memitem:a3193d402e2550fc09dee4b4ffee2d33d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1uniform__type__info.html#a3193d402e2550fc09dee4b4ffee2d33d">delete_instance</a> (void *instance) const =0</td></tr>
@@ -192,6 +196,80 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
  e.g.: <code>namespace { class foo { }; }</code> is mapped to <code>@_::foo</code> </li>
 </ul>
 </div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a77bb4580739187f06bd676e541a0f0ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cppa::uniform_type_info::assert_type_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1deserializer.html">deserializer</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks wheter <code>src-&gt;seek_object()</code> returns <code>tname</code> and throws an exception if not. </p>
+<dl class="exception"><dt>Exceptions:</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7ac84f9f75721eafb7ec20355f5cfd32"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cppa::uniform_type_info::assert_type_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcppa_1_1deserializer.html">deserializer</a> *&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks wheter <code>src-&gt;seek_object()</code> returns <a class="el" href="classcppa_1_1uniform__type__info.html#a2691e562da3909c199070181d01ec068">name()</a> and throws an exception if not. </p>
+<dl class="exception"><dt>Exceptions:</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a3193d402e2550fc09dee4b4ffee2d33d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -555,7 +633,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2012 16:18:06 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 1 2012 17:26:17 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

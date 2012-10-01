@@ -2,7 +2,7 @@ var searchData=
 [
   ['make_5fany_5ftuple',['make_any_tuple',['../namespacecppa.html#a7d0ed8b8c047b52ff833c8315b1bf963',1,'cppa']]],
   ['match',['match',['../namespacecppa.html#ad65859efc090932630d14b226b9c9624',1,'cppa::match(any_tuple what)'],['../namespacecppa.html#adaa18a8117e9022caea2b0606c11ebbc',1,'cppa::match(T &amp;&amp;what)']]],
-  ['match_5feach',['match_each',['../namespacecppa.html#a2369c61ab3411c68039880a290092c7f',1,'cppa::match_each(Container &amp;what)-&gt; detail'],['../namespacecppa.html#a9a73849c0765ff40b93159a2d70516cf',1,'cppa::match_each(std::initializer_list&lt; T &gt; what)-&gt; detail'],['../namespacecppa.html#a190b08703616bd22402836fcb24033a9',1,'cppa::match_each(InputIterator first, InputIterator last)-&gt; detail'],['../namespacecppa.html#abd625f5c7c3705bb7c951c425ce96469',1,'cppa::match_each(InputIterator first, InputIterator last, Projection proj)-&gt; detail']]],
+  ['match_5feach',['match_each',['../namespacecppa.html#a190b08703616bd22402836fcb24033a9',1,'cppa::match_each(InputIterator first, InputIterator last)-&gt; detail'],['../namespacecppa.html#abd625f5c7c3705bb7c951c425ce96469',1,'cppa::match_each(InputIterator first, InputIterator last, Projection proj)-&gt; detail']]],
   ['matches',['matches',['../classcppa_1_1attachable.html#a0fd31569245dd6c213e24bc5164d1e4d',1,'cppa::attachable']]],
   ['message_5ffuture',['message_future',['../classcppa_1_1message__future.html',1,'cppa']]],
   ['message_5fid_5ft',['message_id_t',['../classcppa_1_1message__id__t.html',1,'cppa']]],
