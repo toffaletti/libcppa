@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.4.2</span>
+   &#160;<span id="projectnumber">Version 0.5</span>
    </div>
   </td>
  </tr>
@@ -83,30 +83,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacecppa.html">cppa</a></li><li class="navelem"><a class="el" href="namespacecppa_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classcppa_1_1util_1_1io__stream.html">io_stream</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecppa.html">cppa</a></li><li class="navelem"><a class="el" href="classcppa_1_1actor__addressing.html">actor_addressing</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">cppa::util::io_stream Member List</div>  </div>
+<div class="title">cppa::actor_addressing Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="classcppa_1_1util_1_1io__stream.html">cppa::util::io_stream</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="classcppa_1_1actor__addressing.html">cppa::actor_addressing</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#a20355d1afa8b9b23956180bdec7c4ec7">deref</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcppa_1_1util_1_1input__stream.html#a1926c6038214f4dcddb17012ae69a6ee">read</a>(void *buf, size_t num_bytes)=0</td><td class="entry"><a class="el" href="classcppa_1_1util_1_1input__stream.html">cppa::util::input_stream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1util_1_1input__stream.html#aab4ac17136c8ba39287eaba8e24011ea">read_file_handle</a>() const =0</td><td class="entry"><a class="el" href="classcppa_1_1util_1_1input__stream.html">cppa::util::input_stream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classcppa_1_1util_1_1input__stream.html#a59beb971563d51dd1f4fc693e90faf44">read_some</a>(void *buf, size_t num_bytes)=0</td><td class="entry"><a class="el" href="classcppa_1_1util_1_1input__stream.html">cppa::util::input_stream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#adde91679876095e34d1ca4502e8c2ee9">ref</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#aa890095d175fd2ced20b7debbb569c5f">unique</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html#a16116e4922a4b654ec815f576bc10f20">write</a>(const void *buf, size_t num_bytes)=0</td><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html">cppa::util::output_stream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html#a98f837aa6458b3ce4a29ebcf5958faa8">write_file_handle</a>() const =0</td><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html">cppa::util::output_stream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html#abddea384bfa316eedff076fc3a0be0dd">write_some</a>(const void *buf, size_t num_bytes)=0</td><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html">cppa::util::output_stream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1actor__addressing.html#accfe92372a2fd6ba61031513479a8bbc">read</a>(deserializer *source)=0</td><td class="entry"><a class="el" href="classcppa_1_1actor__addressing.html">cppa::actor_addressing</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classcppa_1_1actor__addressing.html#aed97452273454083c58de69dd316e2ad">technology_id</a>() const =0</td><td class="entry"><a class="el" href="classcppa_1_1actor__addressing.html">cppa::actor_addressing</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1actor__addressing.html#a05df5338d088333fc1d654aa5698fc2f">write</a>(serializer *sink, const actor_ptr &amp;ptr)=0</td><td class="entry"><a class="el" href="classcppa_1_1actor__addressing.html">cppa::actor_addressing</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~actor_addressing</b>() (defined in <a class="el" href="classcppa_1_1actor__addressing.html">cppa::actor_addressing</a>)</td><td class="entry"><a class="el" href="classcppa_1_1actor__addressing.html">cppa::actor_addressing</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 16:34:28 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 27 2012 00:47:42 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

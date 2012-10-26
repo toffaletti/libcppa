@@ -7,6 +7,7 @@ var searchData=
   ['insert',['insert',['../classcppa_1_1util_1_1fixed__vector.html#a339c2780ca298a6f3b3602334de68866',1,'cppa::util::fixed_vector']]],
   ['insert_5fafter',['insert_after',['../classcppa_1_1intrusive_1_1singly__linked__list.html#a0423000a5ba08ab5e164ce115c696590',1,'cppa::intrusive::singly_linked_list']]],
   ['instances',['instances',['../classcppa_1_1uniform__type__info.html#a5190c6fcdbfffdf433d68026cb902002',1,'cppa::uniform_type_info']]],
+  ['invalid',['invalid',['../classcppa_1_1weak__intrusive__ptr.html#a8f3702d1a9f854d69d9106ad5ddb0ef7',1,'cppa::weak_intrusive_ptr']]],
   ['is_5fleft',['is_left',['../classcppa_1_1either.html#a4e577c59781fffa4721089d2be6db304',1,'cppa::either']]],
   ['is_5fproxy',['is_proxy',['../classcppa_1_1actor.html#a6c2a21b5056fbe82b73ed8e84497b0bd',1,'cppa::actor']]],
   ['is_5fright',['is_right',['../classcppa_1_1either.html#a72c6595d1cd8c25fa00f305723615388',1,'cppa::either']]],

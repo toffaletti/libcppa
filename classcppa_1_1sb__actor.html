@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.4.2</span>
+   &#160;<span id="projectnumber">Version 0.5</span>
    </div>
   </td>
  </tr>
@@ -243,10 +243,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:adde91679876095e34d1ca4502e8c2ee9 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adde91679876095e34d1ca4502e8c2ee9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#adde91679876095e34d1ca4502e8c2ee9">ref</a> ()</td></tr>
 <tr class="memdesc:adde91679876095e34d1ca4502e8c2ee9 inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases reference count by one. <br/></td></tr>
-<tr class="memitem:a20355d1afa8b9b23956180bdec7c4ec7 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#a20355d1afa8b9b23956180bdec7c4ec7">deref</a> ()</td></tr>
-<tr class="memdesc:a20355d1afa8b9b23956180bdec7c4ec7 inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases reference cound by one.  <a href="#a20355d1afa8b9b23956180bdec7c4ec7"></a><br/></td></tr>
-<tr class="memitem:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#aa890095d175fd2ced20b7debbb569c5f">unique</a> ()</td></tr>
-<tr class="memdesc:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries if there is exactly one reference.  <a href="#aa890095d175fd2ced20b7debbb569c5f"></a><br/></td></tr>
+<tr class="memitem:a9439c57c415af736d7284b160f2f6ec0 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9439c57c415af736d7284b160f2f6ec0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#a9439c57c415af736d7284b160f2f6ec0">deref</a> ()</td></tr>
+<tr class="memdesc:a9439c57c415af736d7284b160f2f6ec0 inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases reference count by one and calls <code>request_deletion</code> when it drops to zero. <br/></td></tr>
+<tr class="memitem:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa890095d175fd2ced20b7debbb569c5f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#aa890095d175fd2ced20b7debbb569c5f">unique</a> ()</td></tr>
+<tr class="memdesc:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries whether there is exactly one reference. <br/></td></tr>
+<tr class="memitem:a907a6686023122998f5b2351837c7b37 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a907a6686023122998f5b2351837c7b37"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_reference_count</b> () const </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -280,8 +284,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>do_become</b> (const 
 <tr class="inherit_header pro_methods_classcppa_1_1actor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcppa_1_1actor')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td></tr>
 <tr class="memitem:aa9d9e6b44e5113f77d65e5c72a08ecaa inherit pro_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9d9e6b44e5113f77d65e5c72a08ecaa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>actor</b> (const process_information_ptr &amp;parent=<a class="el" href="classcppa_1_1process__information.html#afc652568bb751841b0ce90cea74d8e2d">process_information::get</a>())</td></tr>
-<tr class="memitem:a4ed7f3d1a22c0b07636575a844025be3 inherit pro_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ed7f3d1a22c0b07636575a844025be3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>actor</b> (std::uint32_t aid, const process_information_ptr &amp;parent=<a class="el" href="classcppa_1_1process__information.html#afc652568bb751841b0ce90cea74d8e2d">process_information::get</a>())</td></tr>
+<tr class="memitem:a6f2dc9acff73497fec570958c43d6c91 inherit pro_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f2dc9acff73497fec570958c43d6c91"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>actor</b> (<a class="el" href="classcppa_1_1actor.html#a419bd336028a1fe6c3d44558088cc484">actor_id</a> aid, const process_information_ptr &amp;parent=<a class="el" href="classcppa_1_1process__information.html#afc652568bb751841b0ce90cea74d8e2d">process_information::get</a>())</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Derived&gt;<br/>
@@ -301,7 +305,7 @@ class cppa::sb_actor&lt; Derived &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 16:34:27 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 27 2012 00:47:43 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

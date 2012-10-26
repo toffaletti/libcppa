@@ -25,7 +25,7 @@ var searchData=
   ['static_5fforeach',['static_foreach',['../structcppa_1_1util_1_1static__foreach.html',1,'cppa::util']]],
   ['subscribe',['subscribe',['../classcppa_1_1group.html#aabeb55e4593f8f25e15863ecde26542b',1,'cppa::group']]],
   ['subtype',['subtype',['../structcppa_1_1attachable_1_1token.html#ab5d5ae4f2de90cc506485f4bec93b4a9',1,'cppa::attachable::token']]],
-  ['sync_5fenqueue',['sync_enqueue',['../classcppa_1_1actor.html#aff5de7ef1e44e9504379e5ec01b9e66c',1,'cppa::actor::sync_enqueue()'],['../classcppa_1_1actor__proxy.html#a627ee2f2c7637deca62e5b7df704812d',1,'cppa::actor_proxy::sync_enqueue()']]],
+  ['sync_5fenqueue',['sync_enqueue',['../classcppa_1_1actor.html#aff5de7ef1e44e9504379e5ec01b9e66c',1,'cppa::actor']]],
   ['sync_5fsend',['sync_send',['../group___message_handling.html#ga48f4fbdf4bb8d1d262bec9eeb6d053c9',1,'cppa']]],
   ['sync_5fsend_5ftuple',['sync_send_tuple',['../group___message_handling.html#ga5067369f214ff6f8581b87b9c730ed30',1,'cppa']]]
 ];

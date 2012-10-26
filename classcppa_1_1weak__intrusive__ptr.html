@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>libcppa: cppa::util::acceptor Class Reference</title>
+<title>libcppa: cppa::weak_intrusive_ptr&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.4.2</span>
+   &#160;<span id="projectnumber">Version 0.5</span>
    </div>
   </td>
  </tr>
@@ -83,72 +83,85 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacecppa.html">cppa</a></li><li class="navelem"><a class="el" href="namespacecppa_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classcppa_1_1util_1_1acceptor.html">acceptor</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecppa.html">cppa</a></li><li class="navelem"><a class="el" href="classcppa_1_1weak__intrusive__ptr.html">weak_intrusive_ptr</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">cppa::util::acceptor Class Reference</div>  </div>
+<div class="title">cppa::weak_intrusive_ptr&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Accepts connections from client processes.  
- <a href="classcppa_1_1util_1_1acceptor.html#details">More...</a></p>
+<p>A smart pointer that does not increase the reference count.  
+ <a href="classcppa_1_1weak__intrusive__ptr.html#details">More...</a></p>
 
-<p><code>#include &lt;acceptor.hpp&gt;</code></p>
+<p><code>#include &lt;weak_intrusive_ptr.hpp&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for cppa::weak_intrusive_ptr&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcppa_1_1weak__intrusive__ptr.png" usemap="#cppa::weak_intrusive_ptr&lt; T &gt;_map" alt=""/>
+  <map id="cppa::weak_intrusive_ptr&lt; T &gt;_map" name="cppa::weak_intrusive_ptr&lt; T &gt;_map">
+<area href="classcppa_1_1util_1_1comparable.html" alt="cppa::util::comparable&lt; weak_intrusive_ptr&lt; T &gt; &gt;" shape="rect" coords="0,0,295,24"/>
+</map>
+ </div></div>
 
-<p><a href="classcppa_1_1util_1_1acceptor-members.html">List of all members.</a></p>
+<p><a href="classcppa_1_1weak__intrusive__ptr-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a52aff08ace914bfff965a0fbe1096f37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52aff08ace914bfff965a0fbe1096f37"></a>
-virtual native_socket_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1acceptor.html#a52aff08ace914bfff965a0fbe1096f37">acceptor_file_handle</a> () const =0</td></tr>
-<tr class="memdesc:a52aff08ace914bfff965a0fbe1096f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal file descriptor. This descriptor is needed for socket multiplexing using select(). <br/></td></tr>
-<tr class="memitem:a4746c77edeaf3ef24cb3f9e40f61e4ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacecppa_1_1util.html#ab444ce5539bc82e2333ce18fd73d1730">io_stream_ptr_pair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1acceptor.html#a4746c77edeaf3ef24cb3f9e40f61e4ca">accept_connection</a> ()=0</td></tr>
-<tr class="memdesc:a4746c77edeaf3ef24cb3f9e40f61e4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts a new connection and returns an input/output stream pair.  <a href="#a4746c77edeaf3ef24cb3f9e40f61e4ca"></a><br/></td></tr>
-<tr class="memitem:a870565fbdb4abbfb150e7b074988e1d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a870565fbdb4abbfb150e7b074988e1d1"></a>
-virtual <a class="el" href="classcppa_1_1option.html">option</a><br class="typebreak"/>
-&lt; <a class="el" href="namespacecppa_1_1util.html#ab444ce5539bc82e2333ce18fd73d1730">io_stream_ptr_pair</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1util_1_1acceptor.html#a870565fbdb4abbfb150e7b074988e1d1">try_accept_connection</a> ()=0</td></tr>
-<tr class="memdesc:a870565fbdb4abbfb150e7b074988e1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to accept a new connection but immediately returns if there is no pending connection. <br/></td></tr>
+<tr class="memitem:acbb74f6679f9378cee112757d7c1c75b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbb74f6679f9378cee112757d7c1c75b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>weak_intrusive_ptr</b> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; T &gt; &amp;from)</td></tr>
+<tr class="memitem:a6d9707ac6187075bf60f777db92cf8c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d9707ac6187075bf60f777db92cf8c7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>weak_intrusive_ptr</b> (const <a class="el" href="classcppa_1_1weak__intrusive__ptr.html">weak_intrusive_ptr</a> &amp;)</td></tr>
+<tr class="memitem:a142a4696a8e684d633e5384efaead50c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a142a4696a8e684d633e5384efaead50c"></a>
+<a class="el" href="classcppa_1_1weak__intrusive__ptr.html">weak_intrusive_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classcppa_1_1weak__intrusive__ptr.html">weak_intrusive_ptr</a> &amp;)</td></tr>
+<tr class="memitem:affcad52aed9b45da89df3eaa7bfb8d1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1weak__intrusive__ptr.html#affcad52aed9b45da89df3eaa7bfb8d1b">promote</a> ()</td></tr>
+<tr class="memdesc:affcad52aed9b45da89df3eaa7bfb8d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Promotes this weak pointer to an <a class="el" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">intrusive_ptr</a>.  <a href="#affcad52aed9b45da89df3eaa7bfb8d1b"></a><br/></td></tr>
+<tr class="memitem:adb0b0f05039b3f77f4315b08881ec527"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb0b0f05039b3f77f4315b08881ec527"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1weak__intrusive__ptr.html#adb0b0f05039b3f77f4315b08881ec527">expired</a> () const </td></tr>
+<tr class="memdesc:adb0b0f05039b3f77f4315b08881ec527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries whether the object was already deleted. <br/></td></tr>
+<tr class="memitem:ad7731a5c26a81cc45ea01ddc3887d611"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7731a5c26a81cc45ea01ddc3887d611"></a>
+ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (const <a class="el" href="classcppa_1_1weak__intrusive__ptr.html">weak_intrusive_ptr</a> &amp;other) const </td></tr>
+<tr class="memitem:a8f3702d1a9f854d69d9106ad5ddb0ef7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f3702d1a9f854d69d9106ad5ddb0ef7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1weak__intrusive__ptr.html#a8f3702d1a9f854d69d9106ad5ddb0ef7">invalid</a> () const </td></tr>
+<tr class="memdesc:a8f3702d1a9f854d69d9106ad5ddb0ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries whether this weak pointer is invalid, i.e., does not point to an object. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Accepts connections from client processes. </p>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class cppa::weak_intrusive_ptr&lt; T &gt;</h3>
+
+<p>A smart pointer that does not increase the reference count. </p>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a4746c77edeaf3ef24cb3f9e40f61e4ca"></a>
+<a class="anchor" id="affcad52aed9b45da89df3eaa7bfb8d1b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespacecppa_1_1util.html#ab444ce5539bc82e2333ce18fd73d1730">io_stream_ptr_pair</a> cppa::util::acceptor::accept_connection </td>
+          <td class="memname"><a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt;T&gt; <a class="el" href="classcppa_1_1weak__intrusive__ptr.html">cppa::weak_intrusive_ptr</a>&lt; T &gt;::promote </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Accepts a new connection and returns an input/output stream pair. </p>
-<dl class="section note"><dt>Note:</dt><dd>This member function blocks until a new connection was established. </dd></dl>
+<p>Promotes this weak pointer to an <a class="el" href="classcppa_1_1intrusive__ptr.html" title="An intrusive, reference counting smart pointer impelementation.">intrusive_ptr</a>. </p>
+<dl class="section warning"><dt>Warning:</dt><dd>Returns <code>nullptr</code> if <a class="el" href="classcppa_1_1weak__intrusive__ptr.html#adb0b0f05039b3f77f4315b08881ec527">expired()</a>. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>cppa/util/acceptor.hpp</li>
+<li>cppa/weak_intrusive_ptr.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 16:34:28 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 27 2012 00:47:43 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

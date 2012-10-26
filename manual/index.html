@@ -56,7 +56,7 @@ An implementation of the actor model for C++
   
   
 User Manual 
-libcppa version 0.4.2
+libcppa version 0.5
 </title>
 </head>
 <body >
@@ -68,7 +68,7 @@ An implementation of the actor model for C++<br>
  <br>
  <br>
 User Manual<br>
-<span style="font-family:monospace">libcppa</span> version 0.4.2</h1><h3 class="titlerest">Dominik Charousset</h3></td></tr>
+<span style="font-family:monospace">libcppa</span> version 0.5</h1><h3 class="titlerest">Dominik Charousset</h3></td></tr>
 </table><!--TOC section id=sec1 Contents-->
 <h2 id="sec1" class="section">Contents</h2><!--SEC END --><ul class="toc"><li class="li-toc">
 <a href="#sec2">1  First Steps</a>
@@ -159,17 +159,18 @@ User Manual<br>
 </li><li class="li-toc"><a href="#sec57">12  Common Pitfalls</a>
 <ul class="toc"><li class="li-toc">
 <a href="#sec58">12.1  Event-Based API</a>
-</li><li class="li-toc"><a href="#sec59">12.2  Synchronous Messages</a>
-</li><li class="li-toc"><a href="#sec60">12.3  Sending Messages</a>
-</li><li class="li-toc"><a href="#sec61">12.4  Sharing</a>
+</li><li class="li-toc"><a href="#sec59">12.2  Mixing Event-Based and Blocking API</a>
+</li><li class="li-toc"><a href="#sec60">12.3  Synchronous Messages</a>
+</li><li class="li-toc"><a href="#sec61">12.4  Sending Messages</a>
+</li><li class="li-toc"><a href="#sec62">12.5  Sharing</a>
 </li></ul>
-</li><li class="li-toc"><a href="#sec62">13  Platform-Independent Type System</a>
+</li><li class="li-toc"><a href="#sec63">13  Platform-Independent Type System</a>
 <ul class="toc"><li class="li-toc">
-<a href="#sec63">13.1  User-Defined Data Types in Messages</a>
+<a href="#sec64">13.1  User-Defined Data Types in Messages</a>
 </li></ul>
-</li><li class="li-toc"><a href="#sec64">14  Appendix</a>
+</li><li class="li-toc"><a href="#sec65">14  Appendix</a>
 <ul class="toc"><li class="li-toc">
-<a href="#sec65">14.1  Class <code>option</code></a>
+<a href="#sec66">14.1  Class <code>option</code></a>
 </li></ul>
 </li></ul>
 <!--TOC section id=sec2 First Steps-->
@@ -198,6 +199,9 @@ GCC ≥ 4.7
 <h3 id="sec5" class="subsection">1.3  Supported Operating Systems</h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
 Linux
 </li><li class="li-itemize">Mac OS X
+</li><li class="li-itemize"><span style="font-style:italic">Note for MS Windows</span>:
+<span style="font-family:monospace">libcppa</span> relies on C++11 features such as variadic templates.
+We will support this platform as soon as Microsoft’s compiler implements all required C++11 features.
 </li></ul>
 <!--TOC subsection id=sec6 Hello World Example-->
 <h3 id="sec6" class="subsection">1.4  Hello World Example</h3><!--SEC END --><div class="lstlisting"><span style="font-size:small"><span style="color:blue">#include</span></span><span style="font-size:small"> &lt;</span><span style="font-size:small">string</span><span style="font-size:small">&gt;</span><span style="font-size:small">
@@ -911,17 +915,17 @@ Unlike exit messages, down messages are always treated like any other ordinary m
 </span><span style="font-size:small">);</span></div><p>Monitors are redundant.
 Hence, actors will receive one down message for each monitor.</p>
 <!--TOC subsection id=sec45 Error Codes-->
-<h3 id="sec45" class="subsection">8.3  Error Codes</h3><!--SEC END --><p>All error codes are defined in the namespace <code>cppa</code><code>::</code><code>exit_reason</code>.</p><table style="border-spacing:6px;border-collapse:separate;width:100%" class="cellpading0"><tr><td class="hbar" colspan=2></td></tr>
-<tr><td style="vertical-align:middle;text-align:left;" > <code>normal</code></td><td style="vertical-align:middle;text-align:left;" >Actor finished execution without error </td></tr>
-<tr><td class="hbar" colspan=2></td></tr>
-<tr><td style="vertical-align:middle;text-align:left;" > <code>unhandled_exception</code></td><td style="vertical-align:middle;text-align:left;" >Actor was killed due to an unhandled exception </td></tr>
-<tr><td class="hbar" colspan=2></td></tr>
-<tr><td style="vertical-align:middle;text-align:left;" > <code>unallowed_function_call</code></td><td style="vertical-align:middle;text-align:left;" >Indicates that an event-based actor tried to use blocking receive calls </td></tr>
-<tr><td class="hbar" colspan=2></td></tr>
-<tr><td style="vertical-align:middle;text-align:left;" > <code>remote_link_unreachable</code></td><td style="vertical-align:middle;text-align:left;" >Indicates that a remote actor became unreachable, e.g., due to connection error </td></tr>
-<tr><td class="hbar" colspan=2></td></tr>
-<tr><td style="vertical-align:middle;text-align:left;" > <code>user_defined</code></td><td style="vertical-align:middle;text-align:left;" >Minimum value for user-defined exit codes </td></tr>
-<tr><td class="hbar" colspan=2></td></tr>
+<h3 id="sec45" class="subsection">8.3  Error Codes</h3><!--SEC END --><p>All error codes are defined in the namespace <code>cppa</code><code>::</code><code>exit_reason</code>.</p><table style="border-spacing:6px;border-collapse:separate;width:100%" class="cellpading0"><tr><td class="hbar" colspan=3></td></tr>
+<tr><td style="vertical-align:middle;text-align:left;" > <code>normal</code></td><td style="vertical-align:middle;text-align:left;" >1</td><td style="vertical-align:middle;text-align:left;" >Actor finished execution without error </td></tr>
+<tr><td class="hbar" colspan=3></td></tr>
+<tr><td style="vertical-align:middle;text-align:left;" > <code>unhandled_exception</code></td><td style="vertical-align:middle;text-align:left;" >2</td><td style="vertical-align:middle;text-align:left;" >Actor was killed due to an unhandled exception </td></tr>
+<tr><td class="hbar" colspan=3></td></tr>
+<tr><td style="vertical-align:middle;text-align:left;" > <code>unallowed_function_call</code></td><td style="vertical-align:middle;text-align:left;" >3</td><td style="vertical-align:middle;text-align:left;" >Indicates that an event-based actor tried to use blocking receive calls </td></tr>
+<tr><td class="hbar" colspan=3></td></tr>
+<tr><td style="vertical-align:middle;text-align:left;" > <code>remote_link_unreachable</code></td><td style="vertical-align:middle;text-align:left;" >257</td><td style="vertical-align:middle;text-align:left;" >Indicates that a remote actor became unreachable, e.g., due to connection error </td></tr>
+<tr><td class="hbar" colspan=3></td></tr>
+<tr><td style="vertical-align:middle;text-align:left;" > <code>user_defined</code></td><td style="vertical-align:middle;text-align:left;" >65536</td><td style="vertical-align:middle;text-align:left;" >Minimum value for user-defined exit codes </td></tr>
+<tr><td class="hbar" colspan=3></td></tr>
 </table>
 <!--TOC subsection id=sec46 Attach Cleanup Code to an Actor-->
 <h3 id="sec46" class="subsection">8.4  Attach Cleanup Code to an Actor</h3><!--SEC END --><p>Actors can attach cleanup code to other actors.
@@ -1003,8 +1007,10 @@ To spawn actors as members of a group see Section <a href="#Sec%3A%3AGroup%3A%3A
 <h2 id="sec50" class="section">10  Network Transparency</h2><!--SEC END --><p>All actor operations as well as sending messages are network transparent.
 Remote actors are represented by actor proxies that forward all messages.</p>
 <!--TOC subsection id=sec51 Publishing of Actors-->
-<h3 id="sec51" class="subsection">10.1  Publishing of Actors</h3><!--SEC END --><div class="lstlisting"><span style="font-size:small"><span style="color:blue">void</span></span><span style="font-size:small"> </span><span style="font-size:small">publish</span><span style="font-size:small">(</span><span style="font-size:small">actor_ptr</span><span style="font-size:small"> </span><span style="font-size:small">whom</span><span style="font-size:small">, </span><span style="font-size:small">std</span><span style="font-size:small">::</span><span style="font-size:small">uint16_t</span><span style="font-size:small"> </span><span style="font-size:small">port</span><span style="font-size:small">)</span></div><p>The function <code>publish</code> binds an actor to a given port.
-It throws <code>network_error</code> if socket related errors occur or <code>bind_failure</code> if the specified port is already in use.</p><div class="lstlisting"><span style="font-size:small">publish</span><span style="font-size:small">(</span><span style="font-size:small">self</span><span style="font-size:small">, 4242);</span><span style="font-size:small">
+<h3 id="sec51" class="subsection">10.1  Publishing of Actors</h3><!--SEC END --><div class="lstlisting"><span style="font-size:small"><span style="color:blue">void</span></span><span style="font-size:small"> </span><span style="font-size:small">publish</span><span style="font-size:small">(</span><span style="font-size:small">actor_ptr</span><span style="font-size:small"> </span><span style="font-size:small">whom</span><span style="font-size:small">, </span><span style="font-size:small">std</span><span style="font-size:small">::</span><span style="font-size:small">uint16_t</span><span style="font-size:small"> </span><span style="font-size:small">port</span><span style="font-size:small">, </span><span style="font-size:small"><span style="color:blue">const</span></span><span style="font-size:small"> </span><span style="font-size:small"><span style="color:blue">char</span></span><span style="font-size:small">* </span><span style="font-size:small">addr</span><span style="font-size:small"> = 0)</span></div><p>The function <code>publish</code> binds an actor to a given port.
+It throws <code>network_error</code> if socket related errors occur or <code>bind_failure</code> if the specified port is already in use.
+The optional <code>addr</code> parameter can be used to listen only to the given IP address.
+Otherwise, the actor accepts all incoming connections (<code>INADDR_ANY</code>).</p><div class="lstlisting"><span style="font-size:small">publish</span><span style="font-size:small">(</span><span style="font-size:small">self</span><span style="font-size:small">, 4242);</span><span style="font-size:small">
 </span><span style="font-size:small">receive_loop</span><span style="font-size:small"> (</span><span style="font-size:small">
 </span><span style="font-size:small">  </span><span style="font-size:small">on</span><span style="font-size:small">(</span><span style="font-size:small">atom</span><span style="font-size:small">(</span><span style="font-size:small"><span style="color:#007F00"><span style="font-size:small">"ping"</span></span></span><span style="font-size:small">), </span><span style="font-size:small">arg_match</span><span style="font-size:small">) &gt;&gt; [](</span><span style="font-size:small"><span style="color:blue">int</span></span><span style="font-size:small"> </span><span style="font-size:small">i</span><span style="font-size:small">) {</span><span style="font-size:small">
 </span><span style="font-size:small">    </span><span style="font-size:small">reply</span><span style="font-size:small">(</span><span style="font-size:small">atom</span><span style="font-size:small">(</span><span style="font-size:small"><span style="color:#007F00"><span style="font-size:small">"pong"</span></span></span><span style="font-size:small">), </span><span style="font-size:small">i</span><span style="font-size:small">);</span><span style="font-size:small">
@@ -1067,36 +1073,44 @@ The group handle is always the first argument, as shown in the examples below.</
 The functions <code>become</code> and <code>handle_response</code> do not block, i.e., always return immediately.
 Thus, you should <span style="font-style:italic">always</span> capture by value in event-based actors, because all references on the stack will cause undefined behavior if a lambda is executed.
 </li></ul>
-<!--TOC subsection id=sec59 Synchronous Messages-->
-<h3 id="sec59" class="subsection">12.2  Synchronous Messages</h3><!--SEC END --><ul class="itemize"><li class="li-itemize"><code>send</code><code>(</code><code>self</code><code>-&gt;</code><code>last_sender</code><code>(), ...)</code> is <span style="font-weight:bold">not</span> equal to <code>reply</code><code>(...)</code>.
+<!--TOC subsection id=sec59 Mixing Event-Based and Blocking API-->
+<h3 id="sec59" class="subsection">12.2  Mixing Event-Based and Blocking API</h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+Blocking <span style="font-family:monospace">libcppa</span> function such as <code>receive</code> will <span style="font-weight:bold">throw an exception</span> if accessed from an event-based actor.
+To catch as many errors as possible at compile-time, <span style="font-family:monospace">libcppa</span> will produce an error if <code>receive</code> is called and the <code><span style="color:blue">this</span></code> pointer is set and points to an event-based actor.</li><li class="li-itemize">Context-switching and thread-mapped actors <span style="font-style:italic">can</span> use the <code>become</code> API, <span style="font-weight:bold">but</span> they should use it either exclusively or not at all.
+Whenever a non-event-based actor calls <code>become</code><code>()</code> for the first time, it will create a behavior stack and execute it until the behavior stack is empty.
+Thus, the <span style="font-style:italic">initial</span> <code>become</code> <span style="font-style:italic">blocks</span> until the behavior stack is empty, whereas all subsequent calls to <code>become</code> will return immediately.
+Related functions, e.g., <code>sync_send</code><code>(...).</code><code>then</code><code>(...)</code>, behave the same, as they manipulate the behavior as well.
+</li></ul>
+<!--TOC subsection id=sec60 Synchronous Messages-->
+<h3 id="sec60" class="subsection">12.3  Synchronous Messages</h3><!--SEC END --><ul class="itemize"><li class="li-itemize"><code>send</code><code>(</code><code>self</code><code>-&gt;</code><code>last_sender</code><code>(), ...)</code> is <span style="font-weight:bold">not</span> equal to <code>reply</code><code>(...)</code>.
 The two functions <code>receive_response</code> and <code>handle_response</code> will only recognize messages send via either <code>reply</code> or <code>reply_tuple</code>.</li><li class="li-itemize">A future returned by <code>sync_send</code> represents <em>exactly one</em> response message.
 Therefore, it is not possible to receive more than one response message.
 Calling <code>reply</code> more than once will result in lost messages and calling <code>handle_response</code> or <code>receive_response</code> more than once on a future will throw an exception.</li><li class="li-itemize">The future returned by <code>sync_send</code> is bound to the calling actor.
 It is not possible to transfer such a future to another actor.
 Calling <code>receive_response</code> or <code>handle_response</code> for a future bound to another actor is undefined behavior.</li></ul>
-<!--TOC subsection id=sec60 Sending Messages-->
-<h3 id="sec60" class="subsection">12.3  Sending Messages</h3><!--SEC END --><ul class="itemize"><li class="li-itemize"><code>send</code><code>(</code><code>whom</code><code>, ...)</code> is syntactic sugar for <code>whom</code><code> &lt;&lt; </code><code>make_any_tuple</code><code>(...)</code>.
+<!--TOC subsection id=sec61 Sending Messages-->
+<h3 id="sec61" class="subsection">12.4  Sending Messages</h3><!--SEC END --><ul class="itemize"><li class="li-itemize"><code>send</code><code>(</code><code>whom</code><code>, ...)</code> is syntactic sugar for <code>whom</code><code> &lt;&lt; </code><code>make_any_tuple</code><code>(...)</code>.
 Hence, a message sent via <code>send</code><code>(</code><code>whom</code><code>, </code><code>self</code><code>-&gt;</code><code>last_dequeued</code><code>())</code> will not yield the expected result, since it wraps <code>self</code><code>-&gt;</code><code>last_dequeued</code><code>()</code> into another <code>any_tuple</code> instance.
 The correct way of forwarding messages is <code>self</code><code>-&gt;</code><code>forward_to</code><code>(</code><code>whom</code><code>)</code>.</li></ul>
-<!--TOC subsection id=sec61 Sharing-->
-<h3 id="sec61" class="subsection">12.4  Sharing</h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
+<!--TOC subsection id=sec62 Sharing-->
+<h3 id="sec62" class="subsection">12.5  Sharing</h3><!--SEC END --><ul class="itemize"><li class="li-itemize">
 It is strongly recommended to <span style="font-weight:bold">not</span> share states between actors.
-In particular, no actor shall ever access member variables of another actor.
+In particular, no actor shall ever access member variables or member functions of another actor.
 Accessing shared memory segments concurrently can cause undefined behavior that is incredibly hard to find and debug.
 However, sharing <span style="font-style:italic">data</span> between actors is fine, as long as the data is <span style="font-style:italic">immutable</span> and all actors access the data only via smart pointers such as <code>std</code><code>::</code><code>shared_ptr</code>.
 Nevertheless, the recommended way of sharing informations is message passing.
 Sending data to multiple actors does <span style="font-style:italic">not</span> result in copying the data several times.
 Read Section <a href="#Sec%3A%3ATuples">2</a> to learn more about <span style="font-family:monospace">libcppa</span>’s copy-on-write optimization for tuples.
 </li></ul>
-<!--TOC section id=sec62 Platform-Independent Type System-->
-<h2 id="sec62" class="section">13  Platform-Independent Type System</h2><!--SEC END --><p>
+<!--TOC section id=sec63 Platform-Independent Type System-->
+<h2 id="sec63" class="section">13  Platform-Independent Type System</h2><!--SEC END --><p>
 <a id="Sec::TypeSystem"></a></p><p><span style="font-family:monospace">libcppa</span> provides a fully network transparent communication between actors.
 Thus, <span style="font-family:monospace">libcppa</span> needs to serialize and deserialize messages.
 Unfortunately, this is not possible using the RTTI system of C++.
 <span style="font-family:monospace">libcppa</span> uses its own RTTI based on the class <code>uniform_type_info</code>, since it is not possible to extend <code>std</code><code>::</code><code><span style="color:blue">type_info</span></code>.</p><p>Unlike <code>std</code><code>::</code><code><span style="color:blue">type_info</span></code><code>::</code><code>name</code><code>()</code>, <code>uniform_type_info</code><code>::</code><code>name</code><code>()</code> is guaranteed to return the same name on all supported platforms. Furthermore, it allows to create an instance of a type by name.</p><div class="lstlisting"><span style="font-size:small"><span style="color:#7F007F"><span style="font-size:small">// creates a signed, 32 bit integer</span></span></span><span style="font-size:small">
 </span><span style="font-size:small">cppa</span><span style="font-size:small">::</span><span style="font-size:small">object</span><span style="font-size:small"> </span><span style="font-size:small">i</span><span style="font-size:small"> = </span><span style="font-size:small">cppa</span><span style="font-size:small">::</span><span style="font-size:small">uniform_typeid</span><span style="font-size:small">&lt;</span><span style="font-size:small"><span style="color:blue">int</span></span><span style="font-size:small">&gt;()-&gt;</span><span style="font-size:small">create</span><span style="font-size:small">();</span></div><p>However, you should rarely if ever need to use <code>object</code> or <code>uniform_type_info</code>.</p>
-<!--TOC subsection id=sec63 User-Defined Data Types in Messages-->
-<h3 id="sec63" class="subsection">13.1  User-Defined Data Types in Messages</h3><!--SEC END --><p>
+<!--TOC subsection id=sec64 User-Defined Data Types in Messages-->
+<h3 id="sec64" class="subsection">13.1  User-Defined Data Types in Messages</h3><!--SEC END --><p>
 <a id="Sec::TypeSystem::UserDefined"></a></p><p>All user-defined types must be explicitly “announced” so that <span style="font-family:monospace">libcppa</span> can (de)serialize them correctly, as shown in the example below.</p><div class="lstlisting"><span style="font-size:small"><span style="color:blue">#include</span></span><span style="font-size:small"> </span><span style="font-size:small"><span style="color:#007F00"><span style="font-size:small">"cppa/cppa.hpp"</span></span></span><span style="font-size:small">
 </span><span style="font-size:small"><span style="color:blue">using</span></span><span style="font-size:small"> </span><span style="font-size:small"><span style="color:blue">namespace</span></span><span style="font-size:small"> </span><span style="font-size:small">cppa</span><span style="font-size:small">;</span><span style="font-size:small">
 </span><span style="font-size:small">
@@ -1112,10 +1126,10 @@ See the announce examples 1 – 4 of the standard distribution for more details.
 You have to implement serialize/deserialize by yourself if your class does implement an unsupported data structure.
 See <code>announce_example_5</code><code>.</code><code>cpp</code> in the examples folder.
 </p>
-<!--TOC section id=sec64 Appendix-->
-<h2 id="sec64" class="section">14  Appendix</h2><!--SEC END -->
-<!--TOC subsection id=sec65 Class <code>option</code>-->
-<h3 id="sec65" class="subsection">14.1  Class <code>option</code></h3><!--SEC END --><p>
+<!--TOC section id=sec65 Appendix-->
+<h2 id="sec65" class="section">14  Appendix</h2><!--SEC END -->
+<!--TOC subsection id=sec66 Class <code>option</code>-->
+<h3 id="sec66" class="subsection">14.1  Class <code>option</code></h3><!--SEC END --><p>
 <a id="Appendix::Option"></a></p><p>Defined in header <code><span style="color:#007F00"><code>"cppa/option.hpp"</code></span></code>.</p><div class="lstlisting"><span style="font-size:small"><span style="color:blue">template</span></span><span style="font-size:small">&lt;</span><span style="font-size:small"><span style="color:blue">typename</span></span><span style="font-size:small"> </span><span style="font-size:small">T</span><span style="font-size:small">&gt;</span><span style="font-size:small">
 </span><span style="font-size:small"><span style="color:blue">class</span></span><span style="font-size:small"> </span><span style="font-size:small">option</span><span style="font-size:small">;</span></div><p>Represents an optional value.</p><table style="border-spacing:6px;border-collapse:separate;width:100%" class="cellpading0"><tr><td style="text-align:left;white-space:nowrap"  colspan=2><span style="font-size:large"><span style="font-weight:bold">Member types</span></span><span style="font-size:small"> </span></td></tr>
 <tr><td class="hbar" colspan=2><span style="font-size:small"></span></td></tr>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.4.2</span>
+   &#160;<span id="projectnumber">Version 0.5</span>
    </div>
   </td>
  </tr>
@@ -83,27 +83,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacecppa.html">cppa</a></li><li class="navelem"><a class="el" href="namespacecppa_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classcppa_1_1util_1_1output__stream.html">output_stream</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecppa.html">cppa</a></li><li class="navelem"><a class="el" href="namespacecppa_1_1network.html">network</a></li><li class="navelem"><a class="el" href="classcppa_1_1network_1_1continuable__writer.html">continuable_writer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">cppa::util::output_stream Member List</div>  </div>
+<div class="title">cppa::network::continuable_writer Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="classcppa_1_1util_1_1output__stream.html">cppa::util::output_stream</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="classcppa_1_1network_1_1continuable__writer.html">cppa::network::continuable_writer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#a20355d1afa8b9b23956180bdec7c4ec7">deref</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#adde91679876095e34d1ca4502e8c2ee9">ref</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#aa890095d175fd2ced20b7debbb569c5f">unique</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html#a16116e4922a4b654ec815f576bc10f20">write</a>(const void *buf, size_t num_bytes)=0</td><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html">cppa::util::output_stream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html#a98f837aa6458b3ce4a29ebcf5958faa8">write_file_handle</a>() const =0</td><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html">cppa::util::output_stream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html#abddea384bfa316eedff076fc3a0be0dd">write_some</a>(const void *buf, size_t num_bytes)=0</td><td class="entry"><a class="el" href="classcppa_1_1util_1_1output__stream.html">cppa::util::output_stream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>continuable_writer</b>(native_socket_type write_handle) (defined in <a class="el" href="classcppa_1_1network_1_1continuable__writer.html">cppa::network::continuable_writer</a>)</td><td class="entry"><a class="el" href="classcppa_1_1network_1_1continuable__writer.html">cppa::network::continuable_writer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classcppa_1_1network_1_1continuable__writer.html#a3db30d4247b3f17939320994b08de9f1">continue_writing</a>()=0</td><td class="entry"><a class="el" href="classcppa_1_1network_1_1continuable__writer.html">cppa::network::continuable_writer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#a9439c57c415af736d7284b160f2f6ec0">deref</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_reference_count</b>() const  (defined in <a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a>)</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#adde91679876095e34d1ca4502e8c2ee9">ref</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>ref_counted</b>() (defined in <a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a>)</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#a35af25822f676b59abdd8675143677c4">request_deletion</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#aa890095d175fd2ced20b7debbb569c5f">unique</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1network_1_1continuable__writer.html#a0de29b8e4201f82d5a3b8d643403513f">write_handle</a>() const </td><td class="entry"><a class="el" href="classcppa_1_1network_1_1continuable__writer.html">cppa::network::continuable_writer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~ref_counted</b>() (defined in <a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a>)</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 16:34:28 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 27 2012 00:47:43 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
