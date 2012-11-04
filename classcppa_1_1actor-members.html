@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.5</span>
+   &#160;<span id="projectnumber">Version 0.5.1</span>
    </div>
   </td>
  </tr>
@@ -94,8 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classcppa_1_1actor.html">cppa::actor</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>actor</b>(const process_information_ptr &amp;parent=process_information::get()) (defined in <a class="el" href="classcppa_1_1actor.html">cppa::actor</a>)</td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>actor</b>(actor_id aid, const process_information_ptr &amp;parent=process_information::get()) (defined in <a class="el" href="classcppa_1_1actor.html">cppa::actor</a>)</td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>actor</b>() (defined in <a class="el" href="classcppa_1_1actor.html">cppa::actor</a>)</td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>actor</b>(actor_id aid) (defined in <a class="el" href="classcppa_1_1actor.html">cppa::actor</a>)</td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1actor.html#a419bd336028a1fe6c3d44558088cc484">actor_id</a> typedef</td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"><span class="mlabel">related</span></td></tr>
   <tr><td class="entry"><a class="el" href="classcppa_1_1actor.html#a15b74113cbde6221df8f00c25b6c2a56">actor_ptr</a> typedef</td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"><span class="mlabel">related</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1actor.html#a1f4813520d9e42e81418ef5688fa01ce">attach</a>(attachable *ptr)=0</td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -112,8 +112,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classcppa_1_1actor.html#a1bcf6d0dda3abb9ba1811c62efc998c9">id</a>() const </td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1actor.html#a6c2a21b5056fbe82b73ed8e84497b0bd">is_proxy</a>() const </td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classcppa_1_1actor.html#af91bd4bf9414307b1c95e1996d3a065d">link_to</a>(const intrusive_ptr&lt; actor &gt; &amp;other)=0</td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1actor.html#a87ed615d0b51a21ed8c7963c60b8c58b">parent_process</a>() const </td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classcppa_1_1actor.html#a4cc1aa76e5a902d82b05c05fa7ade100">parent_process_ptr</a>() const </td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html#adde91679876095e34d1ca4502e8c2ee9">ref</a>()</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>ref_counted</b>() (defined in <a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a>)</td><td class="entry"><a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classcppa_1_1actor.html#ad1f8d44644f596ff1e4c77fe162a3b58">remove_backlink</a>(const intrusive_ptr&lt; actor &gt; &amp;other)=0</td><td class="entry"><a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -126,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 27 2012 00:47:42 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 4 2012 01:12:26 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

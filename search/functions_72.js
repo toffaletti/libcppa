@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['read',['read',['../classcppa_1_1actor__addressing.html#accfe92372a2fd6ba61031513479a8bbc',1,'cppa::actor_addressing::read()'],['../classcppa_1_1network_1_1input__stream.html#a0196a62a625e142ebb2f2e7bbc89fabe',1,'cppa::network::input_stream::read()']]],
+  ['read',['read',['../classcppa_1_1actor__addressing.html#accfe92372a2fd6ba61031513479a8bbc',1,'cppa::actor_addressing::read()'],['../classcppa_1_1deserializer.html#a76a57d6be828872d531fd6d4cde5ec59',1,'cppa::deserializer::read()'],['../classcppa_1_1network_1_1input__stream.html#a0196a62a625e142ebb2f2e7bbc89fabe',1,'cppa::network::input_stream::read()']]],
   ['read_5fhandle',['read_handle',['../classcppa_1_1network_1_1continuable__reader.html#ab4b522c8f816c932d4915d7ff498b92d',1,'cppa::network::continuable_reader::read_handle()'],['../classcppa_1_1network_1_1input__stream.html#ab3cde8e255d234ea52205c2f5c174388',1,'cppa::network::input_stream::read_handle()']]],
   ['read_5fraw',['read_raw',['../classcppa_1_1binary__deserializer.html#a82079f60415f4eacbce8d1dcb82b98b3',1,'cppa::binary_deserializer::read_raw()'],['../classcppa_1_1deserializer.html#a4d1b5b13c191586f8a06d9e997654bec',1,'cppa::deserializer::read_raw()']]],
   ['read_5fsome',['read_some',['../classcppa_1_1network_1_1input__stream.html#a3630fe70fdef2ff9b5d9caa7892a41e3',1,'cppa::network::input_stream']]],
@@ -12,6 +12,7 @@ var searchData=
   ['receive_5floop',['receive_loop',['../classcppa_1_1event__based__actor.html#aafdbb93d3f17c9727324939823e7de09',1,'cppa::event_based_actor::receive_loop()'],['../namespacecppa.html#a779def4c306e2d63d1cd74fe2d9d7cb1',1,'cppa::receive_loop()']]],
   ['receive_5fresponse',['receive_response',['../group___message_handling.html#ga84570199b65a462b1acf37e1428dcc16',1,'cppa']]],
   ['receive_5fwhile',['receive_while',['../classcppa_1_1event__based__actor.html#aeddf3be708f98ad7e03cd06dad0d1506',1,'cppa::event_based_actor::receive_while()'],['../namespacecppa.html#af50e3deafdaddd7159f915841e7fe24c',1,'cppa::receive_while()']]],
+  ['receiver',['receiver',['../classcppa_1_1response__handle.html#a20e0b80b9157f0e015dcdf0b234f7c9e',1,'cppa::response_handle']]],
   ['ref',['ref',['../classcppa_1_1ref__counted.html#adde91679876095e34d1ca4502e8c2ee9',1,'cppa::ref_counted']]],
   ['release',['release',['../classcppa_1_1intrusive__ptr.html#a00666205fea1ffb837142e5bb951bfba',1,'cppa::intrusive_ptr']]],
   ['remote_5factor',['remote_actor',['../namespacecppa.html#a76739f7f372b92999ee9b80d332093bd',1,'cppa::remote_actor(const char *host, std::uint16_t port)'],['../namespacecppa.html#a1e44ab5ef88ac98dd909f3a09bbf181d',1,'cppa::remote_actor(const std::string &amp;host, std::uint16_t port)'],['../namespacecppa.html#aa39f7d863455eec31681ebd1879e4fd6',1,'cppa::remote_actor(network::io_stream_ptr_pair connection)']]],
@@ -20,8 +21,11 @@ var searchData=
   ['remove_5ffirst',['remove_first',['../classcppa_1_1intrusive_1_1singly__linked__list.html#ac47b13d0a28eaeae84916ebdb4e99e6f',1,'cppa::intrusive::singly_linked_list']]],
   ['remove_5fif',['remove_if',['../classcppa_1_1intrusive_1_1singly__linked__list.html#a63fcde7eb941284007198c5b2e63792a',1,'cppa::intrusive::singly_linked_list']]],
   ['reply',['reply',['../group___message_handling.html#gac8769898500320bfc51235a5fe771b11',1,'cppa']]],
+  ['reply_5fto',['reply_to',['../group___message_handling.html#ga65519e00c02599a6524125ab379a1b72',1,'cppa']]],
   ['reply_5ftuple',['reply_tuple',['../group___message_handling.html#ga4d847736b07a78186a20cd2b25e7fa47',1,'cppa']]],
+  ['reply_5ftuple_5fto',['reply_tuple_to',['../group___message_handling.html#ga9a4dc7aa969b618f88f0571c0b8ea3d9',1,'cppa']]],
   ['request_5fdeletion',['request_deletion',['../classcppa_1_1ref__counted.html#a35af25822f676b59abdd8675143677c4',1,'cppa::ref_counted']]],
+  ['response_5fid',['response_id',['../classcppa_1_1response__handle.html#a7a48bd6bd4bf6d312a28f0ca1770ad30',1,'cppa::response_handle']]],
   ['right',['right',['../classcppa_1_1either.html#a45654ed0cc476a017e937d346e4cc5e2',1,'cppa::either::right()'],['../classcppa_1_1either.html#a6226d3124c5ddeebcecdee8aa83b5904',1,'cppa::either::right() const ']]],
   ['ripemd_5f160',['ripemd_160',['../namespacecppa_1_1util.html#aefe0082d66a3564308ebba66750e7a1f',1,'cppa::util']]],
   ['run',['run',['../classcppa_1_1context__switching__actor.html#af79827b76d5d9dda4c510948e31a824d',1,'cppa::context_switching_actor::run()'],['../classcppa_1_1thread__mapped__actor.html#a5c3f96131ae5cb8d71f9e69e0748b548',1,'cppa::thread_mapped_actor::run()']]],

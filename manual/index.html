@@ -49,26 +49,14 @@ td p{margin:0px;}
 .lstlisting{font-family:monospace;white-space:pre;margin-right:auto;margin-left:0pt;text-align:left}
 body{width:600px;margin:auto;padding-top:20px;text-align: justify;}
 </style>
-<title>libcppa 
-  
-An implementation of the actor model for C++ 
-  
-  
-  
-User Manual 
-libcppa version 0.5
+<title>User Manual 
+libcppa version 0.5.1
 </title>
 </head>
 <body >
 <!--HEVEA command line is: hevea -I .. manual.tex -->
-<!--CUT STYLE article--><!--CUT DEF section 1 --><table class="title"><tr><td><h1 class="titlemain"><span style="font-family:monospace"><span style="font-size:xx-large"><span style="font-weight:bold">libcppa</span></span></span><br>
- <br>
-An implementation of the actor model for C++<br>
- <br>
- <br>
- <br>
-User Manual<br>
-<span style="font-family:monospace">libcppa</span> version 0.5</h1><h3 class="titlerest">Dominik Charousset</h3></td></tr>
+<!--CUT STYLE article--><!--CUT DEF section 1 --><table class="title"><tr><td><h1 class="titlemain">User Manual<br>
+<span style="font-family:monospace">libcppa</span> version 0.5.1</h1><h3 class="titlerest">Dominik Charousset</h3></td></tr>
 </table><!--TOC section id=sec1 Contents-->
 <h2 id="sec1" class="section">Contents</h2><!--SEC END --><ul class="toc"><li class="li-toc">
 <a href="#sec2">1  First Steps</a>
@@ -540,9 +528,23 @@ Choosing one or the other is merely a matter of personal preferences.</p>
 <!--TOC subsection id=sec28 Replying to Messages-->
 <h3 id="sec28" class="subsection">5.1  Replying to Messages</h3><!--SEC END --><p>
 <a id="Sec::Send::Reply"></a></p><p>During callback invokation, <code>self</code><code>-&gt;</code><code>last_sender</code><code>()</code> is set.
-This identifies the sender of the received message and is used implicitly by the functions <code>reply</code> and <code>reply_tuple</code>.</p><p>Note that <code>reply</code><code>(...)</code> is <span style="font-weight:bold">not</span> equal to <code>send</code><code>(</code><code>self</code><code>-&gt;</code><code>last_sender</code><code>(), ...)</code>.
-The function <code>send</code> always uses asynchronous message passing, whereas <code>reply</code> will send a synchronous response message if the received message was a synchronous request
-(see Section <a href="#Sec%3A%3ASync">7</a>).</p>
+This identifies the sender of the received message and is used implicitly by the functions <code>reply</code> and <code>reply_tuple</code>.</p><p>Using <code>reply</code><code>(...)</code> is <span style="font-weight:bold">not</span> equal to <code>send</code><code>(</code><code>self</code><code>-&gt;</code><code>last_sender</code><code>(), ...)</code>.
+The function <code>send</code> always uses asynchronous message passing, whereas <code>reply</code> will send a synchronous response message if the received message was a synchronous request (see Section <a href="#Sec%3A%3ASync">7</a>).
+</p><p>To delay a response, i.e., reply to a message after receiving another message, actors can use <code>self</code><code>-&gt;</code><code>make_response_handle</code><code>()</code>.
+The functions <code>reply_to</code> and <code>reply_tuple_to</code> then can be used to reply the the original request, as shown in the example below.</p><div class="lstlisting"><span style="font-size:small"><span style="color:blue">class</span></span><span style="font-size:small"> </span><span style="font-size:small">broker</span><span style="font-size:small"> : </span><span style="font-size:small"><span style="color:blue">public</span></span><span style="font-size:small"> </span><span style="font-size:small">event_based_actor</span><span style="font-size:small"> {</span><span style="font-size:small">
+</span><span style="font-size:small">  </span><span style="font-size:small"><span style="color:#7F007F"><span style="font-size:small">// ...</span></span></span><span style="font-size:small">
+</span><span style="font-size:small">  </span><span style="font-size:small">on</span><span style="font-size:small">(</span><span style="font-size:small"><span style="color:#007F00"><span style="font-size:small">"foo"</span></span></span><span style="font-size:small">, </span><span style="font-size:small">arg_match</span><span style="font-size:small">) &gt;&gt; [=](</span><span style="font-size:small"><span style="color:blue">const</span></span><span style="font-size:small"> </span><span style="font-size:small">std</span><span style="font-size:small">::</span><span style="font-size:small">string</span><span style="font-size:small">&amp; </span><span style="font-size:small">request</span><span style="font-size:small">) {</span><span style="font-size:small">
+</span><span style="font-size:small">    </span><span style="font-size:small"><span style="color:blue">auto</span></span><span style="font-size:small"> </span><span style="font-size:small">hdl</span><span style="font-size:small"> = </span><span style="font-size:small">make_response_handle</span><span style="font-size:small">();</span><span style="font-size:small">
+</span><span style="font-size:small">    </span><span style="font-size:small">sync_send</span><span style="font-size:small">(</span><span style="font-size:small">master</span><span style="font-size:small">, </span><span style="font-size:small">atom</span><span style="font-size:small">(</span><span style="font-size:small"><span style="color:#007F00"><span style="font-size:small">"bar"</span></span></span><span style="font-size:small">), </span><span style="font-size:small">request</span><span style="font-size:small">).</span><span style="font-size:small">then</span><span style="font-size:small">(</span><span style="font-size:small">
+</span><span style="font-size:small">      </span><span style="font-size:small">on_arg_match</span><span style="font-size:small"> &gt;&gt; [=](</span><span style="font-size:small"><span style="color:blue">const</span></span><span style="font-size:small"> </span><span style="font-size:small">std</span><span style="font-size:small">::</span><span style="font-size:small">string</span><span style="font-size:small">&amp; </span><span style="font-size:small">response</span><span style="font-size:small">) {</span><span style="font-size:small">
+</span><span style="font-size:small">        </span><span style="font-size:small">reply_to</span><span style="font-size:small">(</span><span style="font-size:small">hdl</span><span style="font-size:small">, </span><span style="font-size:small">response</span><span style="font-size:small">);</span><span style="font-size:small">
+</span><span style="font-size:small">      },</span><span style="font-size:small">
+</span><span style="font-size:small">      </span><span style="font-size:small">after</span><span style="font-size:small">...</span><span style="font-size:small">
+</span><span style="font-size:small">    );</span><span style="font-size:small">
+</span><span style="font-size:small">  }</span><span style="font-size:small">
+</span><span style="font-size:small">  </span><span style="font-size:small"><span style="color:#7F007F"><span style="font-size:small">// ...</span></span></span><span style="font-size:small">
+</span><span style="font-size:small">};</span></div><p>In any case, do never reply than more than once.
+Additional (synchronous) response message will be ignored by the receiver.</p>
 <!--TOC subsection id=sec29 Chaining Sends-->
 <h3 id="sec29" class="subsection">5.2  Chaining Sends</h3><!--SEC END --><p>
 <a id="Sec::Send::ChainedSend"></a></p><p>Sending a message to a cooperatively scheduled actor usually causes the receiving actor to be put into the scheduler’s job queue if it is currently blocked, i.e., is waiting for a new message.
@@ -583,23 +585,23 @@ The following example illustrates a polling strategy using <code>delayed_send</c
 <!--TOC subsection id=sec31 Forwarding Messages-->
 <h3 id="sec31" class="subsection">5.4  Forwarding Messages</h3><!--SEC END --><p>The function <code>forward_to</code> forwards the last dequeued message to an other actor.
 Forwarding a synchronous message will also transfer responsibility for the request, i.e., the receiver of the forwarded message can reply as usual and the original sender of the message will receive the response.
-The following diagram illustrates forwarding of a synchronous message from actor <span style="font-family:monospace">B</span> to actor <span style="font-family:monospace">C</span>.</p><pre class="verbatim">            A                  B                  C
-            |                  |                  |
-            | --(sync_send)--&gt; |                  |
-            |                  | --(forward_to)-&gt; |
-            |                  X                  |---\
-            |                                     |   | compute
-            |                                     |   | result
-            |                                     |&lt;--/
-            | &lt;-------------(reply)-------------- |
-            |                                     X
-            |---\
-            |   | handle
-            |   | response
-            |&lt;--/
-            |
-            X
-</pre><p>The forwarding is completely transparent to actor <span style="font-family:monospace">C</span>, since it will see actor <span style="font-family:monospace">A</span> as sender of the message.
+The following diagram illustrates forwarding of a synchronous message from actor <span style="font-family:monospace">B</span> to actor <span style="font-family:monospace">C</span>.</p><pre class="verbatim"><span style="font-size:small">               A                  B                  C
+               |                  |                  |
+               | --(sync_send)--&gt; |                  |
+               |                  | --(forward_to)-&gt; |
+               |                  X                  |---\
+               |                                     |   | compute
+               |                                     |   | result
+               |                                     |&lt;--/
+               | &lt;-------------(reply)-------------- |
+               |                                     X
+               |---\
+               |   | handle
+               |   | response
+               |&lt;--/
+               |
+               X
+</span></pre><p>The forwarding is completely transparent to actor <span style="font-family:monospace">C</span>, since it will see actor <span style="font-family:monospace">A</span> as sender of the message.
 However, actor <span style="font-family:monospace">A</span> will see actor <span style="font-family:monospace">C</span> as sender of the response message instead of actor <span style="font-family:monospace">B</span> and thus could recognize the forwarding by evaluating <code>self</code><code>-&gt;</code><code>last_sender</code><code>()</code>.
 </p>
 <!--TOC section id=sec32 Receiving Messages-->

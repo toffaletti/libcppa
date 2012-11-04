@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['parent_5fprocess',['parent_process',['../classcppa_1_1actor.html#a87ed615d0b51a21ed8c7963c60b8c58b',1,'cppa::actor']]],
-  ['parent_5fprocess_5fptr',['parent_process_ptr',['../classcppa_1_1actor.html#a4cc1aa76e5a902d82b05c05fa7ade100',1,'cppa::actor']]],
   ['peek_5fobject',['peek_object',['../classcppa_1_1binary__deserializer.html#a0a0fccfe3847011675b8a0c216645d8b',1,'cppa::binary_deserializer::peek_object()'],['../classcppa_1_1deserializer.html#a2486ae2333c538cbb964c9925e3219d9',1,'cppa::deserializer::peek_object()']]],
   ['pop',['pop',['../classcppa_1_1intrusive_1_1single__reader__queue.html#adb6695b4cb99c191db86a9e50c4afdc6',1,'cppa::intrusive::single_reader_queue']]],
   ['pop_5ffront',['pop_front',['../classcppa_1_1intrusive_1_1singly__linked__list.html#a4788658ece0d5415cecac4ff2e437b13',1,'cppa::intrusive::singly_linked_list']]],

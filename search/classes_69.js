@@ -8,6 +8,8 @@ var searchData=
   ['intrusive_5fptr_3c_20channel_20_3e',['intrusive_ptr&lt; channel &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20companion_20_3e',['intrusive_ptr&lt; companion &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20continuable_5freader_20_3e',['intrusive_ptr&lt; continuable_reader &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
+  ['intrusive_5fptr_3c_20default_5fmessage_5fqueue_20_3e',['intrusive_ptr&lt; default_message_queue &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
+  ['intrusive_5fptr_3c_20default_5fpeer_20_3e',['intrusive_ptr&lt; default_peer &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20default_5fprotocol_20_3e',['intrusive_ptr&lt; default_protocol &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20detail_3a_3aabstract_5ftuple_20_3e',['intrusive_ptr&lt; detail::abstract_tuple &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20detail_3a_3abehavior_5fimpl_20_3e',['intrusive_ptr&lt; detail::behavior_impl &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],

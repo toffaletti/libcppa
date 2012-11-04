@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.5</span>
+   &#160;<span id="projectnumber">Version 0.5.1</span>
    </div>
   </td>
  </tr>
@@ -133,6 +133,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:ad8b4ae56320e117ad03344d446e0cb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends deserialization of a sequence. <br/></td></tr>
 <tr class="memitem:a3cdf810f985cd64a0d429b1f28e203ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#a3cdf810f985cd64a0d429b1f28e203ca">read_value</a> (<a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> ptype)=0</td></tr>
 <tr class="memdesc:a3cdf810f985cd64a0d429b1f28e203ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a primitive value from the data source of type <code>ptype</code>.  <a href="#a3cdf810f985cd64a0d429b1f28e203ca"></a><br/></td></tr>
+<tr class="memitem:a76a57d6be828872d531fd6d4cde5ec59"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a76a57d6be828872d531fd6d4cde5ec59"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#a76a57d6be828872d531fd6d4cde5ec59">read</a> ()</td></tr>
+<tr class="memdesc:a76a57d6be828872d531fd6d4cde5ec59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a value of type <code>T</code> from the data source of type <code>ptype</code>.  <a href="#a76a57d6be828872d531fd6d4cde5ec59"></a><br/></td></tr>
 <tr class="memitem:a7ab5ff291c95d1b0e20a57086c422eb8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1deserializer.html#a7ab5ff291c95d1b0e20a57086c422eb8">read_tuple</a> (size_t num, const <a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> *ptypes, <a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a> *storage)=0</td></tr>
 <tr class="memdesc:a7ab5ff291c95d1b0e20a57086c422eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a tuple of primitive values from the data source of the types <code>ptypes</code>.  <a href="#a7ab5ff291c95d1b0e20a57086c422eb8"></a><br/></td></tr>
 <tr class="memitem:a4d1b5b13c191586f8a06d9e997654bec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d1b5b13c191586f8a06d9e997654bec"></a>
@@ -212,7 +215,29 @@ Related Functions</h2></td></tr>
 <dl class="section return"><dt>Returns:</dt><dd>The size of the sequence. </dd></dl>
 
 <p>Implemented in <a class="el" href="classcppa_1_1binary__deserializer.html#ac3858a074cec83241da7737bd90b5953">cppa::binary_deserializer</a>.</p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_5_8cpp-example.html#a12">announce_example_5.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_5_8cpp-example.html#a11">announce_example_5.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a76a57d6be828872d531fd6d4cde5ec59"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T cppa::deserializer::read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a value of type <code>T</code> from the data source of type <code>ptype</code>. </p>
+<dl class="section note"><dt>Note:</dt><dd><code>T</code> must be of a primitive type. </dd></dl>
+<dl class="section return"><dt>Returns:</dt><dd>The read value of type <code>T</code>. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_5_8cpp-example.html#a10">announce_example_5.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -300,8 +325,7 @@ Related Functions</h2></td></tr>
 <dl class="section return"><dt>Returns:</dt><dd>A primitive value of type <code>ptype</code>. </dd></dl>
 
 <p>Implemented in <a class="el" href="classcppa_1_1binary__deserializer.html#a2691e4ee234e7f5a87281c6326826883">cppa::binary_deserializer</a>.</p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_5_8cpp-example.html#a10">announce_example_5.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <hr/><h2>Friends And Related Function Documentation</h2>
@@ -355,7 +379,7 @@ Related Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 27 2012 00:47:42 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 4 2012 01:12:27 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

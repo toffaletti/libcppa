@@ -6,7 +6,6 @@ var searchData=
   ['actor_5faddressing',['actor_addressing',['../classcppa_1_1actor__addressing.html',1,'cppa']]],
   ['actor_5fexited',['actor_exited',['../classcppa_1_1actor__exited.html',1,'cppa']]],
   ['actor_5fproxy',['actor_proxy',['../classcppa_1_1actor__proxy.html',1,'cppa']]],
-  ['addressed_5fmessage',['addressed_message',['../classcppa_1_1network_1_1addressed__message.html',1,'cppa::network']]],
   ['any_5ftuple',['any_tuple',['../classcppa_1_1any__tuple.html',1,'cppa']]],
   ['anything',['anything',['../structcppa_1_1anything.html',1,'cppa']]],
   ['attachable',['attachable',['../classcppa_1_1attachable.html',1,'cppa']]]

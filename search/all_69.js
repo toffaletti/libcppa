@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id',['id',['../classcppa_1_1actor.html#a1bcf6d0dda3abb9ba1811c62efc998c9',1,'cppa::actor']]],
+  ['id',['id',['../classcppa_1_1actor.html#a1bcf6d0dda3abb9ba1811c62efc998c9',1,'cppa::actor::id()'],['../classcppa_1_1message__future.html#a9f18d9e26ea4418fc23d93fc4f0b733d',1,'cppa::message_future::id()']]],
   ['identifier',['identifier',['../classcppa_1_1group.html#a0ca2805302d4af52ed0d5052bbf3bce9',1,'cppa::group']]],
   ['if_5felse',['if_else',['../structcppa_1_1util_1_1if__else.html',1,'cppa::util']]],
   ['if_5fnot_5fleft',['if_not_left',['../structcppa_1_1util_1_1if__not__left.html',1,'cppa::util']]],
@@ -17,6 +17,8 @@ var searchData=
   ['intrusive_5fptr_3c_20channel_20_3e',['intrusive_ptr&lt; channel &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20companion_20_3e',['intrusive_ptr&lt; companion &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20continuable_5freader_20_3e',['intrusive_ptr&lt; continuable_reader &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
+  ['intrusive_5fptr_3c_20default_5fmessage_5fqueue_20_3e',['intrusive_ptr&lt; default_message_queue &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
+  ['intrusive_5fptr_3c_20default_5fpeer_20_3e',['intrusive_ptr&lt; default_peer &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20default_5fprotocol_20_3e',['intrusive_ptr&lt; default_protocol &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20detail_3a_3aabstract_5ftuple_20_3e',['intrusive_ptr&lt; detail::abstract_tuple &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20detail_3a_3abehavior_5fimpl_20_3e',['intrusive_ptr&lt; detail::behavior_impl &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
@@ -25,6 +27,7 @@ var searchData=
   ['intrusive_5fptr_3c_20output_5fstream_20_3e',['intrusive_ptr&lt; output_stream &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20weak_5fptr_5fanchor_20_3e',['intrusive_ptr&lt; weak_ptr_anchor &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['invalid',['invalid',['../classcppa_1_1weak__intrusive__ptr.html#a8f3702d1a9f854d69d9106ad5ddb0ef7',1,'cppa::weak_intrusive_ptr']]],
+  ['io_5ffailed',['io_failed',['../classcppa_1_1network_1_1continuable__reader.html#a50461c873ac0274a4ef56fc79bc73a60',1,'cppa::network::continuable_reader']]],
   ['io_5fstream',['io_stream',['../classcppa_1_1network_1_1io__stream.html',1,'cppa::network']]],
   ['io_5fstream_5fptr',['io_stream_ptr',['../namespacecppa_1_1network.html#a3dd5fd105c0e1593a4e6897e6c07c3fa',1,'cppa::network']]],
   ['io_5fstream_5fptr_5fpair',['io_stream_ptr_pair',['../namespacecppa_1_1network.html#a4615e80cb9a1a5925e5598b46348afc2',1,'cppa::network']]],
