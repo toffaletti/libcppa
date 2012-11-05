@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.4.2</span>
+   &#160;<span id="projectnumber">Version 0.5.2</span>
    </div>
   </td>
  </tr>
@@ -106,16 +106,17 @@ Inheritance diagram for cppa::channel:</div>
  <div class="center">
   <img src="classcppa_1_1channel.png" usemap="#cppa::channel_map" alt=""/>
   <map id="cppa::channel_map" name="cppa::channel_map">
-<area href="classcppa_1_1ref__counted.html" title="A (thread safe) base class for reference counted objects with an atomic reference count..." alt="cppa::ref_counted" shape="rect" coords="191,0,372,24"/>
-<area href="classcppa_1_1actor.html" title="Base class for all actor implementations." alt="cppa::actor" shape="rect" coords="95,112,276,136"/>
-<area href="classcppa_1_1group.html" title="A multicast group." alt="cppa::group" shape="rect" coords="286,112,467,136"/>
-<area href="classcppa_1_1actor__proxy.html" title="Represents a remote actor." alt="cppa::actor_proxy" shape="rect" coords="0,168,181,192"/>
-<area href="classcppa_1_1local__actor.html" title="Base class for local running Actors." alt="cppa::local_actor" shape="rect" coords="191,168,372,192"/>
-<area href="classcppa_1_1scheduled__actor.html" title="A base class for cooperatively scheduled actors." alt="cppa::scheduled_actor" shape="rect" coords="95,224,276,248"/>
-<area href="classcppa_1_1thread__mapped__actor.html" title="An actor running in its own thread." alt="cppa::thread_mapped_actor" shape="rect" coords="286,224,467,248"/>
-<area href="classcppa_1_1context__switching__actor.html" title="Context-switching actor implementation." alt="cppa::context_switching_actor" shape="rect" coords="0,280,181,304"/>
-<area href="classcppa_1_1event__based__actor.html" title="Base class for all event-based actor implementations." alt="cppa::event_based_actor" shape="rect" coords="191,280,372,304"/>
-<area href="classcppa_1_1sb__actor.html" title="A base class for state-based actors using the Curiously Recurring Template Pattern to initialize the ..." alt="cppa::sb_actor&lt; Derived &gt;" shape="rect" coords="191,336,372,360"/>
+<area href="classcppa_1_1ref__counted.html" title="A (thread safe) base class for reference counted objects with an atomic reference count..." alt="cppa::ref_counted" shape="rect" coords="540,0,770,24"/>
+<area href="classcppa_1_1actor.html" title="Base class for all actor implementations." alt="cppa::actor" shape="rect" coords="420,112,650,136"/>
+<area href="classcppa_1_1group.html" title="A multicast group." alt="cppa::group" shape="rect" coords="660,112,890,136"/>
+<area href="classcppa_1_1local__actor.html" title="Base class for local running Actors." alt="cppa::local_actor" shape="rect" coords="240,168,470,192"/>
+<area href="classcppa_1_1enable__weak__ptr__mixin.html" alt="cppa::enable_weak_ptr_mixin&lt; actor &gt;" shape="rect" coords="600,168,830,192"/>
+<area href="classcppa_1_1scheduled__actor.html" title="A base class for cooperatively scheduled actors." alt="cppa::scheduled_actor" shape="rect" coords="120,224,350,248"/>
+<area href="classcppa_1_1thread__mapped__actor.html" title="An actor running in its own thread." alt="cppa::thread_mapped_actor" shape="rect" coords="360,224,590,248"/>
+<area href="classcppa_1_1actor__proxy.html" title="Represents a remote actor." alt="cppa::actor_proxy" shape="rect" coords="600,224,830,248"/>
+<area href="classcppa_1_1context__switching__actor.html" title="Context-switching actor implementation." alt="cppa::context_switching_actor" shape="rect" coords="0,280,230,304"/>
+<area href="classcppa_1_1event__based__actor.html" title="Base class for all event-based actor implementations." alt="cppa::event_based_actor" shape="rect" coords="240,280,470,304"/>
+<area href="classcppa_1_1sb__actor.html" title="A base class for state-based actors using the Curiously Recurring Template Pattern to initialize the ..." alt="cppa::sb_actor&lt; Derived &gt;" shape="rect" coords="240,336,470,360"/>
 </map>
  </div></div>
 
@@ -130,10 +131,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:adde91679876095e34d1ca4502e8c2ee9 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adde91679876095e34d1ca4502e8c2ee9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#adde91679876095e34d1ca4502e8c2ee9">ref</a> ()</td></tr>
 <tr class="memdesc:adde91679876095e34d1ca4502e8c2ee9 inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases reference count by one. <br/></td></tr>
-<tr class="memitem:a20355d1afa8b9b23956180bdec7c4ec7 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#a20355d1afa8b9b23956180bdec7c4ec7">deref</a> ()</td></tr>
-<tr class="memdesc:a20355d1afa8b9b23956180bdec7c4ec7 inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases reference cound by one.  <a href="#a20355d1afa8b9b23956180bdec7c4ec7"></a><br/></td></tr>
-<tr class="memitem:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#aa890095d175fd2ced20b7debbb569c5f">unique</a> ()</td></tr>
-<tr class="memdesc:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries if there is exactly one reference.  <a href="#aa890095d175fd2ced20b7debbb569c5f"></a><br/></td></tr>
+<tr class="memitem:a9439c57c415af736d7284b160f2f6ec0 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9439c57c415af736d7284b160f2f6ec0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#a9439c57c415af736d7284b160f2f6ec0">deref</a> ()</td></tr>
+<tr class="memdesc:a9439c57c415af736d7284b160f2f6ec0 inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases reference count by one and calls <code>request_deletion</code> when it drops to zero. <br/></td></tr>
+<tr class="memitem:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa890095d175fd2ced20b7debbb569c5f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#aa890095d175fd2ced20b7debbb569c5f">unique</a> ()</td></tr>
+<tr class="memdesc:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries whether there is exactly one reference. <br/></td></tr>
+<tr class="memitem:a907a6686023122998f5b2351837c7b37 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a907a6686023122998f5b2351837c7b37"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_reference_count</b> () const </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
@@ -149,6 +154,13 @@ Related Functions</h2></td></tr>
 <tr class="memitem:ac7df8ed0bb6003f386e088bb0dedb1df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7df8ed0bb6003f386e088bb0dedb1df"></a>
 typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1channel.html">channel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1channel.html#ac7df8ed0bb6003f386e088bb0dedb1df">channel_ptr</a></td></tr>
 <tr class="memdesc:ac7df8ed0bb6003f386e088bb0dedb1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">A smart pointer type that manages instances of <a class="el" href="classcppa_1_1channel.html">channel</a>. <br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classcppa_1_1ref__counted"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcppa_1_1ref__counted')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="classcppa_1_1ref__counted.html">cppa::ref_counted</a></td></tr>
+<tr class="memitem:a35af25822f676b59abdd8675143677c4 inherit pro_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35af25822f676b59abdd8675143677c4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#a35af25822f676b59abdd8675143677c4">request_deletion</a> ()</td></tr>
+<tr class="memdesc:a35af25822f676b59abdd8675143677c4 inherit pro_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default implementations calls <code>delete this</code>, but can be overriden in case deletion depends on more than the reference count alone. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Interface for all message receivers. </p>
@@ -159,7 +171,7 @@ typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 16:34:27 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 5 2012 11:51:53 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

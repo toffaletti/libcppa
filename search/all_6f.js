@@ -16,6 +16,6 @@ var searchData=
   ['operator_3e_3e',['operator&gt;&gt;',['../classcppa_1_1deserializer.html#ad00e60cd230f244c1aac80d8decc03b5',1,'cppa::deserializer']]],
   ['option',['option',['../classcppa_1_1option.html#a2b5c7cb69212509d97d61edda1ff2e53',1,'cppa::option::option()'],['../classcppa_1_1option.html#aa7d7daab8ca7d8f39c8fa5d5f0265ce3',1,'cppa::option::option(T value)']]],
   ['option',['option',['../classcppa_1_1option.html',1,'cppa']]],
-  ['output_5fstream',['output_stream',['../classcppa_1_1util_1_1output__stream.html',1,'cppa::util']]],
-  ['output_5fstream_5fptr',['output_stream_ptr',['../namespacecppa_1_1util.html#a9f18e078e5cc4e302fc8390b9c153190',1,'cppa::util']]]
+  ['output_5fstream',['output_stream',['../classcppa_1_1network_1_1output__stream.html',1,'cppa::network']]],
+  ['output_5fstream_5fptr',['output_stream_ptr',['../namespacecppa_1_1network.html#a6df98290af0c40b9eb07f6fa7c71c403',1,'cppa::network']]]
 ];

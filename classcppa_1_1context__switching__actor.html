@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.4.2</span>
+   &#160;<span id="projectnumber">Version 0.5.2</span>
    </div>
   </td>
  </tr>
@@ -128,10 +128,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>do_become</b>
 <tr class="memitem:a056086f5bdb0fca7d9abbe9a945434c2 inherit pro_methods_classcppa_1_1local__actor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a056086f5bdb0fca7d9abbe9a945434c2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>do_become</b> (const <a class="el" href="classcppa_1_1behavior.html">behavior</a> &amp;bhvr, bool discard_old)</td></tr>
 <tr class="inherit_header pro_methods_classcppa_1_1actor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcppa_1_1actor')"><img src="closed.png" alt="-"/>&nbsp;Protected Member Functions inherited from <a class="el" href="classcppa_1_1actor.html">cppa::actor</a></td></tr>
-<tr class="memitem:aa9d9e6b44e5113f77d65e5c72a08ecaa inherit pro_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9d9e6b44e5113f77d65e5c72a08ecaa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>actor</b> (const process_information_ptr &amp;parent=<a class="el" href="classcppa_1_1process__information.html#afc652568bb751841b0ce90cea74d8e2d">process_information::get</a>())</td></tr>
-<tr class="memitem:a4ed7f3d1a22c0b07636575a844025be3 inherit pro_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ed7f3d1a22c0b07636575a844025be3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>actor</b> (std::uint32_t aid, const process_information_ptr &amp;parent=<a class="el" href="classcppa_1_1process__information.html#afc652568bb751841b0ce90cea74d8e2d">process_information::get</a>())</td></tr>
+<tr class="memitem:a60c4075e0351b84dfe155b090e17309a inherit pro_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60c4075e0351b84dfe155b090e17309a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>actor</b> (<a class="el" href="classcppa_1_1actor.html#a419bd336028a1fe6c3d44558088cc484">actor_id</a> aid)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -240,10 +238,6 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memdesc:ad20eddd3d0b6b5f9bfe5a96d2e231103 inherit pub_methods_classcppa_1_1actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes a link relation between this actor and <code>other</code>.  <a href="#ad20eddd3d0b6b5f9bfe5a96d2e231103"></a><br/></td></tr>
 <tr class="memitem:ad1f8d44644f596ff1e4c77fe162a3b58 inherit pub_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#ad1f8d44644f596ff1e4c77fe162a3b58">remove_backlink</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; <a class="el" href="classcppa_1_1actor.html">actor</a> &gt; &amp;other)=0</td></tr>
 <tr class="memdesc:ad1f8d44644f596ff1e4c77fe162a3b58 inherit pub_methods_classcppa_1_1actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a link relation between this actor and <code>other</code>.  <a href="#ad1f8d44644f596ff1e4c77fe162a3b58"></a><br/></td></tr>
-<tr class="memitem:a87ed615d0b51a21ed8c7963c60b8c58b inherit pub_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classcppa_1_1process__information.html">process_information</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a87ed615d0b51a21ed8c7963c60b8c58b">parent_process</a> () const </td></tr>
-<tr class="memdesc:a87ed615d0b51a21ed8c7963c60b8c58b inherit pub_methods_classcppa_1_1actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classcppa_1_1process__information.html">process_information</a> of the parent process.  <a href="#a87ed615d0b51a21ed8c7963c60b8c58b"></a><br/></td></tr>
-<tr class="memitem:a4cc1aa76e5a902d82b05c05fa7ade100 inherit pub_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top">process_information_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a4cc1aa76e5a902d82b05c05fa7ade100">parent_process_ptr</a> () const </td></tr>
-<tr class="memdesc:a4cc1aa76e5a902d82b05c05fa7ade100 inherit pub_methods_classcppa_1_1actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classcppa_1_1process__information.html">process_information</a> pointer of the parent process.  <a href="#a4cc1aa76e5a902d82b05c05fa7ade100"></a><br/></td></tr>
 <tr class="memitem:a1bcf6d0dda3abb9ba1811c62efc998c9 inherit pub_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1actor.html#a419bd336028a1fe6c3d44558088cc484">actor_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a1bcf6d0dda3abb9ba1811c62efc998c9">id</a> () const </td></tr>
 <tr class="memdesc:a1bcf6d0dda3abb9ba1811c62efc998c9 inherit pub_methods_classcppa_1_1actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an integer value that uniquely identifies this Actor in the process it's executed in.  <a href="#a1bcf6d0dda3abb9ba1811c62efc998c9"></a><br/></td></tr>
 <tr class="memitem:a6c2a21b5056fbe82b73ed8e84497b0bd inherit pub_methods_classcppa_1_1actor"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html#a6c2a21b5056fbe82b73ed8e84497b0bd">is_proxy</a> () const </td></tr>
@@ -256,10 +250,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:adde91679876095e34d1ca4502e8c2ee9 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adde91679876095e34d1ca4502e8c2ee9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#adde91679876095e34d1ca4502e8c2ee9">ref</a> ()</td></tr>
 <tr class="memdesc:adde91679876095e34d1ca4502e8c2ee9 inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases reference count by one. <br/></td></tr>
-<tr class="memitem:a20355d1afa8b9b23956180bdec7c4ec7 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#a20355d1afa8b9b23956180bdec7c4ec7">deref</a> ()</td></tr>
-<tr class="memdesc:a20355d1afa8b9b23956180bdec7c4ec7 inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases reference cound by one.  <a href="#a20355d1afa8b9b23956180bdec7c4ec7"></a><br/></td></tr>
-<tr class="memitem:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#aa890095d175fd2ced20b7debbb569c5f">unique</a> ()</td></tr>
-<tr class="memdesc:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries if there is exactly one reference.  <a href="#aa890095d175fd2ced20b7debbb569c5f"></a><br/></td></tr>
+<tr class="memitem:a9439c57c415af736d7284b160f2f6ec0 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9439c57c415af736d7284b160f2f6ec0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#a9439c57c415af736d7284b160f2f6ec0">deref</a> ()</td></tr>
+<tr class="memdesc:a9439c57c415af736d7284b160f2f6ec0 inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases reference count by one and calls <code>request_deletion</code> when it drops to zero. <br/></td></tr>
+<tr class="memitem:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa890095d175fd2ced20b7debbb569c5f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html#aa890095d175fd2ced20b7debbb569c5f">unique</a> ()</td></tr>
+<tr class="memdesc:aa890095d175fd2ced20b7debbb569c5f inherit pub_methods_classcppa_1_1ref__counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries whether there is exactly one reference. <br/></td></tr>
+<tr class="memitem:a907a6686023122998f5b2351837c7b37 inherit pub_methods_classcppa_1_1ref__counted"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a907a6686023122998f5b2351837c7b37"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_reference_count</b> () const </td></tr>
 <tr class="inherit_header pub_attribs_classcppa_1_1scheduled__actor"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classcppa_1_1scheduled__actor')"><img src="closed.png" alt="-"/>&nbsp;Public Attributes inherited from <a class="el" href="classcppa_1_1scheduled__actor.html">cppa::scheduled_actor</a></td></tr>
 <tr class="memitem:a6c26f4f72050ef1ca9757f82fafcf337 inherit pub_attribs_classcppa_1_1scheduled__actor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c26f4f72050ef1ca9757f82fafcf337"></a>
 <a class="el" href="classcppa_1_1scheduled__actor.html">scheduled_actor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1scheduled__actor.html#a6c26f4f72050ef1ca9757f82fafcf337">next</a></td></tr>
@@ -278,7 +276,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_hidden</b></td></tr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 16:34:27 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 5 2012 11:51:53 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

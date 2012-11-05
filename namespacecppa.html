@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.4.2</span>
+   &#160;<span id="projectnumber">Version 0.5.2</span>
    </div>
   </td>
  </tr>
@@ -104,6 +104,8 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacecppa_1_1factory"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains factory functions to create actors from lambdas or other functors. <br/></td></tr>
 <tr class="memitem:namespacecppa_1_1intrusive"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa_1_1intrusive.html">intrusive</a></td></tr>
 <tr class="memdesc:namespacecppa_1_1intrusive"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains intrusive container implementations. <br/></td></tr>
+<tr class="memitem:namespacecppa_1_1network"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa_1_1network.html">network</a></td></tr>
+<tr class="memdesc:namespacecppa_1_1network"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all network related classes. <br/></td></tr>
 <tr class="memitem:namespacecppa_1_1placeholders"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa_1_1placeholders.html">placeholders</a></td></tr>
 <tr class="memdesc:namespacecppa_1_1placeholders"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the guard placeholders <code>_x1</code> to <code>_x9</code>. <br/></td></tr>
 <tr class="memitem:namespacecppa_1_1util"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa_1_1util.html">util</a></td></tr>
@@ -113,6 +115,8 @@ Namespaces</h2></td></tr>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor.html">actor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all actor implementations.  <a href="classcppa_1_1actor.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor__addressing.html">actor_addressing</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Different serialization protocols have different representations for actors. This class encapsulates a technology-specific actor addressing.  <a href="classcppa_1_1actor__addressing.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1actor__proxy.html">actor_proxy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a remote actor.  <a href="classcppa_1_1actor__proxy.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a></td></tr>
@@ -141,6 +145,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Technology-independent deserialization interface.  <a href="classcppa_1_1deserializer.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1either.html">either</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents either a <code>Left</code> or a <code>Right</code>.  <a href="classcppa_1_1either.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1enable__weak__ptr__mixin.html">enable_weak_ptr_mixin</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables derived classes to be used in <a class="el" href="classcppa_1_1weak__intrusive__ptr.html">weak_intrusive_ptr</a>.  <a href="classcppa_1_1enable__weak__ptr__mixin.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1event__based__actor.html">event_based_actor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all event-based actor implementations.  <a href="classcppa_1_1event__based__actor.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1cppa__exception.html">cppa_exception</a></td></tr>
@@ -168,14 +174,14 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an optional value of <code>T</code>.  <a href="classcppa_1_1option.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1partial__function.html">partial_function</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A partial function implementation for <a class="el" href="classcppa_1_1any__tuple.html">any_tuples</a>.  <a href="classcppa_1_1partial__function.html#details">More...</a><br/></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1pattern.html">pattern</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pattern matching for type and optionally value of tuple elements.  <a href="classcppa_1_1pattern.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1primitive__variant.html">primitive_variant</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An union container for primitive data types.  <a href="classcppa_1_1primitive__variant.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1process__information.html">process_information</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies a process.  <a href="classcppa_1_1process__information.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1ref__counted.html">ref_counted</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A (thread safe) base class for reference counted objects with an atomic reference count.  <a href="classcppa_1_1ref__counted.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1response__handle.html">response_handle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Denotes an outstanding response.  <a href="classcppa_1_1response__handle.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1sb__actor.html">sb_actor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for state-based actors using the Curiously Recurring Template Pattern to initialize the derived actor with its <code>init_state</code> member.  <a href="classcppa_1_1sb__actor.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1scheduled__actor.html">scheduled_actor</a></td></tr>
@@ -186,6 +192,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An actor running in its own thread.  <a href="classcppa_1_1thread__mapped__actor.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1uniform__type__info.html">uniform_type_info</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a platform independent type name and a (very primitive) kind of reflection in combination with <a class="el" href="classcppa_1_1object.html">object</a>.  <a href="classcppa_1_1uniform__type__info.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1weak__intrusive__ptr.html">weak_intrusive_ptr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A smart pointer that does not increase the reference count.  <a href="classcppa_1_1weak__intrusive__ptr.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1weak__ptr__anchor.html">weak_ptr_anchor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A storage holding a spinlock and a pointer to a reference counted object.  <a href="classcppa_1_1weak__ptr__anchor.html#details">More...</a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -260,19 +270,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>dummy_op</b>
 <br/>
  }</td></tr>
-<tr class="memitem:a5ab63f2274711ea5cce959c91d793b25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a5ab63f2274711ea5cce959c91d793b25">wildcard_position</a> { <br/>
-&#160;&#160;<b>nil</b>, 
-<br/>
-&#160;&#160;<b>trailing</b>, 
-<br/>
-&#160;&#160;<b>leading</b>, 
-<br/>
-&#160;&#160;<b>in_between</b>, 
-<br/>
-&#160;&#160;<b>multiple</b>
-<br/>
- }</td></tr>
-<tr class="memdesc:a5ab63f2274711ea5cce959c91d793b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Denotes the position of <a class="el" href="structcppa_1_1anything.html">anything</a> in a template parameter pack. <br/></td></tr>
 <tr class="memitem:ga5a8afa49a3547b610d4a50b3ab1dceb6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> { <br/>
 &#160;&#160;<a class="el" href="group___type_system.html#gga5a8afa49a3547b610d4a50b3ab1dceb6af3b4cd07f6e7b784ef327226d125f081">pt_int8</a>, 
 <br/>
@@ -329,6 +326,19 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="memdesc:ada43001c9a9dd2cbb1f87656b7fa1cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Denotes whether a user wants an actor to take part in cooperative scheduling or not.  <a href="namespacecppa.html#ada43001c9a9dd2cbb1f87656b7fa1cb4">More...</a><br/></td></tr>
+<tr class="memitem:a5ab63f2274711ea5cce959c91d793b25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a5ab63f2274711ea5cce959c91d793b25">wildcard_position</a> { <br/>
+&#160;&#160;<b>nil</b>, 
+<br/>
+&#160;&#160;<b>trailing</b>, 
+<br/>
+&#160;&#160;<b>leading</b>, 
+<br/>
+&#160;&#160;<b>in_between</b>, 
+<br/>
+&#160;&#160;<b>multiple</b>
+<br/>
+ }</td></tr>
+<tr class="memdesc:a5ab63f2274711ea5cce959c91d793b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Denotes the position of <a class="el" href="structcppa_1_1anything.html">anything</a> in a template parameter pack. <br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -383,14 +393,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>closesocket</b> (nati
 <tr class="memdesc:a185090573ffb146384ccdfa94172c23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks execution of this actor until all other actors finished execution.  <a href="#a185090573ffb146384ccdfa94172c23e"></a><br/></td></tr>
 <tr class="memitem:a487e6c08f5f4f7de4775418547f7e93e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a487e6c08f5f4f7de4775418547f7e93e">publish</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> whom, std::uint16_t port, const char *addr=nullptr)</td></tr>
 <tr class="memdesc:a487e6c08f5f4f7de4775418547f7e93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes <code>whom</code> at <code>port</code>.  <a href="#a487e6c08f5f4f7de4775418547f7e93e"></a><br/></td></tr>
-<tr class="memitem:a1d483079b5f832ecb73ed740ac42b157"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a1d483079b5f832ecb73ed740ac42b157">publish</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> whom, std::unique_ptr&lt; <a class="el" href="classcppa_1_1util_1_1acceptor.html">util::acceptor</a> &gt; acceptor)</td></tr>
-<tr class="memdesc:a1d483079b5f832ecb73ed740ac42b157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes <code>whom</code> using <code>acceptor</code> to handle incoming connections.  <a href="#a1d483079b5f832ecb73ed740ac42b157"></a><br/></td></tr>
+<tr class="memitem:ad9c73df0929df9b069096d3d9f9499bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#ad9c73df0929df9b069096d3d9f9499bf">publish</a> (<a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> whom, std::unique_ptr&lt; <a class="el" href="classcppa_1_1network_1_1acceptor.html">network::acceptor</a> &gt; acceptor)</td></tr>
+<tr class="memdesc:ad9c73df0929df9b069096d3d9f9499bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes <code>whom</code> using <code>acceptor</code> to handle incoming connections.  <a href="#ad9c73df0929df9b069096d3d9f9499bf"></a><br/></td></tr>
 <tr class="memitem:a76739f7f372b92999ee9b80d332093bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a76739f7f372b92999ee9b80d332093bd">remote_actor</a> (const char *host, std::uint16_t port)</td></tr>
 <tr class="memdesc:a76739f7f372b92999ee9b80d332093bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a new connection to the actor at <code>host</code> on given <code>port</code>.  <a href="#a76739f7f372b92999ee9b80d332093bd"></a><br/></td></tr>
 <tr class="memitem:a1e44ab5ef88ac98dd909f3a09bbf181d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a1e44ab5ef88ac98dd909f3a09bbf181d">remote_actor</a> (const std::string &amp;host, std::uint16_t port)</td></tr>
 <tr class="memdesc:a1e44ab5ef88ac98dd909f3a09bbf181d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a new connection to the actor at <code>host</code> on given <code>port</code>.   <a href="#a1e44ab5ef88ac98dd909f3a09bbf181d"></a><br/></td></tr>
-<tr class="memitem:a2bc7fcd936a2c6cacef55a9ee2e0eef3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a2bc7fcd936a2c6cacef55a9ee2e0eef3">remote_actor</a> (<a class="el" href="namespacecppa_1_1util.html#ab444ce5539bc82e2333ce18fd73d1730">util::io_stream_ptr_pair</a> connection)</td></tr>
-<tr class="memdesc:a2bc7fcd936a2c6cacef55a9ee2e0eef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a new connection to the actor via given <code>connection</code>.  <a href="#a2bc7fcd936a2c6cacef55a9ee2e0eef3"></a><br/></td></tr>
+<tr class="memitem:aa39f7d863455eec31681ebd1879e4fd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#aa39f7d863455eec31681ebd1879e4fd6">remote_actor</a> (<a class="el" href="namespacecppa_1_1network.html#a4615e80cb9a1a5925e5598b46348afc2">network::io_stream_ptr_pair</a> connection)</td></tr>
+<tr class="memdesc:aa39f7d863455eec31681ebd1879e4fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish a new connection to the actor via given <code>connection</code>.  <a href="#aa39f7d863455eec31681ebd1879e4fd6"></a><br/></td></tr>
 <tr class="memitem:a8d5daac288a10cc34286f505ea637571"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d5daac288a10cc34286f505ea637571"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a8d5daac288a10cc34286f505ea637571">shutdown</a> ()</td></tr>
 <tr class="memdesc:a8d5daac288a10cc34286f505ea637571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys all singletons, disconnects all peers and stops the scheduler. It is recommended to use this function as very last function call before leaving main(). Especially in programs using libcppa's networking infrastructure. <br/></td></tr>
@@ -470,6 +480,10 @@ detail::tdata_from_type_list<br class="typebreak"/>
 &lt; typename util::tl_filter_not<br class="typebreak"/>
 &lt; TupleTypes, <a class="el" href="structcppa_1_1is__anything.html">is_anything</a> &gt;<br class="typebreak"/>
 ::type &gt;::type &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ge_invoke_any</b> (const guard_expr&lt; OP, First, Second &gt; &amp;ge, const <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;tup)</td></tr>
+<tr class="memitem:ad9a68bcc41e0df87663196f06f274246"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad9a68bcc41e0df87663196f06f274246"></a>
+template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:ad9a68bcc41e0df87663196f06f274246"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#ad9a68bcc41e0df87663196f06f274246">make_counted</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:ad9a68bcc41e0df87663196f06f274246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an object of type T which must be a derived type of <a class="el" href="classcppa_1_1ref__counted.html">ref_counted</a> and wraps it in an <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>. <br/></td></tr>
 <tr class="memitem:ad65859efc090932630d14b226b9c9624"><td class="memItemLeft" align="right" valign="top">detail::match_helper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#ad65859efc090932630d14b226b9c9624">match</a> (<a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> what)</td></tr>
 <tr class="memdesc:ad65859efc090932630d14b226b9c9624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a match expression.  <a href="#ad65859efc090932630d14b226b9c9624"></a><br/></td></tr>
 <tr class="memitem:adaa18a8117e9022caea2b0606c11ebbc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -558,9 +572,6 @@ detail::opt_rvalue_builder&lt; true &gt;&#160;</td><td class="memItemRight" vali
 std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>print_desc</b> (options_description *desc, std::ostream &amp;out=std::cout)</td></tr>
 <tr class="memitem:aeb2216fa186264747a6256d0d21dbf98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb2216fa186264747a6256d0d21dbf98"></a>
 std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>print_desc_and_exit</b> (options_description *desc, std::ostream &amp;out=std::cout, int exit_reason=0)</td></tr>
-<tr class="memitem:a33344c46529f70febab48161c0c53a68"><td class="memTemplParams" colspan="2">template&lt;typename Types &gt; </td></tr>
-<tr class="memitem:a33344c46529f70febab48161c0c53a68"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacecppa.html#a5ab63f2274711ea5cce959c91d793b25">wildcard_position</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a33344c46529f70febab48161c0c53a68">get_wildcard_position</a> ()</td></tr>
-<tr class="memdesc:a33344c46529f70febab48161c0c53a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position of <a class="el" href="structcppa_1_1anything.html">anything</a> from the type list <code>Types</code>.  <a href="#a33344c46529f70febab48161c0c53a68"></a><br/></td></tr>
 <tr class="memitem:ga5d1de7bc77d88156d0e12e373ab2c613"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___type_system.html#ga5d1de7bc77d88156d0e12e373ab2c613">primitive_type_name</a> (<a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> ptype)</td></tr>
 <tr class="memdesc:ga5d1de7bc77d88156d0e12e373ab2c613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a <a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6" title="Represents the type flag of primitive_variant.">primitive_type</a> value to its name.  <a href="group___type_system.html#ga5d1de7bc77d88156d0e12e373ab2c613"></a><br/></td></tr>
 <tr class="memitem:a1f48cc1f5e2597c4a131d292145f728f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1f48cc1f5e2597c4a131d292145f728f"></a>
@@ -589,15 +600,27 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>equal</b> (const <a c
 <tr class="memdesc:ab32fd2e5649ee811c08a9ff74e9bed84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives messages until <code>stmt</code> returns true.  <a href="#ab32fd2e5649ee811c08a9ff74e9bed84"></a><br/></td></tr>
 <tr class="memitem:a9fd959a7ff3c017ded6b64ee72dcec97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a9fd959a7ff3c017ded6b64ee72dcec97">set_scheduler</a> (scheduler *sched)</td></tr>
 <tr class="memdesc:a9fd959a7ff3c017ded6b64ee72dcec97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scheduler to <code>sched</code>.  <a href="#a9fd959a7ff3c017ded6b64ee72dcec97"></a><br/></td></tr>
-<tr class="memitem:a438040c204e8dc7819cd7ca9bd661eec"><td class="memItemLeft" align="right" valign="top">scheduler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a438040c204e8dc7819cd7ca9bd661eec">get_scheduler</a> ()</td></tr>
-<tr class="memdesc:a438040c204e8dc7819cd7ca9bd661eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the actual used scheduler implementation.  <a href="#a438040c204e8dc7819cd7ca9bd661eec"></a><br/></td></tr>
-<tr class="memitem:adf2637ef1408fa9d8cbe61a005f8c63d"><td class="memTemplParams" colspan="2"><a class="anchor" id="adf2637ef1408fa9d8cbe61a005f8c63d"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:adf2637ef1408fa9d8cbe61a005f8c63d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#adf2637ef1408fa9d8cbe61a005f8c63d">to_string</a> (const T &amp;what, typename std::enable_if&lt; detail::has_cppa_to_string&lt; T &gt;::value &gt;::type *=0)</td></tr>
-<tr class="memdesc:adf2637ef1408fa9d8cbe61a005f8c63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts any of libcppa's core types to a string. <br/></td></tr>
+<tr class="memitem:a8f2a11054c90870f7f7bae3117845127"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a8f2a11054c90870f7f7bae3117845127">set_default_scheduler</a> (size_t num_threads)</td></tr>
+<tr class="memdesc:a8f2a11054c90870f7f7bae3117845127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a thread pool scheduler with <code>num_threads</code> worker threads.  <a href="#a8f2a11054c90870f7f7bae3117845127"></a><br/></td></tr>
+<tr class="memitem:a438040c204e8dc7819cd7ca9bd661eec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a438040c204e8dc7819cd7ca9bd661eec"></a>
+scheduler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a438040c204e8dc7819cd7ca9bd661eec">get_scheduler</a> ()</td></tr>
+<tr class="memdesc:a438040c204e8dc7819cd7ca9bd661eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the currently running scheduler. <br/></td></tr>
+<tr class="memitem:a58a28e93004ce87aa330248e4a5604ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58a28e93004ce87aa330248e4a5604ec"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> (const <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> &amp;what)</td></tr>
+<tr class="memitem:a6c00a68715448704917da16b0f7556f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c00a68715448704917da16b0f7556f1"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> (const <a class="el" href="classcppa_1_1network_1_1message__header.html">network::message_header</a> &amp;what)</td></tr>
+<tr class="memitem:ab5dafe56a214fb056845a07e3b884ca7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5dafe56a214fb056845a07e3b884ca7"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> &amp;what)</td></tr>
+<tr class="memitem:afb103c782d4dd432e52f51e247743c3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb103c782d4dd432e52f51e247743c3f"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> (const <a class="el" href="classcppa_1_1process__information.html">process_information</a> &amp;what)</td></tr>
 <tr class="memitem:a7919488dad32bd35a6e461f4ae6d0bd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7919488dad32bd35a6e461f4ae6d0bd7"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a7919488dad32bd35a6e461f4ae6d0bd7">to_string</a> (const <a class="el" href="classcppa_1_1object.html">object</a> &amp;what)</td></tr>
-<tr class="memdesc:a7919488dad32bd35a6e461f4ae6d0bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an object to a string. <br/></td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> (const <a class="el" href="classcppa_1_1object.html">object</a> &amp;what)</td></tr>
+<tr class="memitem:a60aae38fbd2f412089646134bbb5c75f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60aae38fbd2f412089646134bbb5c75f"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a60aae38fbd2f412089646134bbb5c75f">to_verbose_string</a> (const std::exception &amp;e)</td></tr>
+<tr class="memdesc:a60aae38fbd2f412089646134bbb5c75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts <code>e</code> to a string including the demangled type of e and <code>e.what()</code>. <br/></td></tr>
+<tr class="memitem:a33344c46529f70febab48161c0c53a68"><td class="memTemplParams" colspan="2">template&lt;typename Types &gt; </td></tr>
+<tr class="memitem:a33344c46529f70febab48161c0c53a68"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="namespacecppa.html#a5ab63f2274711ea5cce959c91d793b25">wildcard_position</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a33344c46529f70febab48161c0c53a68">get_wildcard_position</a> ()</td></tr>
+<tr class="memdesc:a33344c46529f70febab48161c0c53a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position of <a class="el" href="structcppa_1_1anything.html">anything</a> from the type list <code>Types</code>.  <a href="#a33344c46529f70febab48161c0c53a68"></a><br/></td></tr>
 <tr class="memitem:ac9456f6c3944e9f8f47ec8fc678d99d5"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac9456f6c3944e9f8f47ec8fc678d99d5"></a>
 template&lt;size_t N, typename... Ts&gt; </td></tr>
 <tr class="memitem:ac9456f6c3944e9f8f47ec8fc678d99d5"><td class="memTemplItemLeft" align="right" valign="top">util::at&lt; N, Ts...&gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const util::type_list&lt; Ts...&gt; &amp;)</td></tr>
@@ -630,8 +653,15 @@ template&lt;size_t N, typename... Ts&gt; </td></tr>
 <tr class="memitem:gac8769898500320bfc51235a5fe771b11"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:gac8769898500320bfc51235a5fe771b11"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#gac8769898500320bfc51235a5fe771b11">reply</a> (Args &amp;&amp;...what)</td></tr>
 <tr class="memdesc:gac8769898500320bfc51235a5fe771b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the sender of the last received message.  <a href="group___message_handling.html#gac8769898500320bfc51235a5fe771b11"></a><br/></td></tr>
+<tr class="memitem:ga65519e00c02599a6524125ab379a1b72"><td class="memTemplParams" colspan="2"><a class="anchor" id="ga65519e00c02599a6524125ab379a1b72"></a>
+template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ga65519e00c02599a6524125ab379a1b72"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga65519e00c02599a6524125ab379a1b72">reply_to</a> (const <a class="el" href="classcppa_1_1response__handle.html">response_handle</a> &amp;handle, Args &amp;&amp;...what)</td></tr>
+<tr class="memdesc:ga65519e00c02599a6524125ab379a1b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message as reply to <code>handle</code>. <br/></td></tr>
+<tr class="memitem:ga9a4dc7aa969b618f88f0571c0b8ea3d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga9a4dc7aa969b618f88f0571c0b8ea3d9">reply_tuple_to</a> (const <a class="el" href="classcppa_1_1response__handle.html">response_handle</a> &amp;handle, <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> what)</td></tr>
+<tr class="memdesc:ga9a4dc7aa969b618f88f0571c0b8ea3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the sender of the last received message.  <a href="group___message_handling.html#ga9a4dc7aa969b618f88f0571c0b8ea3d9"></a><br/></td></tr>
 <tr class="memitem:ga9e7296666267daedec965b147f9aa1e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9e7296666267daedec965b147f9aa1e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>forward_to</b> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> &amp;whom)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga9e7296666267daedec965b147f9aa1e7">forward_to</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> &amp;whom)</td></tr>
+<tr class="memdesc:ga9e7296666267daedec965b147f9aa1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards the last received message to <code>whom</code>. <br/></td></tr>
 <tr class="memitem:ga9c243f8d541dc374ba38c0792285531b"><td class="memTemplParams" colspan="2">template&lt;class Rep , class Period , typename... Args&gt; </td></tr>
 <tr class="memitem:ga9c243f8d541dc374ba38c0792285531b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga9c243f8d541dc374ba38c0792285531b">delayed_send_tuple</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">channel_ptr</a> &amp;whom, const std::chrono::duration&lt; Rep, Period &gt; &amp;rtime, <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> what)</td></tr>
 <tr class="memdesc:ga9c243f8d541dc374ba38c0792285531b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to <code>whom</code> that is delayed by <code>rel_time</code>.  <a href="group___message_handling.html#ga9c243f8d541dc374ba38c0792285531b"></a><br/></td></tr>
@@ -844,24 +874,6 @@ Do not call this function in cooperatively scheduled actors. </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>The deserialized value as instance of <code>T</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a438040c204e8dc7819cd7ca9bd661eec"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">scheduler* cppa::get_scheduler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the actual used scheduler implementation. </p>
-<dl class="section return"><dt>Returns:</dt><dd>The active scheduler (usually default constructed). </dd></dl>
 
 </div>
 </div>
@@ -1173,7 +1185,7 @@ template&lt;atom_value... Atoms, typename... Ts&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1d483079b5f832ecb73ed740ac42b157"></a>
+<a class="anchor" id="ad9c73df0929df9b069096d3d9f9499bf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1186,7 +1198,7 @@ template&lt;atom_value... Atoms, typename... Ts&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unique_ptr&lt; util::acceptor &gt;&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; network::acceptor &gt;&#160;</td>
           <td class="paramname"><em>acceptor</em>&#160;</td>
         </tr>
         <tr>
@@ -1311,7 +1323,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>A functor implementing the loop. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_4_8cpp-example.html#a3">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a16">announce_example_5.cpp</a>, and <a class="el" href="dancing_kirby_8cpp-example.html#a2">dancing_kirby.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_4_8cpp-example.html#a3">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a15">announce_example_5.cpp</a>, and <a class="el" href="dancing_kirby_8cpp-example.html#a2">dancing_kirby.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1448,14 +1460,14 @@ template&lt;typename Statement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2bc7fcd936a2c6cacef55a9ee2e0eef3"></a>
+<a class="anchor" id="aa39f7d863455eec31681ebd1879e4fd6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> cppa::remote_actor </td>
           <td>(</td>
-          <td class="paramtype">util::io_stream_ptr_pair&#160;</td>
+          <td class="paramtype">network::io_stream_ptr_pair&#160;</td>
           <td class="paramname"><em>connection</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1470,6 +1482,30 @@ template&lt;typename Statement &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>An <a class="el" href="">actor_ptr</a> to the proxy instance representing a remote actor. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8f2a11054c90870f7f7bae3117845127"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cppa::set_default_scheduler </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_threads</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a thread pool scheduler with <code>num_threads</code> worker threads. </p>
+<dl class="exception"><dt>Exceptions:</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if there's already a scheduler defined. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1526,7 +1562,7 @@ template&lt;typename Statement &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd><code>what</code> as string. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_4_8cpp-example.html#a4">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a17">announce_example_5.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a10">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_4_8cpp-example.html#a4">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a16">announce_example_5.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a10">math_actor_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1605,7 +1641,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2012 16:34:27 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 5 2012 11:51:53 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>
