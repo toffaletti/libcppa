@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.5.2</span>
+   &#160;<span id="projectnumber">Version 0.5.4</span>
    </div>
   </td>
  </tr>
@@ -161,6 +161,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A multicast group.  <a href="classcppa_1_1group.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcppa_1_1guard__placeholder.html">guard_placeholder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A placeholder for guard expression.  <a href="structcppa_1_1guard__placeholder.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1intrusive__fwd__ptr.html">intrusive_fwd_ptr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference counting smart pointer implementation that can be used with forward declarated types.  <a href="classcppa_1_1intrusive__fwd__ptr.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An intrusive, reference counting smart pointer impelementation.  <a href="classcppa_1_1intrusive__ptr.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1local__actor.html">local_actor</a></td></tr>
@@ -170,6 +172,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1message__id__t.html">message_id_t</a></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1object.html">object</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstraction class that stores an instance of an announced type.  <a href="classcppa_1_1object.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcppa_1_1option__info.html">option_info</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a help text along with the number of expected arguments.  <a href="structcppa_1_1option__info.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1option.html">option</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an optional value of <code>T</code>.  <a href="classcppa_1_1option.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppa_1_1partial__function.html">partial_function</a></td></tr>
@@ -215,10 +219,11 @@ typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&
 typedef behavior_policy&lt; false &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>keep_behavior_t</b></td></tr>
 <tr class="memitem:a7ea2a0fe3f2f2a7f451d667a22b5940e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ea2a0fe3f2f2a7f451d667a22b5940e"></a>
 typedef behavior_policy&lt; true &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>discard_behavior_t</b></td></tr>
-<tr class="memitem:a748ba4e6851a7452f97ef907fe1c8393"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a748ba4e6851a7452f97ef907fe1c8393"></a>
+<tr class="memitem:ab8969803d282c6f1fe9b7641cd9357cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8969803d282c6f1fe9b7641cd9357cf"></a>
 typedef std::map&lt; std::string, <br class="typebreak"/>
 std::map&lt; std::pair&lt; char, <br class="typebreak"/>
-std::string &gt;, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>options_description</b></td></tr>
+std::string &gt;, <a class="el" href="structcppa_1_1option__info.html">option_info</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#ab8969803d282c6f1fe9b7641cd9357cf">options_description</a></td></tr>
+<tr class="memdesc:ab8969803d282c6f1fe9b7641cd9357cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a help text for program options with option groups. <br/></td></tr>
 <tr class="memitem:ae02290ba27f0e00874bd507875e460e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae02290ba27f0e00874bd507875e460e2"></a>
 typedef <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a><br class="typebreak"/>
 &lt; <a class="el" href="classcppa_1_1scheduled__actor.html">scheduled_actor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scheduled_actor_ptr</b></td></tr>
@@ -489,6 +494,9 @@ template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:adaa18a8117e9022caea2b0606c11ebbc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:adaa18a8117e9022caea2b0606c11ebbc"><td class="memTemplItemLeft" align="right" valign="top">detail::match_helper&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#adaa18a8117e9022caea2b0606c11ebbc">match</a> (T &amp;&amp;what)</td></tr>
 <tr class="memdesc:adaa18a8117e9022caea2b0606c11ebbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a match expression.   <a href="#adaa18a8117e9022caea2b0606c11ebbc"></a><br/></td></tr>
+<tr class="memitem:a512c996a6bbaef4f7127218b5513226f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a512c996a6bbaef4f7127218b5513226f"></a>
+detail::match_helper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a512c996a6bbaef4f7127218b5513226f">match_split</a> (const std::string &amp;str, char delim, bool keep_empties=false)</td></tr>
+<tr class="memdesc:a512c996a6bbaef4f7127218b5513226f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits <code>str</code> using <code>delim</code> and match the resulting strings. <br/></td></tr>
 <tr class="memitem:a190b08703616bd22402836fcb24033a9"><td class="memTemplParams" colspan="2">template&lt;typename InputIterator &gt; </td></tr>
 <tr class="memitem:a190b08703616bd22402836fcb24033a9"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a190b08703616bd22402836fcb24033a9">match_each</a> (InputIterator first, InputIterator last)-&gt; detail</td></tr>
 <tr class="memdesc:a190b08703616bd22402836fcb24033a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a match expression that matches each element in range [first, last).  <a href="#a190b08703616bd22402836fcb24033a9"></a><br/></td></tr>
@@ -554,24 +562,26 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a623e50578009f84547699fefe8ae40f4"><td class="memTemplParams" colspan="2">template&lt;atom_value... Atoms, typename... Ts&gt; </td></tr>
 <tr class="memitem:a623e50578009f84547699fefe8ae40f4"><td class="memTemplItemLeft" align="right" valign="top">___&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a623e50578009f84547699fefe8ae40f4">on</a> ()</td></tr>
 <tr class="memdesc:a623e50578009f84547699fefe8ae40f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left-hand side of a partial function expression that matches types.  <a href="#a623e50578009f84547699fefe8ae40f4"></a><br/></td></tr>
-<tr class="memitem:a78997285c975b7db83053fe800e26b6f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a78997285c975b7db83053fe800e26b6f"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a78997285c975b7db83053fe800e26b6f"><td class="memTemplItemLeft" align="right" valign="top">detail::conv_arg_impl&lt; T &gt;<br class="typebreak"/>
-::result_type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>conv_arg</b> (const std::string &amp;arg)</td></tr>
 <tr class="memitem:a203490e67e091f123d0cc6f7884e88c9"><td class="memTemplParams" colspan="2"><a class="anchor" id="a203490e67e091f123d0cc6f7884e88c9"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a203490e67e091f123d0cc6f7884e88c9"><td class="memTemplItemLeft" align="right" valign="top">detail::rd_arg_functor&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>rd_arg</b> (T &amp;storage)</td></tr>
+<tr class="memitem:a203490e67e091f123d0cc6f7884e88c9"><td class="memTemplItemLeft" align="right" valign="top">detail::rd_arg_functor&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a203490e67e091f123d0cc6f7884e88c9">rd_arg</a> (T &amp;storage)</td></tr>
+<tr class="memdesc:a203490e67e091f123d0cc6f7884e88c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right-hand side of a match expression for a program option reading an argument of type <code>T</code>. <br/></td></tr>
 <tr class="memitem:ab1ebc36e2bddc5cef48f1688af4d7608"><td class="memTemplParams" colspan="2"><a class="anchor" id="ab1ebc36e2bddc5cef48f1688af4d7608"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab1ebc36e2bddc5cef48f1688af4d7608"><td class="memTemplItemLeft" align="right" valign="top">detail::add_arg_functor&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>add_arg</b> (std::vector&lt; T &gt; &amp;storage)</td></tr>
-<tr class="memitem:a18d58a681b4c0cc4d75c2383bf3829a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18d58a681b4c0cc4d75c2383bf3829a8"></a>
-detail::opt_rvalue_builder&lt; true &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>on_opt</b> (char short_opt, std::string long_opt, options_description *desc=nullptr, std::string help_text=&quot;&quot;, std::string help_group=&quot;general options&quot;)</td></tr>
-<tr class="memitem:a3fdef777679df7e29d359102e22f61a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fdef777679df7e29d359102e22f61a1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>decltype</b> (<a class="el" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808">on</a>&lt; std::string &gt;().when(cppa::placeholders::_x1.in(std::vector&lt; std::string &gt;()))) on_vopt(char short_opt</td></tr>
+<tr class="memitem:ab1ebc36e2bddc5cef48f1688af4d7608"><td class="memTemplItemLeft" align="right" valign="top">detail::add_arg_functor&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecppa.html#ab1ebc36e2bddc5cef48f1688af4d7608">add_arg</a> (std::vector&lt; T &gt; &amp;storage)</td></tr>
+<tr class="memdesc:ab1ebc36e2bddc5cef48f1688af4d7608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right-hand side of a match expression for a program option adding an argument of type <code>T</code> to <code>storage</code>. <br/></td></tr>
+<tr class="memitem:ac6e2e610b7d676a86b43b7b5552ea3e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6e2e610b7d676a86b43b7b5552ea3e9"></a>
+detail::opt1_rvalue_builder&lt; true &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#ac6e2e610b7d676a86b43b7b5552ea3e9">on_opt1</a> (char short_opt, std::string long_opt, <a class="el" href="namespacecppa.html#ab8969803d282c6f1fe9b7641cd9357cf">options_description</a> *desc=nullptr, std::string help_text=&quot;&quot;, std::string help_group=&quot;general options&quot;)</td></tr>
+<tr class="memdesc:ac6e2e610b7d676a86b43b7b5552ea3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left-hand side of a match expression for a program option with one argument. <br/></td></tr>
+<tr class="memitem:a5bbb3d478cab709c2eeae7146d73f24c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bbb3d478cab709c2eeae7146d73f24c"></a>
+detail::opt0_rvalue_builder&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a5bbb3d478cab709c2eeae7146d73f24c">on_opt0</a> (char short_opt, std::string long_opt, <a class="el" href="namespacecppa.html#ab8969803d282c6f1fe9b7641cd9357cf">options_description</a> *desc=nullptr, std::string help_text=&quot;&quot;, std::string help_group=&quot;general options&quot;)</td></tr>
+<tr class="memdesc:a5bbb3d478cab709c2eeae7146d73f24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left-hand side of a match expression for a program option with no argument. <br/></td></tr>
 <tr class="memitem:a3e9f8e43fb78f1a6c9afb6700ebe4404"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e9f8e43fb78f1a6c9afb6700ebe4404"></a>
-std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>print_desc</b> (options_description *desc, std::ostream &amp;out=std::cout)</td></tr>
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a3e9f8e43fb78f1a6c9afb6700ebe4404">print_desc</a> (<a class="el" href="namespacecppa.html#ab8969803d282c6f1fe9b7641cd9357cf">options_description</a> *desc, std::ostream &amp;out=std::cout)</td></tr>
+<tr class="memdesc:a3e9f8e43fb78f1a6c9afb6700ebe4404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that prints the help text of <code>desc</code> to <code>out</code>. <br/></td></tr>
 <tr class="memitem:aeb2216fa186264747a6256d0d21dbf98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb2216fa186264747a6256d0d21dbf98"></a>
-std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>print_desc_and_exit</b> (options_description *desc, std::ostream &amp;out=std::cout, int exit_reason=0)</td></tr>
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#aeb2216fa186264747a6256d0d21dbf98">print_desc_and_exit</a> (<a class="el" href="namespacecppa.html#ab8969803d282c6f1fe9b7641cd9357cf">options_description</a> *desc, std::ostream &amp;out=std::cout, int exit_reason=0)</td></tr>
+<tr class="memdesc:aeb2216fa186264747a6256d0d21dbf98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that prints the help text of <code>desc</code> to <code>out</code> and then calls <code>exit(exit_reason)</code>. <br/></td></tr>
 <tr class="memitem:ga5d1de7bc77d88156d0e12e373ab2c613"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___type_system.html#ga5d1de7bc77d88156d0e12e373ab2c613">primitive_type_name</a> (<a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6">primitive_type</a> ptype)</td></tr>
 <tr class="memdesc:ga5d1de7bc77d88156d0e12e373ab2c613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a <a class="el" href="group___type_system.html#ga5a8afa49a3547b610d4a50b3ab1dceb6" title="Represents the type flag of primitive_variant.">primitive_type</a> value to its name.  <a href="group___type_system.html#ga5d1de7bc77d88156d0e12e373ab2c613"></a><br/></td></tr>
 <tr class="memitem:a1f48cc1f5e2597c4a131d292145f728f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1f48cc1f5e2597c4a131d292145f728f"></a>
@@ -635,6 +645,16 @@ template&lt;size_t N, typename... Ts&gt; </td></tr>
 &lt; std::is_base_of&lt; <a class="el" href="classcppa_1_1channel.html">channel</a>, C &gt;<br class="typebreak"/>
 ::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b">send</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; C &gt; &amp;whom, Args &amp;&amp;...what)</td></tr>
 <tr class="memdesc:ga3d831d687613a6a5ebc143b7e347858b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>{what...}</code> as a message to <code>whom</code>.  <a href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b"></a><br/></td></tr>
+<tr class="memitem:ga71f717be3499a85a571d7536cb33cd23"><td class="memTemplParams" colspan="2">template&lt;class C , typename... Args&gt; </td></tr>
+<tr class="memitem:ga71f717be3499a85a571d7536cb33cd23"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
+&lt; std::is_base_of&lt; <a class="el" href="classcppa_1_1channel.html">channel</a>, C &gt;<br class="typebreak"/>
+::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga71f717be3499a85a571d7536cb33cd23">send_tuple_as</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> &amp;from, const <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; C &gt; &amp;whom, <a class="el" href="classcppa_1_1any__tuple.html">any_tuple</a> what)</td></tr>
+<tr class="memdesc:ga71f717be3499a85a571d7536cb33cd23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>what</code> as a message to <code>whom</code>, but sets the sender information to <code>from</code>.  <a href="group___message_handling.html#ga71f717be3499a85a571d7536cb33cd23"></a><br/></td></tr>
+<tr class="memitem:gab3e0109b216f1dc69fa852139259cc2a"><td class="memTemplParams" colspan="2">template&lt;class C , typename... Args&gt; </td></tr>
+<tr class="memitem:gab3e0109b216f1dc69fa852139259cc2a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
+&lt; std::is_base_of&lt; <a class="el" href="classcppa_1_1channel.html">channel</a>, C &gt;<br class="typebreak"/>
+::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#gab3e0109b216f1dc69fa852139259cc2a">send_as</a> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">actor_ptr</a> &amp;from, const <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; C &gt; &amp;whom, Args &amp;&amp;...what)</td></tr>
+<tr class="memdesc:gab3e0109b216f1dc69fa852139259cc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>{what...}</code> as a message to <code>whom</code>, but sets the sender information to <code>from</code>.  <a href="group___message_handling.html#gab3e0109b216f1dc69fa852139259cc2a"></a><br/></td></tr>
 <tr class="memitem:gac75843b3cdee57feeb6844a5568e4bfa"><td class="memTemplParams" colspan="2">template&lt;class C &gt; </td></tr>
 <tr class="memitem:gac75843b3cdee57feeb6844a5568e4bfa"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
 &lt; std::is_base_of&lt; <a class="el" href="classcppa_1_1channel.html">channel</a>, C &gt;<br class="typebreak"/>
@@ -709,18 +729,6 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>Second</b></td></tr>
 <tr class="memitem:a6fd601df8b1aff0ef276f80a103c5f4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fd601df8b1aff0ef276f80a103c5f4e"></a>
 constexpr <a class="el" href="structcppa_1_1anything.html">anything</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#a6fd601df8b1aff0ef276f80a103c5f4e">any_vals</a></td></tr>
 <tr class="memdesc:a6fd601df8b1aff0ef276f80a103c5f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wildcard that matches any number of any values. <br/></td></tr>
-<tr class="memitem:a3ad5b68eab4045e02909b9a2bc707aa7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ad5b68eab4045e02909b9a2bc707aa7"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>long_opt</b></td></tr>
-<tr class="memitem:a3eb178de20ce9e22a81a025959730466"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3eb178de20ce9e22a81a025959730466"></a>
-std::string options_description *&#160;</td><td class="memItemRight" valign="bottom"><b>desc</b> = nullptr</td></tr>
-<tr class="memitem:a89119412ea3bacad7cadb8156a0442b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89119412ea3bacad7cadb8156a0442b9"></a>
-std::string <br class="typebreak"/>
-options_description <br class="typebreak"/>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>help_text</b> = &quot;&quot;</td></tr>
-<tr class="memitem:a842fbee51407c9e40b79e9aba7a53dc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a842fbee51407c9e40b79e9aba7a53dc4"></a>
-std::string <br class="typebreak"/>
-options_description <br class="typebreak"/>
-std::string std::string&#160;</td><td class="memItemRight" valign="bottom"><b>help_group</b> = &quot;general options&quot;)</td></tr>
 <tr class="memitem:a241a516282529c45499a49101c35aa74"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>primitive_type_names</b> []</td></tr>
 <tr class="memitem:abdc77f5b27edd9e40908860db20e666d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdc77f5b27edd9e40908860db20e666d"></a>
 <a class="el" href="classcppa_1_1local__actor.html">local_actor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecppa.html#abdc77f5b27edd9e40908860db20e666d">self</a></td></tr>
@@ -784,7 +792,7 @@ template&lt;size_t Size&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>A compact representation of <code>str</code>. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a1">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#a4">dining_philosophers.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a2">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a1">dancing_kirby.cpp</a>, and <a class="el" href="dining_philosophers_8cpp-example.html#a4">dining_philosophers.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -805,7 +813,7 @@ template&lt;size_t Size&gt; </div>
 <dl class="section warning"><dt>Warning:</dt><dd>This function will cause a deadlock if called from multiple actors. </dd>
 <dd>
 Do not call this function in cooperatively scheduled actors. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dining_philosophers_8cpp-example.html#a8">dining_philosophers.cpp</a>, <a class="el" href="hello_world_example_8cpp-example.html#a4">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a12">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dining_philosophers_8cpp-example.html#a8">dining_philosophers.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -840,8 +848,7 @@ Do not call this function in cooperatively scheduled actors. </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>A functor providing the <code>until</code> member function. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="math_actor_example_8cpp-example.html#a0">math_actor_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="aaa221547ef879ba5b42f7cc7820f90e1"></a>
@@ -1092,7 +1099,7 @@ template&lt;typename Arg0 , typename... Args&gt; </div>
 
 <p>Left-hand side of a partial function expression that matches values. </p>
 <p>This overload can be used with the wildcards <a class="el" href="namespacecppa.html#a18bab167555966e432564cdee1611825">val</a>, <a class="el" href="namespacecppa.html#a6fd601df8b1aff0ef276f80a103c5f4e">any_vals</a> and <a class="el" href="namespacecppa.html#a8b4879d9cdef5c6c0995b30ee37d935e">arg_match</a>. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a3">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#a3">dining_philosophers.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a1">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a3">dancing_kirby.cpp</a>, and <a class="el" href="dining_philosophers_8cpp-example.html#a3">dining_philosophers.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1277,8 +1284,7 @@ template&lt;atom_value... Atoms, typename... Ts&gt; </div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_2_8cpp-example.html#a2">announce_example_2.cpp</a>, <a class="el" href="announce_example_3_8cpp-example.html#a2">announce_example_3.cpp</a>, <a class="el" href="hello_world_example_8cpp-example.html#a0">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a9">math_actor_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="ae06258ccd73463e833ade58a29406e66"></a>
@@ -1323,7 +1329,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd>A functor implementing the loop. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_4_8cpp-example.html#a3">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a15">announce_example_5.cpp</a>, and <a class="el" href="dancing_kirby_8cpp-example.html#a2">dancing_kirby.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a2">dancing_kirby.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1562,8 +1568,7 @@ template&lt;typename Statement &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns:</dt><dd><code>what</code> as string. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_4_8cpp-example.html#a4">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a16">announce_example_5.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a10">math_actor_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a18bab167555966e432564cdee1611825"></a>
@@ -1583,8 +1588,7 @@ template&lt;typename T &gt; </div>
 
 <p>A wildcard that matches any value of type <code>T</code>. </p>
 <dl class="section see"><dt>See also:</dt><dd><a class="el" href="math_actor_example_8cpp-example.html">Math Actor Example</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_2_8cpp-example.html#a0">announce_example_2.cpp</a>, <a class="el" href="announce_example_3_8cpp-example.html#a0">announce_example_3.cpp</a>, and <a class="el" href="announce_example_4_8cpp-example.html#a0">announce_example_4.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <hr/><h2>Variable Documentation</h2>
@@ -1600,8 +1604,7 @@ template&lt;typename T &gt; </div>
 
 <p>A wildcard that matches the argument types of a given callback. Must be the last argument to <a class="el" href="namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808">on()</a>. </p>
 <dl class="section see"><dt>See also:</dt><dd><a class="el" href="math_actor_example_8cpp-example.html">Math Actor Example</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="math_actor_example_8cpp-example.html#a3">math_actor_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a1845e56c3aad8758b11698353f7317c5"></a>
@@ -1641,7 +1644,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 5 2012 11:52:58 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 19 2012 15:35:07 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

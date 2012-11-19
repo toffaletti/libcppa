@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.5.2</span>
+   &#160;<span id="projectnumber">Version 0.5.4</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &lt; std::is_base_of&lt; channel, C &gt;<br class="typebreak"/>
 ::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b">cppa::send</a> (const intrusive_ptr&lt; C &gt; &amp;whom, Args &amp;&amp;...what)</td></tr>
 <tr class="memdesc:ga3d831d687613a6a5ebc143b7e347858b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>{what...}</code> as a message to <code>whom</code>.  <a href="#ga3d831d687613a6a5ebc143b7e347858b"></a><br/></td></tr>
+<tr class="memitem:ga71f717be3499a85a571d7536cb33cd23"><td class="memTemplParams" colspan="2">template&lt;class C , typename... Args&gt; </td></tr>
+<tr class="memitem:ga71f717be3499a85a571d7536cb33cd23"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
+&lt; std::is_base_of&lt; channel, C &gt;<br class="typebreak"/>
+::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#ga71f717be3499a85a571d7536cb33cd23">cppa::send_tuple_as</a> (const <a class="el" href="classcppa_1_1actor.html#a15b74113cbde6221df8f00c25b6c2a56">actor_ptr</a> &amp;from, const intrusive_ptr&lt; C &gt; &amp;whom, any_tuple what)</td></tr>
+<tr class="memdesc:ga71f717be3499a85a571d7536cb33cd23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>what</code> as a message to <code>whom</code>, but sets the sender information to <code>from</code>.  <a href="#ga71f717be3499a85a571d7536cb33cd23"></a><br/></td></tr>
+<tr class="memitem:gab3e0109b216f1dc69fa852139259cc2a"><td class="memTemplParams" colspan="2">template&lt;class C , typename... Args&gt; </td></tr>
+<tr class="memitem:gab3e0109b216f1dc69fa852139259cc2a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
+&lt; std::is_base_of&lt; channel, C &gt;<br class="typebreak"/>
+::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___message_handling.html#gab3e0109b216f1dc69fa852139259cc2a">cppa::send_as</a> (const <a class="el" href="classcppa_1_1actor.html#a15b74113cbde6221df8f00c25b6c2a56">actor_ptr</a> &amp;from, const intrusive_ptr&lt; C &gt; &amp;whom, Args &amp;&amp;...what)</td></tr>
+<tr class="memdesc:gab3e0109b216f1dc69fa852139259cc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends <code>{what...}</code> as a message to <code>whom</code>, but sets the sender information to <code>from</code>.  <a href="#gab3e0109b216f1dc69fa852139259cc2a"></a><br/></td></tr>
 <tr class="memitem:gac75843b3cdee57feeb6844a5568e4bfa"><td class="memTemplParams" colspan="2">template&lt;class C &gt; </td></tr>
 <tr class="memitem:gac75843b3cdee57feeb6844a5568e4bfa"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
 &lt; std::is_base_of&lt; channel, C &gt;<br class="typebreak"/>
@@ -493,8 +503,7 @@ template&lt;typename... Args&gt; </div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="hello_world_example_8cpp-example.html#a1">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a4">math_actor_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="ga4d847736b07a78186a20cd2b25e7fa47"></a>
@@ -590,8 +599,53 @@ template&lt;class C , typename... Args&gt; </div>
   </dd>
 </dl>
 <dl class="section pre"><dt>Precondition:</dt><dd><code>sizeof...(Args) &gt; 0</code> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="announce_example_1_8cpp-example.html#a2">announce_example_1.cpp</a>, <a class="el" href="announce_example_2_8cpp-example.html#a1">announce_example_2.cpp</a>, <a class="el" href="announce_example_3_8cpp-example.html#a1">announce_example_3.cpp</a>, <a class="el" href="announce_example_4_8cpp-example.html#a2">announce_example_4.cpp</a>, <a class="el" href="announce_example_5_8cpp-example.html#a14">announce_example_5.cpp</a>, <a class="el" href="dancing_kirby_8cpp-example.html#a0">dancing_kirby.cpp</a>, <a class="el" href="dining_philosophers_8cpp-example.html#a5">dining_philosophers.cpp</a>, <a class="el" href="hello_world_example_8cpp-example.html#a3">hello_world_example.cpp</a>, and <a class="el" href="math_actor_example_8cpp-example.html#a8">math_actor_example.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="dancing_kirby_8cpp-example.html#a0">dancing_kirby.cpp</a>, and <a class="el" href="dining_philosophers_8cpp-example.html#a5">dining_philosophers.cpp</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="gab3e0109b216f1dc69fa852139259cc2a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class C , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_base_of&lt;channel, C&gt;::value&gt;::type cppa::send_as </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcppa_1_1actor.html#a15b74113cbde6221df8f00c25b6c2a56">actor_ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const intrusive_ptr&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>whom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>what</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends <code>{what...}</code> as a message to <code>whom</code>, but sets the sender information to <code>from</code>. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>Sender as seen by <code>whom</code>. </td></tr>
+    <tr><td class="paramname">whom</td><td>Receiver of the message. </td></tr>
+    <tr><td class="paramname">what</td><td>Message elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition:</dt><dd><code>sizeof...(Args) &gt; 0</code> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ga3ae2b7f14f29131233296643035e5128"></a>
@@ -628,6 +682,51 @@ template&lt;class C , typename... Args&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ga71f717be3499a85a571d7536cb33cd23"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class C , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_base_of&lt;channel, C&gt;::value&gt;::type cppa::send_tuple_as </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcppa_1_1actor.html#a15b74113cbde6221df8f00c25b6c2a56">actor_ptr</a> &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const intrusive_ptr&lt; C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>whom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">any_tuple&#160;</td>
+          <td class="paramname"><em>what</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends <code>what</code> as a message to <code>whom</code>, but sets the sender information to <code>from</code>. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>Sender as seen by <code>whom</code>. </td></tr>
+    <tr><td class="paramname">whom</td><td>Receiver of the message. </td></tr>
+    <tr><td class="paramname">what</td><td>Message elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition:</dt><dd><code>sizeof...(Args) &gt; 0</code> </dd></dl>
 
 </div>
 </div>
@@ -723,7 +822,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 5 2012 11:52:58 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 19 2012 15:35:07 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

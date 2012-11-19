@@ -15,6 +15,7 @@ var searchData=
   ['detach',['detach',['../classcppa_1_1actor.html#af984afca4a4d83d233d2c88ecab3c25b',1,'cppa::actor']]],
   ['detached',['detached',['../namespacecppa.html#ada43001c9a9dd2cbb1f87656b7fa1cb4aa095bad54a9491227ae34ec4e8036eed',1,'cppa']]],
   ['detached_5fand_5fhidden',['detached_and_hidden',['../namespacecppa.html#ada43001c9a9dd2cbb1f87656b7fa1cb4a855c80d325a3d15c95b310a3a4f7528c',1,'cppa']]],
+  ['disable',['disable',['../classcppa_1_1util_1_1scope__guard.html#aac9006ed1b9d816b6adb3af73605c7dd',1,'cppa::util::scope_guard']]],
   ['discard_5fbehavior',['discard_behavior',['../classcppa_1_1local__actor.html#a1c01211e9e3311febbeead50b6a6a5bd',1,'cppa::local_actor']]],
   ['do_5freceive',['do_receive',['../classcppa_1_1event__based__actor.html#a63872237d897992db3a1fdeaa1b5bd5c',1,'cppa::event_based_actor::do_receive()'],['../namespacecppa.html#ab32fd2e5649ee811c08a9ff74e9bed84',1,'cppa::do_receive()']]],
   ['duration',['duration',['../classcppa_1_1util_1_1duration.html',1,'cppa::util']]]

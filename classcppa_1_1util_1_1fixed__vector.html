@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.5.2</span>
+   &#160;<span id="projectnumber">Version 0.5.4</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A vector with a fixed maximum size.  
+<p>A vector with a fixed maximum size (uses an array internally).  
  <a href="classcppa_1_1util_1_1fixed__vector.html#details">More...</a></p>
 
 <p><code>#include &lt;fixed_vector.hpp&gt;</code></p>
@@ -154,8 +154,6 @@ size_type&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b> () 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="memitem:a4abbb704bf6f5f807622f92c5c5332b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4abbb704bf6f5f807622f92c5c5332b0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const </td></tr>
-<tr class="memitem:abedcfa441f325ba296ddcd3e7a26f456"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abedcfa441f325ba296ddcd3e7a26f456"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>not_empty</b> () const </td></tr>
 <tr class="memitem:af6ae9bf9c20a256200cfc8b4a34781ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6ae9bf9c20a256200cfc8b4a34781ae"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>full</b> () const </td></tr>
 <tr class="memitem:a489cfa9a764aaf47a1b598512a0b1619"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a489cfa9a764aaf47a1b598512a0b1619"></a>
@@ -214,8 +212,8 @@ const T *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> () cons
 <div class="textblock"><h3>template&lt;typename T, size_t MaxSize&gt;<br/>
 class cppa::util::fixed_vector&lt; T, MaxSize &gt;</h3>
 
-<p>A vector with a fixed maximum size. </p>
-<p>This implementation is highly optimized for arithmetic types and does <b>not</b> call constructors or destructors properly. </p>
+<p>A vector with a fixed maximum size (uses an array internally). </p>
+<dl class="section warning"><dt>Warning:</dt><dd>This implementation is highly optimized for arithmetic types and does <b>not</b> call constructors or destructors properly. </dd></dl>
 </div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a339c2780ca298a6f3b3602334de68866"></a>
 <div class="memitem">
@@ -267,7 +265,7 @@ template&lt;class InputIterator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 5 2012 11:52:58 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 19 2012 15:35:08 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

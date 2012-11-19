@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.5.2</span>
+   &#160;<span id="projectnumber">Version 0.5.4</span>
    </div>
   </td>
  </tr>
@@ -107,51 +107,13 @@ Getting Started</h1>
 </ul>
 <h1><a class="anchor" id="IntroHelloWorld"></a>
 Hello World Example</h1>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;cppa/cppa.hpp&quot;</span></div>
-<div class="line"></div>
-<div class="line"><span class="keyword">using namespace </span>cppa;</div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> echo_actor() {</div>
-<div class="line">    <span class="comment">// wait for a message</span></div>
-<div class="line">    <a class="code" href="namespacecppa.html#a671f171f6353ab9c5c859842a242faab" title="Dequeues the next message from the mailbox that&#39;s matched by bhvr and executes the corresponding call...">receive</a> (</div>
-<div class="line">        <span class="comment">// invoke this lambda expression if we receive a string</span></div>
-<div class="line">        on&lt;std::string&gt;() &gt;&gt; [](<span class="keyword">const</span> std::string&amp; what) {</div>
-<div class="line">            <span class="comment">// prints &quot;Hello World!&quot;</span></div>
-<div class="line">            std::cout &lt;&lt; what &lt;&lt; std::endl;</div>
-<div class="line">            <span class="comment">// replies &quot;!dlroW olleH&quot;</span></div>
-<div class="line">            <a class="code" href="group___message_handling.html#gac8769898500320bfc51235a5fe771b11" title="Sends a message to the sender of the last received message.">reply</a>(std::string(what.rbegin(), what.rend()));</div>
-<div class="line">        }</div>
-<div class="line">    );</div>
-<div class="line">}</div>
-<div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> main() {</div>
-<div class="line">    <span class="comment">// create a new actor that invokes the function echo_actor</span></div>
-<div class="line">    <span class="keyword">auto</span> hello_actor = <a class="code" href="group___actor_creation.html#ga6dfaa32fe8444afd935a2810672c704a" title="Spawns a new context-switching or thread-mapped actor that executes fun(args...).">spawn</a>(echo_actor);</div>
-<div class="line">    <span class="comment">// send &quot;Hello World!&quot; to our new actor</span></div>
-<div class="line">    <span class="comment">// note: libcppa converts string literals to std::string</span></div>
-<div class="line">    <a class="code" href="group___message_handling.html#ga3d831d687613a6a5ebc143b7e347858b" title="Sends {what...} as a message to whom.">send</a>(hello_actor, <span class="stringliteral">&quot;Hello World!&quot;</span>);</div>
-<div class="line">    <span class="comment">// wait for a response and print it</span></div>
-<div class="line">    <a class="code" href="namespacecppa.html#a671f171f6353ab9c5c859842a242faab" title="Dequeues the next message from the mailbox that&#39;s matched by bhvr and executes the corresponding call...">receive</a> (</div>
-<div class="line">        on&lt;std::string&gt;() &gt;&gt; [](<span class="keyword">const</span> std::string&amp; what) {</div>
-<div class="line">            <span class="comment">// prints &quot;!dlroW olleH&quot;</span></div>
-<div class="line">            std::cout &lt;&lt; what &lt;&lt; std::endl;</div>
-<div class="line">        }</div>
-<div class="line">    );</div>
-<div class="line">    <span class="comment">// wait until all other actors we&#39;ve spawned are done</span></div>
-<div class="line">    <a class="code" href="namespacecppa.html#a185090573ffb146384ccdfa94172c23e" title="Blocks execution of this actor until all other actors finished execution.">await_all_others_done</a>();</div>
-<div class="line">    <span class="comment">// done</span></div>
-<div class="line">    <a class="code" href="namespacecppa.html#a8d5daac288a10cc34286f505ea637571" title="Destroys all singletons, disconnects all peers and stops the scheduler. It is recommended to use this...">shutdown</a>();</div>
-<div class="line">    <span class="keywordflow">return</span> 0;</div>
-<div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="IntroMoreExamples"></a>
+<div class="fragment"></div><!-- fragment --><h1><a class="anchor" id="IntroMoreExamples"></a>
 More Examples</h1>
 <p>The <a class="el" href="math_actor_example_8cpp-example.html">Math Actor Example</a> shows the usage of <a class="el" href="">receive_loop</a> and <a class="el" href="namespacecppa.html#a8b4879d9cdef5c6c0995b30ee37d935e">arg_match</a>. The <a class="el" href="dining_philosophers_8cpp-example.html">Dining Philosophers Example</a> introduces event-based actors and includes a lot of <code>libcppa</code> features. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 5 2012 11:52:58 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 19 2012 15:35:08 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

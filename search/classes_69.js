@@ -3,6 +3,8 @@ var searchData=
   ['if_5felse',['if_else',['../structcppa_1_1util_1_1if__else.html',1,'cppa::util']]],
   ['if_5fnot_5fleft',['if_not_left',['../structcppa_1_1util_1_1if__not__left.html',1,'cppa::util']]],
   ['input_5fstream',['input_stream',['../classcppa_1_1network_1_1input__stream.html',1,'cppa::network']]],
+  ['intrusive_5ffwd_5fptr',['intrusive_fwd_ptr',['../classcppa_1_1intrusive__fwd__ptr.html',1,'cppa']]],
+  ['intrusive_5ffwd_5fptr_3c_20abstract_5fmiddleman_2c_20ref_5fftor_2c_20deref_5fftor_20_3e',['intrusive_fwd_ptr&lt; abstract_middleman, ref_ftor, deref_ftor &gt;',['../classcppa_1_1intrusive__fwd__ptr.html',1,'cppa']]],
   ['intrusive_5fptr',['intrusive_ptr',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20actor_20_3e',['intrusive_ptr&lt; actor &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],
   ['intrusive_5fptr_3c_20channel_20_3e',['intrusive_ptr&lt; channel &gt;',['../classcppa_1_1intrusive__ptr.html',1,'cppa']]],

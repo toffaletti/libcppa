@@ -2,9 +2,10 @@ var searchData=
 [
   ['accept_5fconnection',['accept_connection',['../classcppa_1_1network_1_1acceptor.html#acba54dd17cfb675dce908172d58e8bdd',1,'cppa::network::acceptor']]],
   ['actor_5fexited',['actor_exited',['../classcppa_1_1attachable.html#a1c0ce6ff1c559f26d78f001d2094f347',1,'cppa::attachable']]],
+  ['add_5farg',['add_arg',['../namespacecppa.html#ab1ebc36e2bddc5cef48f1688af4d7608',1,'cppa']]],
   ['add_5fmodule',['add_module',['../classcppa_1_1group.html#a53508e073e6fc0466ba1dfa3fbacf908',1,'cppa::group']]],
   ['add_5fprotocol',['add_protocol',['../classcppa_1_1network_1_1middleman.html#a4b8a1e553f558cc2782fb7f7e649b59a',1,'cppa::network::middleman']]],
-  ['adopt',['adopt',['../classcppa_1_1intrusive__ptr.html#a9b9b75a5c4f24d08f997d3f1f05046b4',1,'cppa::intrusive_ptr']]],
+  ['adopt',['adopt',['../classcppa_1_1intrusive__fwd__ptr.html#a9357971803be4b2c7c011c9f3e6a8fc5',1,'cppa::intrusive_fwd_ptr::adopt()'],['../classcppa_1_1intrusive__ptr.html#a9b9b75a5c4f24d08f997d3f1f05046b4',1,'cppa::intrusive_ptr::adopt()']]],
   ['announce',['announce',['../group___type_system.html#ga7f73c466e0356b08161d77769aeb726f',1,'cppa::announce(const std::type_info &amp;tinfo, uniform_type_info *utype)'],['../group___type_system.html#gacb2a06b208db48f0c7c79740702e7e61',1,'cppa::announce(const Args &amp;...args)']]],
   ['anonymous',['anonymous',['../classcppa_1_1group.html#af7e024c27adcf2b5970b85cb1b1572f2',1,'cppa::group']]],
   ['any_5ftuple',['any_tuple',['../classcppa_1_1any__tuple.html#a63e7c1f31f31e9f0f21c6cacbcb7a0fe',1,'cppa::any_tuple::any_tuple()'],['../classcppa_1_1any__tuple.html#a634d1b42fd11e6740ddd9d2e170d23ee',1,'cppa::any_tuple::any_tuple(const cow_tuple&lt; Args...&gt; &amp;t)'],['../classcppa_1_1any__tuple.html#a22ffc9b701c8923579066cb72193f8cf',1,'cppa::any_tuple::any_tuple(cow_tuple&lt; Args...&gt; &amp;&amp;t)'],['../classcppa_1_1any__tuple.html#a0ad2fbd03421ba797212645da8a7df72',1,'cppa::any_tuple::any_tuple(any_tuple &amp;&amp;)'],['../classcppa_1_1any__tuple.html#a362244f803cc21e8c34a5a503a796a7f',1,'cppa::any_tuple::any_tuple(const any_tuple &amp;)']]],

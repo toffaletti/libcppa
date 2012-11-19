@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">libcppa
-   &#160;<span id="projectnumber">Version 0.5.2</span>
+   &#160;<span id="projectnumber">Version 0.5.4</span>
    </div>
   </td>
  </tr>
@@ -135,6 +135,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>intrusive_ptr</b> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a> &amp;&amp;other)</td></tr>
 <tr class="memitem:acdfc1ecc243a0b7c342ddab83b4a35c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdfc1ecc243a0b7c342ddab83b4a35c7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>intrusive_ptr</b> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a> &amp;other)</td></tr>
+<tr class="memitem:a02a5f21bb7f63f0730322964cea9f886"><td class="memTemplParams" colspan="2"><a class="anchor" id="a02a5f21bb7f63f0730322964cea9f886"></a>
+template&lt;typename Y , typename Ref , typename Deref &gt; </td></tr>
+<tr class="memitem:a02a5f21bb7f63f0730322964cea9f886"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>intrusive_ptr</b> (<a class="el" href="classcppa_1_1intrusive__fwd__ptr.html">intrusive_fwd_ptr</a>&lt; Y, Ref, Deref &gt; other)</td></tr>
 <tr class="memitem:a17c744687dc05738016edd852487da15"><td class="memTemplParams" colspan="2"><a class="anchor" id="a17c744687dc05738016edd852487da15"></a>
 template&lt;typename Y &gt; </td></tr>
 <tr class="memitem:a17c744687dc05738016edd852487da15"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>intrusive_ptr</b> (<a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; Y &gt; other)</td></tr>
@@ -193,6 +196,12 @@ template&lt;class C &gt; </td></tr>
 Related Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
 </td></tr>
+<tr class="memitem:a3bf21338b2fff0865dc0072acc3a5b30"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3bf21338b2fff0865dc0072acc3a5b30"></a>
+template&lt;typename T , typename Ref , typename Deref &gt; </td></tr>
+<tr class="memitem:a3bf21338b2fff0865dc0072acc3a5b30"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classcppa_1_1intrusive__fwd__ptr.html">intrusive_fwd_ptr</a>&lt; T, Ref, Deref &gt; &amp;lhs, const <a class="el" href="classcppa_1_1intrusive__fwd__ptr.html">intrusive_fwd_ptr</a>&lt; T, Ref, Deref &gt; &amp;rhs)</td></tr>
+<tr class="memitem:afa03801382c8f440c11242d55548b685"><td class="memTemplParams" colspan="2"><a class="anchor" id="afa03801382c8f440c11242d55548b685"></a>
+template&lt;typename T , typename Ref , typename Deref &gt; </td></tr>
+<tr class="memitem:afa03801382c8f440c11242d55548b685"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classcppa_1_1intrusive__fwd__ptr.html">intrusive_fwd_ptr</a>&lt; T, Ref, Deref &gt; &amp;lhs, const <a class="el" href="classcppa_1_1intrusive__fwd__ptr.html">intrusive_fwd_ptr</a>&lt; T, Ref, Deref &gt; &amp;rhs)</td></tr>
 <tr class="memitem:a03d21c4c1127def1b35ff3458b0b7473"><td class="memTemplParams" colspan="2"><a class="anchor" id="a03d21c4c1127def1b35ff3458b0b7473"></a>
 template&lt;typename X , typename Y &gt; </td></tr>
 <tr class="memitem:a03d21c4c1127def1b35ff3458b0b7473"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; X &gt; &amp;lhs, const <a class="el" href="classcppa_1_1intrusive__ptr.html">intrusive_ptr</a>&lt; Y &gt; &amp;rhs)</td></tr>
@@ -205,13 +214,14 @@ template&lt;typename X , typename Y &gt; </td></tr>
 class cppa::intrusive_ptr&lt; T &gt;</h3>
 
 <p>An intrusive, reference counting smart pointer impelementation. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>cppa/intrusive_ptr.hpp</li>
+<li>cppa/intrusive_fwd_ptr.hpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 5 2012 11:52:58 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 19 2012 15:35:08 for libcppa by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

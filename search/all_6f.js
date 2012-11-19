@@ -5,6 +5,8 @@ var searchData=
   ['on',['on',['../namespacecppa.html#a2f7ec3894c43620a6dea726625e3e808',1,'cppa::on(const Arg0 &amp;arg0, const Args &amp;...args)'],['../namespacecppa.html#abdf16cec61f25dc58e5b649c51ab36a5',1,'cppa::on()'],['../namespacecppa.html#a623e50578009f84547699fefe8ae40f4',1,'cppa::on()']]],
   ['on_5farg_5fmatch',['on_arg_match',['../namespacecppa.html#a1845e56c3aad8758b11698353f7317c5',1,'cppa']]],
   ['on_5fexit',['on_exit',['../classcppa_1_1local__actor.html#a77a401359c4fa5d766d403345053430a',1,'cppa::local_actor']]],
+  ['on_5fopt0',['on_opt0',['../namespacecppa.html#a5bbb3d478cab709c2eeae7146d73f24c',1,'cppa']]],
+  ['on_5fopt1',['on_opt1',['../namespacecppa.html#ac6e2e610b7d676a86b43b7b5552ea3e9',1,'cppa']]],
   ['operator_20bool',['operator bool',['../classcppa_1_1option.html#a0fc3a670eb0d6a1708b6d15afac4d257',1,'cppa::option']]],
   ['operator_21',['operator!',['../classcppa_1_1option.html#a7b565686216ccff61f384248e554a646',1,'cppa::option']]],
   ['operator_21_3d',['operator!=',['../structcppa_1_1anything.html#adc1789c708839469b8a77556c30d0aed',1,'cppa::anything::operator!=()'],['../classcppa_1_1either.html#a340aa1d9da23b7c40c3ef9da0ec5803f',1,'cppa::either::operator!=(const either&lt; Left, Right &gt; &amp;lhs, const either&lt; Left, Right &gt; &amp;rhs)'],['../classcppa_1_1either.html#a104359ff5ff27e50b9d8dbe4344fb492',1,'cppa::either::operator!=(const either&lt; Left, Right &gt; &amp;lhs, const Left &amp;rhs)'],['../classcppa_1_1either.html#a2c9c27793ed31c7094209f6ba542bcc5',1,'cppa::either::operator!=(const Left &amp;lhs, const either&lt; Left, Right &gt; &amp;rhs)'],['../classcppa_1_1either.html#af26ec74b249ee2ff859dc5ddda20770c',1,'cppa::either::operator!=(const either&lt; Left, Right &gt; &amp;lhs, const Right &amp;rhs)'],['../classcppa_1_1either.html#a3397344a00af2efead74901422fd4c34',1,'cppa::either::operator!=(const Right &amp;lhs, const either&lt; Left, Right &gt; &amp;rhs)'],['../classcppa_1_1option.html#a8d7cdc6d35acbbbfc72cd3fadf589cc3',1,'cppa::option::operator!=(const option&lt; T &gt; &amp;lhs, const option&lt; U &gt; &amp;rhs)'],['../classcppa_1_1option.html#a2864be47773dd2a2dc946ccf705c15e9',1,'cppa::option::operator!=(const option&lt; T &gt; &amp;lhs, const U &amp;rhs)'],['../classcppa_1_1option.html#ad76614771c066d75e1501a4a05310e90',1,'cppa::option::operator!=(const T &amp;lhs, const option&lt; U &gt; &amp;rhs)']]],
@@ -16,6 +18,8 @@ var searchData=
   ['operator_3e_3e',['operator&gt;&gt;',['../classcppa_1_1deserializer.html#ad00e60cd230f244c1aac80d8decc03b5',1,'cppa::deserializer']]],
   ['option',['option',['../classcppa_1_1option.html#a2b5c7cb69212509d97d61edda1ff2e53',1,'cppa::option::option()'],['../classcppa_1_1option.html#aa7d7daab8ca7d8f39c8fa5d5f0265ce3',1,'cppa::option::option(T value)']]],
   ['option',['option',['../classcppa_1_1option.html',1,'cppa']]],
+  ['option_5finfo',['option_info',['../structcppa_1_1option__info.html',1,'cppa']]],
+  ['options_5fdescription',['options_description',['../namespacecppa.html#ab8969803d282c6f1fe9b7641cd9357cf',1,'cppa']]],
   ['output_5fstream',['output_stream',['../classcppa_1_1network_1_1output__stream.html',1,'cppa::network']]],
   ['output_5fstream_5fptr',['output_stream_ptr',['../namespacecppa_1_1network.html#a6df98290af0c40b9eb07f6fa7c71c403',1,'cppa::network']]]
 ];
